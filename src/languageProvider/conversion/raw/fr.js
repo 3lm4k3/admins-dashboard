@@ -552,5 +552,5 @@ Connectez - Out
 Voir tout
 Voir le panier
 Prix ​​total
-`
-export default txt
+`;
+export default txt;

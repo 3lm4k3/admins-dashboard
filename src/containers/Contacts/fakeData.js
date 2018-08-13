@@ -4,7 +4,7 @@ export const otherAttributes = [
   { title: 'Company', value: 'company', type: 'company' },
   { title: 'Work', value: 'work', type: 'phoneNumber' },
   { title: 'Notes', value: 'note', type: 'paragraph' }
-]
+];
 
 const contactList = JSON.parse(
   `[{
@@ -118,29 +118,29 @@ const contactList = JSON.parse(
   "work": "1-908-422-4964",
   "note": "Aut sequi quae omnis ut qui quaerat. Dolor et fugit blanditiis laudantium. Libero modi officiis consequatur corrupti reiciendis aut qui nemo doloribus. Consequatur voluptatibus quis vero numquam aspernatur a sit laborum voluptates."
 }]`
-)
+);
 
 export default class fakeData {
-  constructor (size = 10) {
-    this.size = size
-    this.datas = []
+  constructor(size = 10) {
+    this.size = size;
+    this.datas = [];
   }
-  dataModel (index) {
-    return contactList[index]
+  dataModel(index) {
+    return contactList[index];
   }
-  getObjectAt (index) {
+  getObjectAt(index) {
     if (index < 0 || index > this.size) {
-      return undefined
+      return undefined;
     }
     if (this.datas[index] === undefined) {
-      this.datas[index] = this.dataModel(index)
+      this.datas[index] = this.dataModel(index);
     }
-    return this.datas[index]
+    return this.datas[index];
   }
-  getAll () {
+  getAll() {
     if (this.datas.length < this.size) {
       for (let i = 0; i < this.size; i++) {
-        this.getObjectAt(i)
+        this.getObjectAt(i);
       }
     }
     return this.datas
@@ -149,10 +149,10 @@ export default class fakeData {
         (contact1, contact2) =>
           `${contact1.firstName}${contact1.LastName}`.toUpperCase() >
           `${contact2.firstName}${contact2.LastName}`.toUpperCase()
-      )
+      );
   }
 
-  getSize () {
-    return this.size
+  getSize() {
+    return this.size;
   }
 }

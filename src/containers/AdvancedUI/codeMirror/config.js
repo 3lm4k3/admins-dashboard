@@ -13,7 +13,7 @@ const switchOptions = [
     falseValue: true,
     value: true
   }
-]
+];
 const selectOptions = [
   {
     id: 'tabSize',
@@ -43,7 +43,7 @@ const selectOptions = [
     ],
     value: 'zenburn'
   }
-]
+];
 
 const defaultValues = {
   basic: `const component = {
@@ -86,6 +86,6 @@ print("visit us https://isomorphic.redq.io ")
 print "This is a RedQ Team production"
 print "visit us https://isomorphic.redq.io "
 `
-}
+};
 
-export { switchOptions, selectOptions, defaultValues }
+export { switchOptions, selectOptions, defaultValues };

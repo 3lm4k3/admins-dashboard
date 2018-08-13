@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import WithDirection from '../../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import WithDirection from '../../../settings/withDirection';
 
 const ReactDatesStyleWrapper = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const ReactDatesStyleWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 const ReactDateWrapper = styled.div`
   .isoReactDate {
@@ -95,8 +95,8 @@ const ReactDateWrapper = styled.div`
       border-radius: 0; 
     }
   }
-`
+`;
 
-const ReactDatesWrapper = WithDirection(ReactDateWrapper)
+const ReactDatesWrapper = WithDirection(ReactDateWrapper);
 
-export { ReactDatesStyleWrapper, ReactDatesWrapper }
+export { ReactDatesStyleWrapper, ReactDatesWrapper };

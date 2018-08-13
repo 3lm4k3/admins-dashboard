@@ -1,48 +1,48 @@
-import echarts from 'echarts'
-import { largeDataGraph, largeDataLunar } from './largeData'
+import echarts from 'echarts';
+import { largeDataGraph, largeDataLunar } from './largeData';
 
-function getVirtulData (year) {
-  year = year || '2017'
-  const date = +echarts.number.parseDate(year + '-01-01')
-  const end = +echarts.number.parseDate(+year + 1 + '-01-01')
-  const dayTime = 3600 * 24 * 1000
-  const data = []
+function getVirtulData(year) {
+  year = year || '2017';
+  const date = +echarts.number.parseDate(year + '-01-01');
+  const end = +echarts.number.parseDate(+year + 1 + '-01-01');
+  const dayTime = 3600 * 24 * 1000;
+  const data = [];
   for (let time = date; time < end; time += dayTime) {
     data.push([
       echarts.format.formatTime('yyyy-MM-dd', time),
-      Math.floor(Math.random() * 1000)
-    ])
+      Math.floor(Math.random() * 1000),
+    ]);
   }
-  return data
+  return data;
 }
-function randomData () {
-  return Math.round(Math.random() * 1000)
+function randomData() {
+  return Math.round(Math.random() * 1000);
 }
 
-function SimpleChart () {
+function SimpleChart() {
   const option = {
     title: {
-      text: 'Simple Chart'
+      text: 'Simple Chart',
     },
     tooltip: {
-      trigger: 'axis'
+      trigger: 'axis',
     },
     legend: {
-      data: ['Series 1', 'Series 2', 'Series 3']
+      data: ['Series 1', 'Series 2', 'Series 3'],
     },
     toolbox: {
       feature: {
         saveAsImage: {
-          title: 'Download'
-        }
-      }
+          title: 'Download',
+        },
+      },
     },
     color: ['#f09875', '#c64187', '#795cae'],
     grid: {
       left: '3%',
       right: '4%',
       bottom: '3%',
-      containLabel: true
+      containLabel: true,
     },
     xAxis: [
       {
@@ -55,14 +55,14 @@ function SimpleChart () {
           'Thursday ',
           'Friday ',
           'Saturday ',
-          'Sunday'
-        ]
-      }
+          'Sunday',
+        ],
+      },
     ],
     yAxis: [
       {
-        type: 'value'
-      }
+        type: 'value',
+      },
     ],
     series: [
       {
@@ -70,38 +70,38 @@ function SimpleChart () {
         type: 'line',
         stack: 'Total',
         areaStyle: { normal: {} },
-        data: [120, 132, 101, 134, 90, 230, 210]
+        data: [120, 132, 101, 134, 90, 230, 210],
       },
       {
         name: 'Series 2',
         type: 'line',
         stack: 'Total',
         areaStyle: { normal: {} },
-        data: [220, 182, 191, 234, 290, 330, 310]
+        data: [220, 182, 191, 234, 290, 330, 310],
       },
       {
         name: 'Series 3',
         type: 'line',
         stack: 'Total',
         areaStyle: { normal: {} },
-        data: [150, 232, 201, 154, 190, 330, 410]
-      }
-    ]
-  }
-  return option
+        data: [150, 232, 201, 154, 190, 330, 410],
+      },
+    ],
+  };
+  return option;
 }
-function ChartWithEventComponent () {
+function ChartWithEventComponent() {
   const option = {
     title: {
       text: '',
       subtext: '',
       // text: 'Chart With Event',
       // subtext: 'Purely Fractional',
-      x: 'center'
+      x: 'center',
     },
     tooltip: {
       trigger: 'item',
-      formatter: '{a} <br/>{b} : {c} ({d}%)'
+      formatter: '{a} <br/>{b} : {c} ({d}%)',
     },
     legend: {
       orient: 'vertical',
@@ -111,8 +111,8 @@ function ChartWithEventComponent () {
         'mail marketing',
         'affiliate ad',
         'video ad',
-        'search engine'
-      ]
+        'search engine',
+      ],
     },
     color: ['#e86e7a', '#c64187', '#795cae', '#a3d1e6', '#f09875'],
     series: [
@@ -126,29 +126,29 @@ function ChartWithEventComponent () {
           { value: 310, name: 'mail marketing' },
           { value: 234, name: 'affiliate ad' },
           { value: 135, name: 'video ad' },
-          { value: 1548, name: 'search engine' }
+          { value: 1548, name: 'search engine' },
         ],
         itemStyle: {
           emphasis: {
             shadowBlur: 10,
             shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
-      }
-    ]
-  }
-  return option
+            shadowColor: 'rgba(0, 0, 0, 0.5)',
+          },
+        },
+      },
+    ],
+  };
+  return option;
 }
-function ChartShowLoadingComponent () {
+function ChartShowLoadingComponent() {
   const option = {
     title: {
       // text: 'Chart ShowLoading Component'
-      text: ''
+      text: '',
     },
     tooltip: {},
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['Allocated Budget', 'Actual Spending'],
     },
     color: ['#ff6384', '#48A6F2'],
     radar: {
@@ -158,8 +158,8 @@ function ChartShowLoadingComponent () {
         { name: 'Information Techology', max: 30000 },
         { name: 'Customer Support', max: 38000 },
         { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
-      ]
+        { name: 'Marketing', max: 25000 },
+      ],
     },
     series: [
       {
@@ -168,47 +168,47 @@ function ChartShowLoadingComponent () {
         data: [
           {
             value: [4300, 10000, 28000, 35000, 50000, 19000],
-            name: 'Allocated Budget'
+            name: 'Allocated Budget',
           },
           {
             value: [5000, 14000, 28000, 31000, 42000, 21000],
-            name: 'Actual Spending'
-          }
-        ]
-      }
-    ]
-  }
-  return option
+            name: 'Actual Spending',
+          },
+        ],
+      },
+    ],
+  };
+  return option;
 }
-function ChartAPIComponent () {
+function ChartAPIComponent() {
   const option = {
     title: {
       text: '',
-      subtext: ''
+      subtext: '',
       // text: 'Chart API',
       // subtext: 'Fake data',
     },
     tooltip: {
       trigger: 'item',
-      formatter: '{a} <br/>{b} : {c}%'
+      formatter: '{a} <br/>{b} : {c}%',
     },
     toolbox: {
       feature: {
         dataView: {
           readOnly: false,
           title: 'View',
-          lang: ['data view', 'turn off', 'refresh']
+          lang: ['data view', 'turn off', 'refresh'],
         },
         restore: {
-          title: 'Reset'
+          title: 'Reset',
         },
         saveAsImage: {
-          title: 'Download'
-        }
-      }
+          title: 'Download',
+        },
+      },
     },
     legend: {
-      data: ['Show', 'Click on', 'access', 'advisory', 'Order']
+      data: ['Show', 'Click on', 'access', 'advisory', 'Order'],
     },
     color: ['#e86e7a', '#c64187', '#795cae', '#a3d1e6', '#f09875'],
     series: [
@@ -219,30 +219,30 @@ function ChartAPIComponent () {
         width: '80%',
         label: {
           normal: {
-            formatter: '{b}expected'
+            formatter: '{b}expected',
           },
           emphasis: {
             position: 'inside',
-            formatter: '{b}expected: {c}%'
-          }
+            formatter: '{b}expected: {c}%',
+          },
         },
         labelLine: {
           normal: {
-            show: false
-          }
+            show: false,
+          },
         },
         itemStyle: {
           normal: {
-            opacity: 0.7
-          }
+            opacity: 0.7,
+          },
         },
         data: [
           { value: 60, name: 'access' },
           { value: 40, name: 'advisory' },
           { value: 20, name: 'Order' },
           { value: 80, name: 'Click on' },
-          { value: 100, name: 'Show' }
-        ]
+          { value: 100, name: 'Show' },
+        ],
       },
       {
         name: 'actual',
@@ -255,54 +255,54 @@ function ChartAPIComponent () {
             position: 'inside',
             formatter: '{c}%',
             textStyle: {
-              color: '#fff'
-            }
+              color: '#fff',
+            },
           },
           emphasis: {
             position: 'inside',
-            formatter: '{b}actual: {c}%'
-          }
+            formatter: '{b}actual: {c}%',
+          },
         },
         itemStyle: {
           normal: {
             opacity: 0.5,
             borderColor: '#fff',
-            borderWidth: 2
-          }
+            borderWidth: 2,
+          },
         },
         data: [
           { value: 30, name: 'access' },
           { value: 10, name: 'advisory' },
           { value: 5, name: 'Order' },
           { value: 50, name: 'Click on' },
-          { value: 80, name: 'Show' }
-        ]
-      }
-    ]
-  }
+          { value: 80, name: 'Show' },
+        ],
+      },
+    ],
+  };
 
-  return option
+  return option;
 }
-function ThemeChartComponent () {
+function ThemeChartComponent() {
   const option = {
     title: {
       text: 'Theme Chart',
-      subtext: 'From ExcelHome'
+      subtext: 'From ExcelHome',
     },
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        type: 'shadow'
-      }
+        type: 'shadow',
+      },
     },
     legend: {
-      data: ['expenditure', 'income']
+      data: ['expenditure', 'income'],
     },
     grid: {
       left: '3%',
       right: '4%',
       bottom: '3%',
-      containLabel: true
+      containLabel: true,
     },
     xAxis: {
       type: 'category',
@@ -318,11 +318,11 @@ function ThemeChartComponent () {
         'November 8',
         'November 9',
         'November 10',
-        'November 11'
-      ]
+        'November 11',
+      ],
     },
     yAxis: {
-      type: 'value'
+      type: 'value',
     },
     color: ['#ff6384', '#48A6F2'],
     series: [
@@ -333,14 +333,14 @@ function ThemeChartComponent () {
         itemStyle: {
           normal: {
             barBorderColor: 'rgba(0,0,0,0)',
-            color: 'rgba(0,0,0,0)'
+            color: 'rgba(0,0,0,0)',
           },
           emphasis: {
             barBorderColor: 'rgba(0,0,0,0)',
-            color: 'rgba(0,0,0,0)'
-          }
+            color: 'rgba(0,0,0,0)',
+          },
         },
-        data: [0, 900, 1245, 1530, 1376, 1376, 1511, 1689, 1856, 1495, 1292]
+        data: [0, 900, 1245, 1530, 1376, 1376, 1511, 1689, 1856, 1495, 1292],
       },
       {
         name: 'income',
@@ -349,10 +349,10 @@ function ThemeChartComponent () {
         label: {
           normal: {
             show: true,
-            position: 'top'
-          }
+            position: 'top',
+          },
         },
-        data: [900, 345, 393, '-', '-', 135, 178, 286, '-', '-', '-']
+        data: [900, 345, 393, '-', '-', 135, 178, 286, '-', '-', '-'],
       },
       {
         name: 'expenditure',
@@ -361,29 +361,29 @@ function ThemeChartComponent () {
         label: {
           normal: {
             show: true,
-            position: 'bottom'
-          }
+            position: 'bottom',
+          },
         },
-        data: ['-', '-', '-', 108, 154, '-', '-', '-', 119, 361, 203]
-      }
-    ]
-  }
-  return option
+        data: ['-', '-', '-', 108, 154, '-', '-', '-', 119, 361, 203],
+      },
+    ],
+  };
+  return option;
 }
-function MapChartComponent () {
+function MapChartComponent() {
   const option = {
     title: {
       text: 'Iphone sales',
       subtext: 'Purely fictional',
-      left: 'center'
+      left: 'center',
     },
     tooltip: {
-      trigger: 'item'
+      trigger: 'item',
     },
     legend: {
       orient: 'vertical',
       left: 'left',
-      data: ['iphone3', 'iphone4', 'iphone5']
+      data: ['iphone3', 'iphone4', 'iphone5'],
     },
     visualMap: {
       min: 0,
@@ -391,7 +391,7 @@ function MapChartComponent () {
       left: 'left',
       top: 'bottom',
       text: ['High', 'low'],
-      calculable: true
+      calculable: true,
     },
     toolbox: {
       show: true,
@@ -402,15 +402,15 @@ function MapChartComponent () {
         dataView: {
           readOnly: false,
           title: 'View',
-          lang: ['data view', 'turn off', 'refresh']
+          lang: ['data view', 'turn off', 'refresh'],
         },
         restore: {
-          title: 'Reset'
+          title: 'Reset',
         },
         saveAsImage: {
-          title: 'Download'
-        }
-      }
+          title: 'Download',
+        },
+      },
     },
     color: ['#511E78', '#ff6384', '#48A6F2'],
     series: [
@@ -421,11 +421,11 @@ function MapChartComponent () {
         roam: false,
         label: {
           normal: {
-            show: true
+            show: true,
           },
           emphasis: {
-            show: true
-          }
+            show: true,
+          },
         },
         data: [
           { Name: 'Beijing', value: randomData() },
@@ -461,8 +461,8 @@ function MapChartComponent () {
           { Name: 'Hainan', value: randomData() },
           { Name: 'Taiwan', value: randomData() },
           { Name: 'Hong Kong', value: randomData() },
-          { Name: 'Macau', value: randomData() }
-        ]
+          { Name: 'Macau', value: randomData() },
+        ],
       },
       {
         name: 'iphone4',
@@ -470,11 +470,11 @@ function MapChartComponent () {
         mapType: 'china',
         label: {
           normal: {
-            show: true
+            show: true,
           },
           emphasis: {
-            show: true
-          }
+            show: true,
+          },
         },
         data: [
           { Name: 'Beijing', value: randomData() },
@@ -495,8 +495,8 @@ function MapChartComponent () {
           { Name: 'Sichuan', value: randomData() },
           { Name: 'Ningxia', value: randomData() },
           { Name: 'Hong Kong', value: randomData() },
-          { Name: 'Macau', value: randomData() }
-        ]
+          { Name: 'Macau', value: randomData() },
+        ],
       },
       {
         name: 'iphone5',
@@ -504,11 +504,11 @@ function MapChartComponent () {
         mapType: 'china',
         label: {
           normal: {
-            show: true
+            show: true,
           },
           emphasis: {
-            show: true
-          }
+            show: true,
+          },
         },
         data: [
           { Name: 'Beijing', value: randomData() },
@@ -517,18 +517,18 @@ function MapChartComponent () {
           { Name: 'Guangdong', value: randomData() },
           { Name: 'Taiwan', value: randomData() },
           { Name: 'Hong Kong', value: randomData() },
-          { Name: 'Macau', value: randomData() }
-        ]
-      }
-    ]
-  }
-  return option
+          { Name: 'Macau', value: randomData() },
+        ],
+      },
+    ],
+  };
+  return option;
 }
-function GraphComponent () {
-  const webkitDep = largeDataGraph
+function GraphComponent() {
+  const webkitDep = largeDataGraph;
   const option = {
     legend: {
-      data: ['HTMLElement', 'WebGL', 'SVG', 'CSS', 'Other']
+      data: ['HTMLElement', 'WebGL', 'SVG', 'CSS', 'Other'],
     },
     color: ['#511E78', '#ff6384', '#00b16a', '#ffbf00', '#48A6F2'],
     series: [
@@ -539,43 +539,43 @@ function GraphComponent () {
         label: {
           normal: {
             position: 'right',
-            formatter: '{b}'
-          }
+            formatter: '{b}',
+          },
         },
         draggable: true,
         data: webkitDep.nodes.map((node, idx) => {
-          node.id = idx
-          return node
+          node.id = idx;
+          return node;
         }),
         categories: webkitDep.categories,
         force: {
           edgeLength: 5,
           repulsion: 20,
-          gravity: 0.2
+          gravity: 0.2,
         },
-        edges: webkitDep.links
-      }
-    ]
-  }
-  return option
+        edges: webkitDep.links,
+      },
+    ],
+  };
+  return option;
 }
-function LunarCalendarComponent () {
-  let heatmapData = []
-  let lunarData = []
+function LunarCalendarComponent() {
+  let heatmapData = [];
+  let lunarData = [];
   for (let i = 0; i < largeDataLunar.length; i++) {
-    heatmapData.push([largeDataLunar[i][0], Math.random() * 300])
+    heatmapData.push([largeDataLunar[i][0], Math.random() * 300]);
     lunarData.push([
       largeDataLunar[i][0],
       1,
       largeDataLunar[i][1],
-      largeDataLunar[i][2]
-    ])
+      largeDataLunar[i][2],
+    ]);
   }
   const option = {
     tooltip: {
       formatter: params => {
-        return 'Rainfall: ' + params.value[1].toFixed(2)
-      }
+        return 'Rainfall: ' + params.value[1].toFixed(2);
+      },
     },
     visualMap: {
       show: false,
@@ -588,13 +588,13 @@ function LunarCalendarComponent () {
       bottom: 20,
       inRange: {
         color: ['#C8E4FB', '#48A6F2'],
-        opacity: 0.3
+        opacity: 0.3,
       },
       controller: {
         inRange: {
-          opacity: 0.5
-        }
-      }
+          opacity: 0.5,
+        },
+      },
     },
     calendar: [
       {
@@ -605,13 +605,13 @@ function LunarCalendarComponent () {
         orient: 'vertical',
         dayLabel: {
           firstDay: 1,
-          nameMap: 'en'
+          nameMap: 'en',
         },
         monthLabel: {
-          show: false
+          show: false,
         },
-        range: '2017-03'
-      }
+        range: '2017-03',
+      },
     ],
 
     series: [
@@ -623,15 +623,15 @@ function LunarCalendarComponent () {
           normal: {
             show: true,
             formatter: params => {
-              const d = echarts.number.parseDate(params.value[0])
-              return d.getDate() + '\n\n' + params.value[2] + '\n\n'
+              const d = echarts.number.parseDate(params.value[0]);
+              return d.getDate() + '\n\n' + params.value[2] + '\n\n';
             },
             textStyle: {
-              color: '#000'
-            }
-          }
+              color: '#000',
+            },
+          },
         },
-        data: lunarData
+        data: lunarData,
       },
       {
         type: 'scatter',
@@ -641,38 +641,38 @@ function LunarCalendarComponent () {
           normal: {
             show: true,
             formatter: params => {
-              return '\n\n\n' + (params.value[3] || '')
+              return '\n\n\n' + (params.value[3] || '');
             },
             textStyle: {
               fontSize: 14,
               fontWeight: 700,
-              color: '#a00'
-            }
-          }
+              color: '#a00',
+            },
+          },
         },
-        data: lunarData
+        data: lunarData,
       },
       {
         name: 'Rainfall',
         type: 'heatmap',
         coordinateSystem: 'calendar',
-        data: heatmapData
-      }
-    ]
-  }
-  return option
+        data: heatmapData,
+      },
+    ],
+  };
+  return option;
 }
-function LiquidfillComponent () {
+function LiquidfillComponent() {
   return {
     series: [
       {
         type: 'liquidFill',
-        data: [0.45]
-      }
-    ]
-  }
+        data: [0.45],
+      },
+    ],
+  };
 }
-function CalendarComponent () {
+function CalendarComponent() {
   const graphData = [
     [1485878400000, 260],
     [1486137600000, 200],
@@ -680,18 +680,18 @@ function CalendarComponent () {
     [1486915200000, 847],
     [1487347200000, 241],
     [1487779200000, 411],
-    [1488124800000, 985]
-  ]
+    [1488124800000, 985],
+  ];
   const links = graphData.map((item, idx) => {
     return {
       source: idx,
-      target: idx + 1
-    }
-  })
-  links.pop()
+      target: idx + 1,
+    };
+  });
+  links.pop();
   const option = {
     tooltip: {
-      position: 'top'
+      position: 'top',
     },
     visualMap: [
       {
@@ -702,75 +702,75 @@ function CalendarComponent () {
         orient: 'horizontal',
         color: ['#ff6384', '#ffa1b5'],
         left: '55%',
-        bottom: 20
+        bottom: 20,
       },
       {
         min: 0,
         max: 1000,
         inRange: {
           color: ['grey'],
-          opacity: [0, 0.3]
+          opacity: [0, 0.3],
         },
         controller: {
           inRange: {
-            opacity: [0.3, 0.6]
+            opacity: [0.3, 0.6],
           },
           outOfRange: {
-            color: '#ccc'
-          }
+            color: '#ccc',
+          },
         },
         calculable: true,
         seriesIndex: [1],
         orient: 'horizontal',
         left: '10%',
-        bottom: 20
-      }
+        bottom: 20,
+      },
     ],
     calendar: [
       {
         orient: 'vertical',
         yearLabel: {
-          margin: 40
+          margin: 40,
         },
         monthLabel: {
           nameMap: 'en',
-          margin: 20
+          margin: 20,
         },
         dayLabel: {
           firstDay: 1,
-          nameMap: 'en'
+          nameMap: 'en',
         },
         cellSize: 40,
-        range: '2017-02'
+        range: '2017-02',
       },
       {
         orient: 'vertical',
         yearLabel: {
-          margin: 40
+          margin: 40,
         },
         monthLabel: {
-          margin: 20
+          margin: 20,
         },
         cellSize: 40,
         left: 460,
-        range: '2017-01'
+        range: '2017-01',
       },
       {
         orient: 'vertical',
         yearLabel: {
-          margin: 40
+          margin: 40,
         },
         monthLabel: {
-          margin: 20
+          margin: 20,
         },
         cellSize: 40,
         top: 350,
-        range: '2017-03'
+        range: '2017-03',
       },
       {
         orient: 'vertical',
         yearLabel: {
-          margin: 40
+          margin: 40,
         },
         dayLabel: {
           firstDay: 1,
@@ -781,18 +781,18 @@ function CalendarComponent () {
             'Wednesday',
             'Thursday',
             'Friday',
-            'Saturday'
-          ]
+            'Saturday',
+          ],
         },
         monthLabel: {
           nameMap: 'en',
-          margin: 20
+          margin: 20,
         },
         cellSize: 40,
         top: 350,
         left: 460,
-        range: '2017-04'
-      }
+        range: '2017-04',
+      },
     ],
 
     series: [
@@ -803,40 +803,40 @@ function CalendarComponent () {
         links: links,
         symbolSize: 10,
         calendarIndex: 0,
-        data: graphData
+        data: graphData,
       },
       {
         type: 'heatmap',
         coordinateSystem: 'calendar',
-        data: getVirtulData(2017)
+        data: getVirtulData(2017),
       },
       {
         type: 'effectScatter',
         coordinateSystem: 'calendar',
         calendarIndex: 1,
         symbolSize: val => {
-          return val[1] / 40
+          return val[1] / 40;
         },
-        data: getVirtulData(2017)
+        data: getVirtulData(2017),
       },
       {
         type: 'scatter',
         coordinateSystem: 'calendar',
         calendarIndex: 2,
         symbolSize: val => {
-          return val[1] / 60
+          return val[1] / 60;
         },
-        data: getVirtulData(2017)
+        data: getVirtulData(2017),
       },
       {
         type: 'heatmap',
         coordinateSystem: 'calendar',
         calendarIndex: 3,
-        data: getVirtulData(2017)
-      }
-    ]
-  }
-  return option
+        data: getVirtulData(2017),
+      },
+    ],
+  };
+  return option;
 }
 export {
   SimpleChart,
@@ -848,5 +848,5 @@ export {
   GraphComponent,
   LunarCalendarComponent,
   LiquidfillComponent,
-  CalendarComponent
-}
+  CalendarComponent,
+};

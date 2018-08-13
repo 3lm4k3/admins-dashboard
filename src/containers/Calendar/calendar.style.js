@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from "styled-components";
+import { palette } from "styled-theme";
 
-import { transition, borderRadius } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import { transition, borderRadius } from "../../settings/style-util";
+import WithDirection from "../../settings/withDirection";
 
 const WDCalendarStyleWrapper = styled.div`
   &.isomorphicCalendarWrapper {
@@ -20,7 +20,7 @@ const WDCalendarStyleWrapper = styled.div`
       background: #fff;
       border-radius: 10px;
       flex-shrink: 0;
-      border: 1px solid ${palette('border', 0)};
+      border: 1px solid ${palette("border", 0)};
 
       @media (max-width: 767px) {
         height: calc(100vh - 70px);
@@ -88,7 +88,7 @@ const WDCalendarStyleWrapper = styled.div`
   }
 
   .rbc-off-range {
-    color: ${palette('text', 2)};
+    color: ${palette("text", 2)};
   }
 
   .rbc-header {
@@ -101,7 +101,7 @@ const WDCalendarStyleWrapper = styled.div`
     font-weight: 500;
     font-size: 11px;
     min-height: 0;
-    color: ${palette('secondary', 2)};
+    color: ${palette("secondary", 2)};
 
     > a {
       &,
@@ -120,7 +120,7 @@ const WDCalendarStyleWrapper = styled.div`
   }
 
   .rbc-today {
-    background-color: ${palette('grayscale', 11)};
+    background-color: ${palette("grayscale", 11)};
   }
 
   /* Toolbar */
@@ -139,11 +139,11 @@ const WDCalendarStyleWrapper = styled.div`
       padding: 0 10px;
       text-align: center;
       font-size: 15px;
-      color: ${palette('secondary', 2)};
+      color: ${palette("secondary", 2)};
     }
 
     & button {
-      color: ${palette('secondary', 2)};
+      color: ${palette("secondary", 2)};
       font-size: 14px;
       display: inline-block;
       margin: 0;
@@ -152,7 +152,7 @@ const WDCalendarStyleWrapper = styled.div`
       vertical-align: middle;
       background: none;
       background-image: none;
-      border: 1px solid ${palette('border', 2)};
+      border: 1px solid ${palette("border", 2)};
       padding: 0 15px;
       border-radius: 0;
       outline: 0;
@@ -166,28 +166,28 @@ const WDCalendarStyleWrapper = styled.div`
       &.rbc-active {
         background-image: none;
         box-shadow: none;
-        background-color: ${palette('primary', 0)};
-        border-color: ${palette('primary', 0)};
+        background-color: ${palette("primary", 0)};
+        border-color: ${palette("primary", 0)};
         color: #ffffff;
 
         &:hover,
         &:focus {
           color: #ffffff;
-          background-color: ${palette('primary', 0)};
-          border-color: ${palette('primary', 0)};
+          background-color: ${palette("primary", 0)};
+          border-color: ${palette("primary", 0)};
         }
       }
 
       &:focus {
-        color: ${palette('secondary', 2)};
+        color: ${palette("secondary", 2)};
         background-color: transparent;
-        border-color: ${palette('border', 2)};
+        border-color: ${palette("border", 2)};
       }
 
       &:hover {
         color: #ffffff;
-        background-color: ${palette('primary', 0)};
-        border-color: ${palette('primary', 0)};
+        background-color: ${palette("primary", 0)};
+        border-color: ${palette("primary", 0)};
       }
     }
   }
@@ -229,7 +229,7 @@ const WDCalendarStyleWrapper = styled.div`
 
     button + button {
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
+        props["data-rtl"] === "rtl" ? "0 -1px 0 0" : "0 0 0 -1px"};
     }
 
     .rbc-rtl & button + button {
@@ -247,12 +247,12 @@ const WDCalendarStyleWrapper = styled.div`
   .rbc-event {
     cursor: pointer;
     padding: 3px 15px;
-    background-color: ${palette('primary', 0)};
+    background-color: ${palette("primary", 0)};
     color: #fff;
-    ${borderRadius('5px')};
+    ${borderRadius("5px")};
 
     &.rbc-selected {
-      background-color: ${palette('primary', 12)};
+      background-color: ${palette("primary", 12)};
     }
   }
 
@@ -321,7 +321,7 @@ const WDCalendarStyleWrapper = styled.div`
     white-space: nowrap;
     padding: 0 5px;
     margin-top: 5px;
-    color: ${palette('secondary', 2)};
+    color: ${palette("secondary", 2)};
     ${transition()};
 
     &:hover {
@@ -341,16 +341,16 @@ const WDCalendarStyleWrapper = styled.div`
     height: 100%;
 
     .rbc-header {
-      border-bottom: 1px solid ${palette('border', 2)};
+      border-bottom: 1px solid ${palette("border", 2)};
     }
 
     .rbc-header + .rbc-header {
-      border-left: 1px solid ${palette('border', 2)};
+      border-left: 1px solid ${palette("border", 2)};
     }
 
     .rbc-rtl & .rbc-header + .rbc-header {
       border-left-width: 0;
-      border-right: 1px solid ${palette('border', 2)};
+      border-right: 1px solid ${palette("border", 2)};
     }
   }
 
@@ -369,7 +369,7 @@ const WDCalendarStyleWrapper = styled.div`
     height: 100%;
 
     + .rbc-month-row {
-      border-top: 1px solid ${palette('border', 2)};
+      border-top: 1px solid ${palette("border", 2)};
     }
   }
 
@@ -405,15 +405,15 @@ const WDCalendarStyleWrapper = styled.div`
   }
 
   .rbc-day-bg + .rbc-day-bg {
-    border-left: ${props => (props['data-rtl'] === 'rtl' ? '0' : '1px')} solid
-      ${palette('border', 2)};
-    border-right: ${props => (props['data-rtl'] === 'rtl' ? '1px' : '0')} solid
-      ${palette('border', 2)};
+    border-left: ${props => (props["data-rtl"] === "rtl" ? "0" : "1px")} solid
+      ${palette("border", 2)};
+    border-right: ${props => (props["data-rtl"] === "rtl" ? "1px" : "0")} solid
+      ${palette("border", 2)};
   }
 
   .rbc-day-bg .rbc-rtl + .rbc-rtl {
     border-left-width: 0;
-    border-right: 1px solid ${palette('border', 2)};
+    border-right: 1px solid ${palette("border", 2)};
   }
 
   .rbc-overlay {
@@ -448,13 +448,13 @@ const WDCalendarStyleWrapper = styled.div`
 
     table {
       width: 100%;
-      border: 1px solid ${palette('border', 2)};
+      border: 1px solid ${palette("border", 2)};
       border-bottom: 0;
 
       tbody > tr > td {
         padding: 5px 10px;
         vertical-align: top;
-        border-right: 1px solid ${palette('border', 2)};
+        border-right: 1px solid ${palette("border", 2)};
       }
 
       .rbc-agenda-time-cell {
@@ -470,19 +470,19 @@ const WDCalendarStyleWrapper = styled.div`
       .rbc-rtl & {
         tbody > tr > td + td {
           border-left-width: 0;
-          border-right: 1px solid ${palette('border', 2)};
+          border-right: 1px solid ${palette("border", 2)};
         }
       }
 
       tbody > tr + tr {
-        border-top: 1px solid ${palette('border', 2)};
+        border-top: 1px solid ${palette("border", 2)};
       }
 
       thead > tr > th {
         padding: 5px 12px;
         text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
-        border-bottom: 1px solid ${palette('border', 2)};
+          props["data-rtl"] === "rtl" ? "right" : "left"};
+        border-bottom: 1px solid ${palette("border", 2)};
 
         .rbc-rtl & {
           text-align: right;
@@ -494,7 +494,7 @@ const WDCalendarStyleWrapper = styled.div`
   .rbc-agenda-content {
     width: 100%;
     overflow-x: scroll;
-    border: 1px solid ${palette('border', 2)};
+    border: 1px solid ${palette("border", 2)};
     -webkit-overflow-scrolling: touch;
 
     table {
@@ -521,14 +521,14 @@ const WDCalendarStyleWrapper = styled.div`
   .rbc-agenda-date-cell,
   .rbc-agenda-time-cell {
     white-space: nowrap;
-    color: ${palette('secondary', 2)};
+    color: ${palette("secondary", 2)};
     font-size: 12px;
     font-weight: 400;
   }
 
   .rbc-agenda-event-cell {
     width: 100%;
-    color: ${palette('secondary', 2)};
+    color: ${palette("secondary", 2)};
     font-size: 12px;
   }
 
@@ -544,7 +544,7 @@ const WDCalendarStyleWrapper = styled.div`
   }
 
   .rbc-timeslot-group {
-    border-bottom: 1px solid ${palette('border', 2)};
+    border-bottom: 1px solid ${palette("border", 2)};
     min-height: 40px;
     display: flex;
     flex-flow: column nowrap;
@@ -557,14 +557,14 @@ const WDCalendarStyleWrapper = styled.div`
 
   .rbc-label {
     padding: 0 5px;
-    color: ${palette('secondary', 2)};
+    color: ${palette("secondary", 2)};
   }
 
   .rbc-day-slot {
     position: relative;
 
     .rbc-event {
-      border: 1px solid ${palette('primary', 12)};
+      border: 1px solid ${palette("primary", 12)};
       display: flex;
       max-height: 100%;
       flex-flow: column wrap;
@@ -584,7 +584,7 @@ const WDCalendarStyleWrapper = styled.div`
       word-wrap: break-word;
       line-height: 1;
       height: 100%;
-      ${''};
+      ${"" /* min-height: 1em; */};
     }
 
     .rbc-time-slot {
@@ -633,7 +633,7 @@ const WDCalendarStyleWrapper = styled.div`
     flex-direction: column;
     flex: 1;
     width: 100%;
-    border: 1px solid ${palette('border', 2)};
+    border: 1px solid ${palette("border", 2)};
     min-height: 0;
 
     .rbc-time-gutter {
@@ -661,25 +661,25 @@ const WDCalendarStyleWrapper = styled.div`
     flex-direction: column;
 
     &.rbc-overflowing {
-      border-right: 1px solid ${palette('border', 2)};
+      border-right: 1px solid ${palette("border", 2)};
     }
 
     .rbc-rtl &.rbc-overflowing {
       border-right-width: 0;
-      border-left: 1px solid ${palette('border', 2)};
+      border-left: 1px solid ${palette("border", 2)};
     }
 
     > .rbc-row > * + * {
-      border-left: 1px solid ${palette('border', 2)};
+      border-left: 1px solid ${palette("border", 2)};
     }
 
     .rbc-rtl & > .rbc-row > * + * {
       border-left-width: 0;
-      border-right: 1px solid ${palette('border', 2)};
+      border-right: 1px solid ${palette("border", 2)};
     }
 
     > .rbc-row:first-child {
-      border-bottom: 1px solid ${palette('border', 2)};
+      border-bottom: 1px solid ${palette("border", 2)};
     }
 
     .rbc-gutter-cell {
@@ -696,7 +696,7 @@ const WDCalendarStyleWrapper = styled.div`
     flex: 1 0 0%;
     align-items: flex-start;
     width: 100%;
-    border-top: 1px solid ${palette('border', 2)};
+    border-top: 1px solid ${palette("border", 2)};
     overflow-y: auto;
     position: relative;
 
@@ -705,12 +705,12 @@ const WDCalendarStyleWrapper = styled.div`
     }
 
     > * + * > * {
-      border-left: 1px solid ${palette('border', 2)};
+      border-left: 1px solid ${palette("border", 2)};
     }
 
     .rbc-rtl & > * + * > * {
       border-left-width: 0;
-      border-right: 1px solid ${palette('border', 2)};
+      border-right: 1px solid ${palette("border", 2)};
     }
 
     > .rbc-day-slot {
@@ -725,7 +725,7 @@ const WDCalendarStyleWrapper = styled.div`
     left: 0;
     height: 1px;
 
-    background-color: ${palette('primary', 0)};
+    background-color: ${palette("primary", 0)};
     pointer-events: none;
 
     &::before {
@@ -736,10 +736,10 @@ const WDCalendarStyleWrapper = styled.div`
       top: -3px;
 
       content: " ";
-      background-color: ${palette('primary', 0)};
+      background-color: ${palette("primary", 0)};
       width: 8px;
       height: 8px;
-      ${borderRadius('50%')};
+      ${borderRadius("50%")};
     }
 
     .rbc-rtl &::before {
@@ -756,7 +756,7 @@ const WDCalendarStyleWrapper = styled.div`
   }
 
   .token.punctuation {
-    color: ${palette('text', 2)};
+    color: ${palette("text", 2)};
   }
 
   .namespace {
@@ -770,7 +770,7 @@ const WDCalendarStyleWrapper = styled.div`
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: ${palette('calendar', 0)};
+    color: ${palette("calendar", 0)};
   }
 
   .token.selector,
@@ -779,7 +779,7 @@ const WDCalendarStyleWrapper = styled.div`
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: ${palette('calendar', 1)};
+    color: ${palette("calendar", 1)};
   }
 
   .token.operator,
@@ -787,24 +787,24 @@ const WDCalendarStyleWrapper = styled.div`
   .token.url,
   .language-css .token.string,
   .style .token.string {
-    color: ${palette('calendar', 2)};
+    color: ${palette("calendar", 2)};
     background: hsla(0, 0%, 100%, 0.5);
   }
 
   .token.atrule,
   .token.attr-value,
   .token.keyword {
-    color: ${palette('calendar', 3)};
+    color: ${palette("calendar", 3)};
   }
 
   .token.function {
-    color: ${palette('calendar', 4)};
+    color: ${palette("calendar", 4)};
   }
 
   .token.regex,
   .token.important,
   .token.variable {
-    color: ${palette('calendar', 5)};
+    color: ${palette("calendar", 5)};
   }
 
   .token.important,
@@ -818,7 +818,7 @@ const WDCalendarStyleWrapper = styled.div`
   .token.entity {
     cursor: help;
   }
-`
+`;
 
 const WDCalendarModalBody = styled.div`
   color: #000000;
@@ -835,7 +835,7 @@ const WDCalendarModalBody = styled.div`
 
       .ant-input {
         border-radius: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
+          props["data-rtl"] === "rtl" ? "0 4px 4px 0" : "4px 0 0 4px"};
       }
 
       &:hover {
@@ -850,19 +850,19 @@ const WDCalendarModalBody = styled.div`
       display: flex;
       flex-shrink: 0;
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
+        props["data-rtl"] === "rtl" ? "0 -1px 0 0" : "0 0 0 -1px"};
       align-items: center;
       justify-content: center;
       border-radius: ${props =>
-    props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
+        props["data-rtl"] === "rtl" ? "4px 0 0 4px" : "0 4px 4px 0"};
 
       &:hover {
         z-index: 1;
       }
     }
   }
-`
+`;
 
-const CalendarStyleWrapper = WithDirection(WDCalendarStyleWrapper)
-const CalendarModalBody = WithDirection(WDCalendarModalBody)
-export { CalendarStyleWrapper, CalendarModalBody }
+const CalendarStyleWrapper = WithDirection(WDCalendarStyleWrapper);
+const CalendarModalBody = WithDirection(WDCalendarModalBody);
+export { CalendarStyleWrapper, CalendarModalBody };

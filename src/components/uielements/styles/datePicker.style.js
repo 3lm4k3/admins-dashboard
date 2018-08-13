@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius } from '../../../settings/style-util'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius } from '../../../settings/style-util';
 
 const AntDatePicker = ComponentName => styled(ComponentName)`
   .ant-input {
@@ -36,6 +36,6 @@ const AntDatePicker = ComponentName => styled(ComponentName)`
       color: ${palette('grayscale', 0)};
     }
   }
-`
+`;
 
-export default AntDatePicker
+export default AntDatePicker;

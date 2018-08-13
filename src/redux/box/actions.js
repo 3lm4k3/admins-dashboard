@@ -3,11 +3,11 @@ const boxActions = {
   SAVE_BOX: 'SAVE_BOX',
   deleteBox: (uid) => ({
     type: boxActions.DELETE_BOX,
-    uid
+    uid,
   }),
   saveBox: (box) => ({
     type: boxActions.SAVE_BOX,
-    box
-  })
+    box,
+  }),
 }
-export default boxActions
+export default boxActions;

@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import contactAction from '../../redux/contacts/actions'
-import { Layout, Icon } from 'antd'
-import Button from '../../components/uielements/button'
-import ContactList from '../../components/contacts/contactList'
-import SingleContactView from '../../components/contacts/singleView'
-import EditContactView from '../../components/contacts/editView'
-import DeleteButton from '../../components/contacts/deleteButton'
-import { otherAttributes } from './fakeData'
-import IntlMessages from '../../components/utility/intlMessages'
-import { ContactsWrapper } from './contacts.style'
-import Scrollbar from '../../components/utility/customScrollBar.js'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import contactAction from "../../redux/contacts/actions";
+import { Layout, Icon } from "antd";
+import Button from "../../components/uielements/button";
+import ContactList from "../../components/contacts/contactList";
+import SingleContactView from "../../components/contacts/singleView";
+import EditContactView from "../../components/contacts/editView";
+import DeleteButton from "../../components/contacts/deleteButton";
+import { otherAttributes } from "./fakeData";
+import IntlMessages from "../../components/utility/intlMessages";
+import { ContactsWrapper } from "./contacts.style";
+import Scrollbar from "../../components/utility/customScrollBar.js";
 
 const {
   changeContact,
@@ -18,11 +18,11 @@ const {
   editContact,
   deleteContact,
   viewChange
-} = contactAction
+} = contactAction;
 
-const { Content } = Layout
+const { Content } = Layout;
 class Contacts extends Component {
-  render () {
+  render() {
     const {
       contacts,
       seectedId,
@@ -32,17 +32,17 @@ class Contacts extends Component {
       editContact,
       deleteContact,
       viewChange
-    } = this.props
+    } = this.props;
     const selectedContact = seectedId
       ? contacts.filter(contact => contact.id === seectedId)[0]
-      : null
-    const onVIewChange = () => viewChange(!editView)
+      : null;
+    const onVIewChange = () => viewChange(!editView);
     return (
       <ContactsWrapper
-        className='isomorphicContacts'
-        style={{ background: 'none' }}
+        className="isomorphicContacts"
+        style={{ background: "none" }}
       >
-        <div className='isoContactListBar'>
+        <div className="isoContactListBar">
           <ContactList
             contacts={contacts}
             seectedId={seectedId}
@@ -50,27 +50,27 @@ class Contacts extends Component {
             deleteContact={deleteContact}
           />
         </div>
-        <Layout className='isoContactBoxWrapper'>
+        <Layout className="isoContactBoxWrapper">
           {selectedContact ? (
-            <Content className='isoContactBox'>
-              <div className='isoContactControl'>
-                <Button type='button' onClick={onVIewChange}>
-                  {editView ? <Icon type='check' /> : <Icon type='edit' />}{' '}
+            <Content className="isoContactBox">
+              <div className="isoContactControl">
+                <Button type="button" onClick={onVIewChange}>
+                  {editView ? <Icon type="check" /> : <Icon type="edit" />}{" "}
                 </Button>
                 <DeleteButton
                   deleteContact={deleteContact}
                   contact={selectedContact}
                 />
                 <Button
-                  type='primary'
+                  type="primary"
                   onClick={addContact}
-                  className='isoAddContactBtn'
+                  className="isoAddContactBtn"
                 >
-                  <IntlMessages id='contactlist.addNewContact' />
+                  <IntlMessages id="contactlist.addNewContact" />
                 </Button>
               </div>
 
-              <Scrollbar className='contactBoxScrollbar'>
+              <Scrollbar className="contactBoxScrollbar">
                 {editView ? (
                   <EditContactView
                     contact={selectedContact}
@@ -86,29 +86,29 @@ class Contacts extends Component {
               </Scrollbar>
             </Content>
           ) : (
-            <div className='isoContactControl'>
+            <div className="isoContactControl">
               <Button
-                type='primary'
+                type="primary"
                 onClick={addContact}
-                className='isoAddContactBtn'
+                className="isoAddContactBtn"
               >
-                <IntlMessages id='contactlist.addNewContact' />
+                <IntlMessages id="contactlist.addNewContact" />
               </Button>
             </div>
           )}
         </Layout>
       </ContactsWrapper>
-    )
+    );
   }
 }
 
-function mapStateToProps (state) {
-  const { contacts, seectedId, editView } = state.Contacts
+function mapStateToProps(state) {
+  const { contacts, seectedId, editView } = state.Contacts;
   return {
     contacts,
     seectedId,
     editView
-  }
+  };
 }
 export default connect(mapStateToProps, {
   changeContact,
@@ -116,4 +116,4 @@ export default connect(mapStateToProps, {
   editContact,
   deleteContact,
   viewChange
-})(Contacts)
+})(Contacts);

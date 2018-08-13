@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius, boxShadow } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius, boxShadow } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const TopbarDropdownWrapper = styled.div`
   display: flex;
@@ -158,7 +158,7 @@ const TopbarDropdownWrapper = styled.div`
         height: 35px;
         overflow: hidden;
         margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+          props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
         display: -webkit-inline-flex;
         display: -ms-inline-flex;
         display: inline-flex;
@@ -190,7 +190,7 @@ const TopbarDropdownWrapper = styled.div`
         h5 {
           margin-bottom: 0;
           padding: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+            props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
         }
 
         .isoDate {
@@ -284,6 +284,6 @@ const TopbarDropdownWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-export default WithDirection(TopbarDropdownWrapper)
+export default WithDirection(TopbarDropdownWrapper);

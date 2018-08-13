@@ -1,4 +1,4 @@
-const DOCUMENT = 'ARTICLE_'
+const DOCUMENT = 'ARTICLE_';
 
 const actions = {
   LOAD_FROM_FIRESTORE: DOCUMENT + 'LOAD_FROM_FIRESTORE',
@@ -15,46 +15,46 @@ const actions = {
   FIRESTORE_UPDATE: DOCUMENT + 'FIRESTORE_UPDATE',
 
   loadFromFireStore: () => {
-    return { type: actions.LOAD_FROM_FIRESTORE }
+    return { type: actions.LOAD_FROM_FIRESTORE };
   },
 
   loadFromFireStoreSuccess: data => ({
     type: actions.LOAD_FROM_FIRESTORE_SUCCESS,
-    payload: { data }
+    payload: { data },
   }),
 
   loadFromFireStoreError: error => ({
     type: actions.LOAD_FROM_FIRESTORE_ERROR,
-    payload: { error }
+    payload: { error },
   }),
 
   saveIntoFireStore: (data, actionName = 'insert') => ({
     type: actions.SAVE_INTO_FIRESTORE,
-    payload: { data, actionName }
+    payload: { data, actionName },
   }),
 
   toggleModal: (data = null) => ({
     type: actions.TOGGLE_FIRESTORE_HANDLE_MODAL,
-    payload: { data }
+    payload: { data },
   }),
 
   update: data => ({
     type: actions.FIRESTORE_UPDATE,
-    payload: { data }
+    payload: { data },
   }),
 
   saveIntoFireStoreError: error => ({
     type: actions.SAVE_INTO_FIRESTORE_ERROR,
-    payload: { error }
+    payload: { error },
   }),
 
   resetFireStoreDocuments: () => ({
-    type: actions.RESET_FIRESTORE_DOCUMENTS
+    type: actions.RESET_FIRESTORE_DOCUMENTS,
   }),
 
   resetFireStoreDocumentsError: error => ({
     type: actions.RESET_FIRESTORE_DOCUMENTS_ERROR,
-    payload: { error }
-  })
-}
-export default actions
+    payload: { error },
+  }),
+};
+export default actions;

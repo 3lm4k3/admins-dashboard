@@ -27,23 +27,23 @@ const basicData = {
       values: [15, 20, -3, -15, 58, 12, -17, 37]
     }
   ]
-}
+};
 
-const heatMapData = {}
-const currentDate = new Date()
-const heatMapStart = new Date(new Date().setMonth(1, 1))
-let timestamp = currentDate.getTime() / 1000
-timestamp = Math.floor(timestamp - timestamp % 86400).toFixed(1) // convert to midnight
+const heatMapData = {};
+const currentDate = new Date();
+const heatMapStart = new Date(new Date().setMonth(1, 1));
+let timestamp = currentDate.getTime() / 1000;
+timestamp = Math.floor(timestamp - timestamp % 86400).toFixed(1); // convert to midnight
 for (let i = 0; i < 375; i++) {
-  heatMapData[timestamp] = Math.floor(Math.random() * 6) + 1
-  timestamp = Math.floor(timestamp - 86400).toFixed(1)
+  heatMapData[timestamp] = Math.floor(Math.random() * 6) + 1;
+  timestamp = Math.floor(timestamp - 86400).toFixed(1);
 }
 
 const basicConfig = {
   height: 250,
   format_tooltip_x: d => (d + '').toUpperCase(),
   format_tooltip_y: d => d + ' pts'
-}
+};
 const barChart = {
   header: 'Bar Chart',
   title: '',
@@ -52,7 +52,7 @@ const barChart = {
   type: 'bar',
   data: basicData,
   ...basicConfig
-}
+};
 const lineChart = {
   header: 'Line Chart',
   title: '',
@@ -64,7 +64,7 @@ const lineChart = {
   heatline: 1,
   region_fill: 1,
   ...basicConfig
-}
+};
 
 const scatterChart = {
   header: 'Scatter Chart',
@@ -74,7 +74,7 @@ const scatterChart = {
   type: 'scatter',
   data: basicData,
   ...basicConfig
-}
+};
 
 const pieChart = {
   header: 'Pie Chart',
@@ -84,7 +84,7 @@ const pieChart = {
   type: 'pie',
   data: basicData,
   ...basicConfig
-}
+};
 
 const percentageChart = {
   header: 'Percentage Chart',
@@ -94,7 +94,7 @@ const percentageChart = {
   type: 'percentage',
   data: basicData,
   ...basicConfig
-}
+};
 const heatMap = {
   header: 'Heatmap Chart',
   title: '',
@@ -102,10 +102,10 @@ const heatMap = {
   parentId: 'heatmap',
   type: 'heatmap',
   height: 115,
-  data: heatMapData, // heatMapData,
+  data: heatMapData, //heatMapData,
   discrete_domains: 1, // default: 0
   start: heatMapStart
-}
+};
 
 const heatMapHalloween = {
   header: 'Heatmap Chart Halloween',
@@ -114,11 +114,11 @@ const heatMapHalloween = {
   parentId: 'heatmapHalloween',
   type: 'heatmap',
   height: 115,
-  data: heatMapData, // heatMapData,
+  data: heatMapData, //heatMapData,
   discrete_domains: 1, // default: 0
   start: heatMapStart,
   legend_colors: ['#ebedf0', '#fdf436', '#ffc700', '#ff9100', '#06001c']
-}
+};
 
 const updatedChart = {
   header: 'Updateable Chart',
@@ -129,7 +129,7 @@ const updatedChart = {
   type: 'line',
   show_dots: 0,
   heatline: 1
-}
+};
 
 export {
   barChart,
@@ -141,4 +141,4 @@ export {
   heatMapHalloween,
   updatedChart,
   basicData
-}
+};

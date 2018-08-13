@@ -11,11 +11,11 @@ const data = {
       data: [65, 59, 80, 81, 56, 55, 40]
     }
   ]
-}
+};
 
 const barSettings = {
-  height: 350
-}
+  height: 350,
+};
 
 export {
   data,

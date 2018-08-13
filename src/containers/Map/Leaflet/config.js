@@ -1,9 +1,9 @@
-import customIcon from '../../../image/map-pin-2.svg'
-import customIconShadow from '../../../image/marker-shadow.png'
-import infoWindowImg1 from '../../../image/image1.jpg'
-import infoWindowImg2 from '../../../image/image3.jpg'
-import infoWindowImg3 from '../../../image/image4.jpg'
-import infoWindowImg4 from '../../../image/image5.jpg'
+import customIcon from '../../../image/map-pin-2.svg';
+import customIconShadow from '../../../image/marker-shadow.png';
+import infoWindowImg1 from '../../../image/image1.jpg';
+import infoWindowImg2 from '../../../image/image3.jpg';
+import infoWindowImg3 from '../../../image/image4.jpg';
+import infoWindowImg4 from '../../../image/image5.jpg';
 
 const basicMarkers = [
   {
@@ -14,7 +14,7 @@ const basicMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Park</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.72143, -74.05729],
@@ -24,7 +24,7 @@ const basicMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Village</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.7215, -73.999],
@@ -34,7 +34,7 @@ const basicMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.696518, -73.95352],
@@ -44,7 +44,7 @@ const basicMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>New York University</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.6943, -74.074201],
@@ -54,9 +54,9 @@ const basicMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Library Golf Club</h3>
-      </div>`
-  }
-]
+      </div>`,
+  },
+];
 
 const customIconMarkers = [
   {
@@ -69,9 +69,9 @@ const customIconMarkers = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Village</h3>
-      </div>`
-  }
-]
+      </div>`,
+  },
+];
 
 const customHtmlMarker = [
   {
@@ -87,9 +87,9 @@ const customHtmlMarker = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Village</h3>
-      </div>`
-  }
-]
+      </div>`,
+  },
+];
 
 const markerCluster = [
   {
@@ -102,7 +102,7 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Village</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.72143, -74.05729],
@@ -113,7 +113,7 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square Village</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.7215, -73.999],
@@ -124,7 +124,7 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Washington Square</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.696518, -73.95352],
@@ -135,7 +135,7 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>New York University</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.6943, -74.074201],
@@ -146,7 +146,7 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Library Golf Club</h3>
-      </div>`
+      </div>`,
   },
   {
     position: [40.6943, -74.074201],
@@ -157,20 +157,20 @@ const markerCluster = [
       </div>
       <div class="isoInfoWindowDetails">
         <h3>Library Golf Club Old Portion</h3>
-      </div>`
-  }
-]
+      </div>`,
+  },
+];
 
 const markerRouting = {
   postion_start: [40.72143, -74.05729],
   iconUrl: customIcon,
-  postion_end: [40.6943, -74.074201]
-}
+  postion_end: [40.6943, -74.074201],
+};
 
 export {
   basicMarkers,
   customIconMarkers,
   customHtmlMarker,
   markerCluster,
-  markerRouting
-}
+  markerRouting,
+};

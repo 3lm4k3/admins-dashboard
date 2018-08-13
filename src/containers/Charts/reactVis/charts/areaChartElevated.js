@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import ChartWrapper from '../../chart.style'
+import React, { Component } from 'react';
+import ChartWrapper from '../../chart.style';
 
 import {
   XYPlot,
@@ -9,13 +9,13 @@ import {
   HorizontalGridLines,
   LineMarkSeries,
   AreaSeries
-} from 'react-vis'
+} from 'react-vis';
 
 export default class extends Component {
-  render () {
-    const { datas, width, height } = this.props
+  render() {
+    const { datas, width, height } = this.props;
     return (
-      <ChartWrapper className='isoChartWrapper'>
+      <ChartWrapper className="isoChartWrapper">
         <XYPlot width={width} height={height}>
           <VerticalGridLines />
           <HorizontalGridLines />
@@ -27,15 +27,15 @@ export default class extends Component {
               className: data.className,
               data: data.data,
               color: data.color
-            }
-            return <AreaSeries {...config} />
+            };
+            return <AreaSeries {...config} />;
           })}
           <LineMarkSeries
-            className='area-elevated-line-series'
+            className="area-elevated-line-series"
             data={datas[1].data}
           />
         </XYPlot>
       </ChartWrapper>
-    )
+    );
   }
 }

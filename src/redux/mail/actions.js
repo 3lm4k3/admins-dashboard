@@ -6,33 +6,33 @@ const mailActions = {
   SEARCH_STRING: 'SEARCH_STRING',
   filterAction: newFilterAttr => {
     return (dispatch, getState) => {
-      const filterAttr = getState().Mails.filterAttr
+      const filterAttr = getState().Mails.filterAttr;
       if (newFilterAttr) {
         if (newFilterAttr.bucket) {
-          filterAttr.bucket = newFilterAttr.bucket
-          filterAttr.tag = newFilterAttr.tag
+          filterAttr.bucket = newFilterAttr.bucket;
+          filterAttr.tag = newFilterAttr.tag;
         } else if (newFilterAttr.tag) {
-          filterAttr.tag = newFilterAttr.tag
+          filterAttr.tag = newFilterAttr.tag;
         }
       }
       dispatch({
         type: mailActions.FILTER_ATTRIBUTE,
         filterAttr
-      })
-    }
+      });
+    };
   },
   selectMail: selectedMail => {
     return (dispatch, getState) => {
-      const allMails = getState().Mails.allMails
+      const allMails = getState().Mails.allMails;
       allMails[
         allMails.findIndex(mail => mail.id === selectedMail)
-      ].read = true
+      ].read = true;
       dispatch({
         type: mailActions.SELECTED_MAIL,
         selectedMail,
         allMails
-      })
-    }
+      });
+    };
   },
   changeComposeMail: composeMail => ({
     type: mailActions.COMPOSE_MAIL,
@@ -46,5 +46,5 @@ const mailActions = {
     type: mailActions.SEARCH_STRING,
     searchString
   })
-}
-export default mailActions
+};
+export default mailActions;

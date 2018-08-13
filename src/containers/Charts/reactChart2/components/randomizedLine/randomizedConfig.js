@@ -42,10 +42,11 @@ const initialData = {
       pointRadius: 1,
       pointHitRadius: 10,
       data: [55, 49, 70, 71, 46, 45, 30]
-    }
+    },
   ]
-}
+};
+
 
 export {
-  initialData
-}
+  initialData,
+};

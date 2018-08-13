@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   RefinementList,
   StarRating,
@@ -7,20 +7,20 @@ import {
   SearchBox,
   MultiRange,
   ClearAll
-} from 'react-instantsearch/dom'
-import RangeSlider from './rangeSlider'
-import VoiceRecognition from './voiceRecognition'
-import { SidebarWrapper } from './algoliaComponent.style'
+} from 'react-instantsearch/dom';
+import RangeSlider from './rangeSlider';
+import VoiceRecognition from './voiceRecognition';
+import { SidebarWrapper } from './algoliaComponent.style';
 
 export default ({ setVoice }) => (
-  <SidebarWrapper className='isoAlgoliaSidebar'>
+  <SidebarWrapper className="isoAlgoliaSidebar">
     <SearchBox translations={{ placeholder: 'Search here' }} />
     <VoiceRecognition setVoice={setVoice} />
 
-    <div className='isoAlgoliaSidebarItem'>
-      <h3 className='isoAlgoliaSidebarTitle'>Multi Range</h3>
+    <div className="isoAlgoliaSidebarItem">
+      <h3 className="isoAlgoliaSidebarTitle">Multi Range</h3>
       <MultiRange
-        attributeName='price'
+        attributeName="price"
         items={[
           { end: 10, label: '<$10' },
           { start: 10, end: 100, label: '$10-$100' },
@@ -30,24 +30,24 @@ export default ({ setVoice }) => (
       />
     </div>
 
-    <div className='isoAlgoliaSidebarItem'>
-      <h3 className='isoAlgoliaSidebarTitle' style={{ marginBottom: 10 }}>
+    <div className="isoAlgoliaSidebarItem">
+      <h3 className="isoAlgoliaSidebarTitle" style={{ marginBottom: 10 }}>
         Slider
       </h3>
-      <RangeSlider attributeName='price' />
+      <RangeSlider attributeName="price" />
     </div>
 
-    <div className='isoAlgoliaSidebarItem'>
-      <h3 className='isoAlgoliaSidebarTitle'>Category</h3>
-      <RefinementList attributeName='categories' />
+    <div className="isoAlgoliaSidebarItem">
+      <h3 className="isoAlgoliaSidebarTitle">Category</h3>
+      <RefinementList attributeName="categories" />
     </div>
 
-    <div className='isoAlgoliaSidebarItem'>
-      <h3 className='isoAlgoliaSidebarTitle'>Brand</h3>
-      <RefinementList attributeName='brand' withSearchBox />
+    <div className="isoAlgoliaSidebarItem">
+      <h3 className="isoAlgoliaSidebarTitle">Brand</h3>
+      <RefinementList attributeName="brand" withSearchBox />
     </div>
 
-    <div className='isoAlgoliaSidebarItem'>
+    <div className="isoAlgoliaSidebarItem">
       <HierarchicalMenu
         attributes={[
           'hierarchicalCategories.lvl0',
@@ -56,15 +56,15 @@ export default ({ setVoice }) => (
         ]}
       />
     </div>
-    <div className='isoAlgoliaSidebarItem'>
-      <h3 className='isoAlgoliaSidebarTitle'>Rating</h3>
-      <StarRating attributeName='rating' style={{ background: '#ff0000' }} />
+    <div className="isoAlgoliaSidebarItem">
+      <h3 className="isoAlgoliaSidebarTitle">Rating</h3>
+      <StarRating attributeName="rating" style={{ background: '#ff0000' }} />
     </div>
-    <div className='isoAlgoliaSidebarItem isoInline'>
-      <h3 className='isoAlgoliaSidebarTitle'>Toggle</h3>
-      <Toggle attributeName='free_shipping' label='Free Shipping' />
+    <div className="isoAlgoliaSidebarItem isoInline">
+      <h3 className="isoAlgoliaSidebarTitle">Toggle</h3>
+      <Toggle attributeName="free_shipping" label="Free Shipping" />
     </div>
 
     <ClearAll />
   </SidebarWrapper>
-)
+);

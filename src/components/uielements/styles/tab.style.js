@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const AntTab = ComponentName => styled(ComponentName)`
   &.ant-tabs {
@@ -11,17 +11,17 @@ const AntTab = ComponentName => styled(ComponentName)`
     .ant-tabs-nav {
       .ant-tabs-tab {
         margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 24px' : '0 24px 0 0'};
+          props['data-rtl'] === 'rtl' ? '0 0 0 24px' : '0 24px 0 0'};
 
         .anticon:not(.anticon-close) {
           margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 8px' : '0 8px 0 0'};
+            props['data-rtl'] === 'rtl' ? '0 0 0 8px' : '0 8px 0 0'};
 
           &.anticon-close{
             right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '2px'};;
+              props['data-rtl'] === 'rtl' ? 'inherit' : '2px'};;
             left: ${props =>
-    props['data-rtl'] === 'rtl' ? '2px' : 'inherit'};;
+              props['data-rtl'] === 'rtl' ? '2px' : 'inherit'};;
           }
         }
       }
@@ -31,7 +31,7 @@ const AntTab = ComponentName => styled(ComponentName)`
       left: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '0')};
       right ${props => (props['data-rtl'] === 'rtl' ? '2px' : 'inherit')};
       transform: ${props =>
-    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
+        props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
 
     }
 
@@ -39,7 +39,7 @@ const AntTab = ComponentName => styled(ComponentName)`
       left: ${props => (props['data-rtl'] === 'rtl' ? '0' : 'inherit')};
       right ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '2px')};
       transform: ${props =>
-    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
+        props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
     }
 
     &.ant-tabs-vertical{
@@ -49,6 +49,6 @@ const AntTab = ComponentName => styled(ComponentName)`
       }
     }
   }
-`
+`;
 
-export default AntTab
+export default AntTab;

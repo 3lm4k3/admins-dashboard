@@ -1,4 +1,4 @@
-import actions from './actions'
+import actions from './actions';
 
 const initState = {
   isLoading: false,
@@ -14,11 +14,11 @@ const initState = {
     status: 'draft', // publish
     description: '',
     created_at: new Date().getTime(),
-    deleted_at: null // soft delete
-  }
-}
+    deleted_at: null, // soft delete
+  },
+};
 
-export default function reducer (
+export default function reducer(
   state = initState,
   { type, payload, newRecord }
 ) {
@@ -28,33 +28,33 @@ export default function reducer (
         ...state,
         isLoading: true,
         errorMessage: false,
-        modalActive: false
-      }
+        modalActive: false,
+      };
     case actions.LOAD_FROM_FIRESTORE_SUCCESS:
       return {
         ...state,
         isLoading: false,
         articles: payload.data,
-        errorMessage: false
-      }
+        errorMessage: false,
+      };
     case actions.LOAD_FROM_FIRESTORE_ERROR:
       return {
         ...state,
         isLoading: false,
-        errorMessage: 'There is a loading problem'
-      }
+        errorMessage: 'There is a loading problem',
+      };
     case actions.TOGGLE_FIRESTORE_HANDLE_MODAL:
       return {
         ...state,
         modalActive: !state.modalActive,
-        article: payload.data == null ? initState.article : payload.data
-      }
+        article: payload.data == null ? initState.article : payload.data,
+      };
     case actions.FIRESTORE_UPDATE:
       return {
         ...state,
-        article: payload.data
-      }
+        article: payload.data,
+      };
     default:
-      return state
+      return state;
   }
 }

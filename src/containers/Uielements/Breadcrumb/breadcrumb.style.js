@@ -1,9 +1,9 @@
-import React from 'react'
-import Breadcrumbs from '../../../components/uielements/breadcrumb'
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import React from 'react';
+import Breadcrumbs from '../../../components/uielements/breadcrumb';
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
-const AnrBreadcrumb = props => <Breadcrumbs {...props} />
+const AnrBreadcrumb = props => <Breadcrumbs {...props} />;
 
 const Breadcrumb = styled(AnrBreadcrumb)`
   color: ${palette('text', 3)};
@@ -18,6 +18,6 @@ const Breadcrumb = styled(AnrBreadcrumb)`
     font-weight: 700;
     color: ${palette('text', 1)};
   }
-`
+`;
 
-export default Breadcrumb
+export default Breadcrumb;

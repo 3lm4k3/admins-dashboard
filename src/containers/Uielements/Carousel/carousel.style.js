@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import WithDirection from '../../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import WithDirection from '../../../settings/withDirection';
 
 const CarouselStyleWrapper = styled.div`
   .isoCarousalDemoContainer {
@@ -27,6 +27,6 @@ const CarouselStyleWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-export default WithDirection(CarouselStyleWrapper)
+export default WithDirection(CarouselStyleWrapper);

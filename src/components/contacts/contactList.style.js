@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius, boxShadow } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius, boxShadow } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const WDContactListWrapper = styled.div`
   width: 100%;
@@ -27,9 +27,9 @@ const WDContactListWrapper = styled.div`
       height: 69px;
       padding: 0 20px;
       padding-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '35px'};
+        props['data-rtl'] === 'rtl' ? 'inherit' : '35px'};
       padding-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '35px' : 'inherit'};
+        props['data-rtl'] === 'rtl' ? '35px' : 'inherit'};
       border: 0;
       border-bottom: 1px solid ${palette('border', 0)};
       outline: 0 !important;
@@ -96,7 +96,7 @@ const WDContactListWrapper = styled.div`
       flex-shrink: 0;
       padding: 15px 20px;
       padding-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '20px' : '35px'};
+        props['data-rtl'] === 'rtl' ? '20px' : '35px'};
       padding-left: ${props => (props['data-rtl'] === 'rtl' ? '35px' : '20px')};
       border-bottom: 1px solid ${palette('border', 0)};
       text-align: ${props => (props['data-rtl'] === 'rtl' ? 'right' : 'left')};
@@ -118,9 +118,9 @@ const WDContactListWrapper = styled.div`
         align-items: center;
         justify-content: center;
         margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
+          props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
         margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
+          props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
         flex-shrink: 0;
         overflow: hidden;
         ${borderRadius('50%')};
@@ -141,9 +141,9 @@ const WDContactListWrapper = styled.div`
       .isoNoteText {
         width: calc(100% - 60px);
         margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
+          props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
         margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
+          props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
         padding: 20px 0;
         cursor: pointer;
 
@@ -191,8 +191,8 @@ const WDContactListWrapper = styled.div`
       padding: 30px 0;
     }
   }
-`
+`;
 
-const ContactListWrapper = WithDirection(WDContactListWrapper)
+const ContactListWrapper = WithDirection(WDContactListWrapper);
 
-export { ContactListWrapper }
+export { ContactListWrapper };

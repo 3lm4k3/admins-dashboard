@@ -1213,5 +1213,5 @@ export default JSON.parse(
   "date": "2016-06-20T07:24:03.907Z",
   "bucket": "Sent",
   "read": true
-}]`
-)
+}]`,
+);

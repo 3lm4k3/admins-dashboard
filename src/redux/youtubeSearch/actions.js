@@ -25,5 +25,5 @@ const actions = {
   youtubeSearchError: () => ({
     type: actions.YOUTUBE_ERROR_RESULT
   })
-}
-export default actions
+};
+export default actions;

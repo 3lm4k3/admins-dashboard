@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { WidgetBox } from './style'
+import React, { Component } from 'react';
+import { WidgetBox } from './style';
 
 export default class extends Component {
-  render () {
-    const { children, style, height, padding } = this.props
+  render() {
+    const { children, style, height, padding } = this.props;
 
     // const boxStyle = {
     //   height: this.props.height,
@@ -13,13 +13,13 @@ export default class extends Component {
 
     return (
       <WidgetBox
-        className='isoWidgetBox'
+        className="isoWidgetBox"
         height={height}
         padding={padding}
         style={style}
       >
         {children}
       </WidgetBox>
-    )
+    );
   }
 }

@@ -28,15 +28,15 @@ const todoData = JSON.parse(`[{
   "createTime": "2017-06-18T00:51:31.881Z",
   "color": 4,
   "completed": true
-}]`)
+}]`);
 
 class fakeData {
-  constructor (size = 10, colorLength = 4) {
-    this.size = size
-    this.datas = []
-    this.colorLength = colorLength
+  constructor(size = 10, colorLength = 4){
+    this.size = size ;
+    this.datas = [];
+    this.colorLength = colorLength;
   }
-  dataModel (index) {
+  dataModel(index) {
     // return {
     //   id: faker.random.number() ,
     //   todo: faker.lorem.paragraph(),
@@ -44,28 +44,29 @@ class fakeData {
     //   color: faker.random.number(this.colorLength - 1),
     //   completed: faker.random.boolean(),
     // }
-    return todoData[index]
+    return todoData[index];
   }
-  getObjectAt (index) {
-    if (index < 0 || index > this.size) {
-      return undefined
+  getObjectAt(index) {
+    if (index < 0 || index > this.size){
+      return undefined;
     }
     if (this.datas[index] === undefined) {
-      this.datas[index] = this.dataModel(index)
+      this.datas[index] = this.dataModel(index);
     }
-    return this.datas[index]
+    return this.datas[index];
   }
-  getAll () {
+  getAll() {
     if (this.datas.length < this.size) {
       for (let i = 0; i < this.size; i++) {
-        this.getObjectAt(i)
+        this.getObjectAt(i);
       }
     }
-    return this.datas.slice()
+    return this.datas.slice();
   }
 
-  getSize () {
-    return this.size
+  getSize() {
+    return this.size;
   }
 }
-export default fakeData
+export default fakeData;
+

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import WithDirection from '../../settings/withDirection';
 
 const WDContentHolderWrapper = styled.div`
   margin-top: 30px;
@@ -38,10 +38,10 @@ const WDContentHolderWrapper = styled.div`
 
     @media only screen and (max-width: 480px) {
       margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '8px' : '0 !important'};
+        props['data-rtl'] === 'rtl' ? '8px' : '0 !important'};
       white-space: nowrap;
       margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 !important' : '8px'};
+        props['data-rtl'] === 'rtl' ? '0 !important' : '8px'};
       float: none !important;
     }
 
@@ -96,8 +96,8 @@ const WDContentHolderWrapper = styled.div`
     font-weight: 700;
     font-size: 14px;
   }
-`
+`;
 
-const ContentHolderWrapper = WithDirection(WDContentHolderWrapper)
+const ContentHolderWrapper = WithDirection(WDContentHolderWrapper);
 
-export { ContentHolderWrapper }
+export { ContentHolderWrapper };

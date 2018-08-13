@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import Progress from '../../../components/uielements/progress'
-import { ProgressWidgetWrapper } from './style'
+import React, { Component } from 'react';
+import Progress from '../../../components/uielements/progress';
+import { ProgressWidgetWrapper } from './style';
 
 export default class ProgressWidget extends Component {
-  render () {
+  render() {
     const {
       label,
       icon,
@@ -11,23 +11,23 @@ export default class ProgressWidget extends Component {
       details,
       percent,
       barHeight,
-      status
-    } = this.props
+      status,
+    } = this.props;
     const iconStyle = {
-      color: iconcolor
-    }
+      color: iconcolor,
+    };
 
     return (
-      <ProgressWidgetWrapper className='isoProgressWidget'>
-        <div className='isoProgressWidgetTopbar'>
+      <ProgressWidgetWrapper className="isoProgressWidget">
+        <div className="isoProgressWidgetTopbar">
           <h3>
             {label}
           </h3>
           <i className={icon} style={iconStyle} />
         </div>
 
-        <div className='isoProgressWidgetBody'>
-          <p className='isoDescription'>
+        <div className="isoProgressWidgetBody">
+          <p className="isoDescription">
             {details}
           </p>
           <Progress
@@ -38,6 +38,6 @@ export default class ProgressWidget extends Component {
           />
         </div>
       </ProgressWidgetWrapper>
-    )
+    );
   }
 }

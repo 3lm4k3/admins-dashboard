@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { borderRadius } from '../../../settings/style-util'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { borderRadius } from '../../../settings/style-util';
 
 const Modals = ComponentName => styled(ComponentName)`
   .ant-modal-header {
@@ -45,7 +45,7 @@ const Modals = ComponentName => styled(ComponentName)`
 
     button + button {
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
+  props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
     }
   }
 
@@ -69,7 +69,7 @@ const Modals = ComponentName => styled(ComponentName)`
       margin-top: 8px;
     }
   }
-`
+`;
 
 const ModalContent = styled.div`
   p {
@@ -77,7 +77,7 @@ const ModalContent = styled.div`
     color: ${palette('text', 3)};
     line-height: 1.5;
   }
-`
+`;
 
-export default Modals
-export { ModalContent }
+export default Modals;
+export { ModalContent };

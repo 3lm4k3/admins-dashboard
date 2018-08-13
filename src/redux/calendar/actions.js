@@ -9,5 +9,5 @@ const calendarActions = {
     type: calendarActions.CALENDAR_EVENTS,
     events
   })
-}
-export default calendarActions
+};
+export default calendarActions;

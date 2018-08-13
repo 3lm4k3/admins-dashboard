@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
 export default styled(message)`
   &.ant-message {
@@ -30,4 +30,4 @@ export default styled(message)`
       }
     }
   }
-`
+`;

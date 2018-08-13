@@ -1,4 +1,4 @@
-const MarkerInfoWindow = (props) => {
+ const  MarkerInfoWindow = (props) => {
   return (`<div class="isoInfoWindowWrapper">
       <div class="isoInfoWindow">
       <div class="isoInfoWindowImage">
@@ -9,8 +9,9 @@ const MarkerInfoWindow = (props) => {
         <p class="isoLocation">${props.location}</p>
       </div>
     </div>
-  </div>`)
+  </div>`);
 }
+
 
 const Marker = (props) => {
   return (`<div class="marker-icon map-marker">
@@ -18,7 +19,7 @@ const Marker = (props) => {
         <i class="${props.iconClass}"></i>
       </div>
     </div>`)
-}
+} 
 
 export {
   Marker,

@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius, boxShadow } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius, boxShadow } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const WDSingleCardWrapper = styled.li`
   padding: 15px;
@@ -121,7 +121,7 @@ const WDSingleCardWrapper = styled.li`
       left: ${props => (props['data-rtl'] === 'rtl' ? '0' : 'inherit')};
     }
   }
-`
+`;
 
 const WDSortableCardWrapper = styled.div`
   padding: 50px 35px;
@@ -171,9 +171,9 @@ const WDSortableCardWrapper = styled.div`
 
         i {
           padding-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : '10px'};
+            props['data-rtl'] === 'rtl' ? '0' : '10px'};
           padding-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '10px' : '0'};
+            props['data-rtl'] === 'rtl' ? '10px' : '0'};
         }
 
         &:last-child {
@@ -188,15 +188,15 @@ const WDSortableCardWrapper = styled.div`
 
       &.isoControlBtnGroup {
         margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : 'auto'};
+          props['data-rtl'] === 'rtl' ? 'inherit' : 'auto'};
         margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'auto' : 'inherit'};
+          props['data-rtl'] === 'rtl' ? 'auto' : 'inherit'};
 
         @media only screen and (max-width: 767px) {
           margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+            props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
           margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+            props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
           margin-top: 20px;
         }
       }
@@ -232,9 +232,9 @@ const WDSortableCardWrapper = styled.div`
 
         i {
           padding-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : '10px'};
+            props['data-rtl'] === 'rtl' ? '0' : '10px'};
           padding-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '10px' : '0'};
+            props['data-rtl'] === 'rtl' ? '10px' : '0'};
         }
 
         &:last-child {
@@ -257,8 +257,8 @@ const WDSortableCardWrapper = styled.div`
       }
     }
   }
-`
-const SingleCardWrapper = WithDirection(WDSingleCardWrapper)
-const SortableCardWrapper = WithDirection(WDSortableCardWrapper)
+`;
+const SingleCardWrapper = WithDirection(WDSingleCardWrapper);
+const SortableCardWrapper = WithDirection(WDSortableCardWrapper);
 
-export { SingleCardWrapper, SortableCardWrapper }
+export { SingleCardWrapper, SortableCardWrapper };

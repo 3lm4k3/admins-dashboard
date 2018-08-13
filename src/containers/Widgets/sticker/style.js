@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { borderRadius } from '../../../settings/style-util'
+import styled from 'styled-components';
+import { borderRadius } from '../../../settings/style-util';
 
 const StickerWidgetWrapper = styled.div`
   width: 100%;
@@ -41,6 +41,6 @@ const StickerWidgetWrapper = styled.div`
       line-height: 1.2;
     }
   }
-`
+`;
 
-export { StickerWidgetWrapper }
+export { StickerWidgetWrapper };

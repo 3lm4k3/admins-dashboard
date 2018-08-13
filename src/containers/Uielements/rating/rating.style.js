@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
-const RatingStyleWrapper = styled.div``
+const RatingStyleWrapper = styled.div``;
 
-export default RatingStyleWrapper
+export default RatingStyleWrapper;

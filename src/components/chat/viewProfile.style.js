@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
 const ViewProfileWrapper = styled.div`
   background: #ffffff;
@@ -55,7 +55,7 @@ const ViewProfileWrapper = styled.div`
   @media only screen and (min-width: 768px) {
     width: 350px;
   }
-`
+`;
 
 const SingleInfoWrapper = styled.div`
   display: flex;
@@ -75,6 +75,6 @@ const SingleInfoWrapper = styled.div`
     color: ${palette('text', 1)};
     margin-bottom: 30px;
   }
-`
+`;
 
-export { ViewProfileWrapper, SingleInfoWrapper }
+export { ViewProfileWrapper, SingleInfoWrapper };

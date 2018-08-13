@@ -23,8 +23,8 @@ const data = {
     'Grey',
     'Blue'
   ]
-}
+};
 
 export {
-  data
+  data,
 }

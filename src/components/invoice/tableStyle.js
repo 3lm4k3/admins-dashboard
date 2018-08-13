@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import Tables from '../uielements/table'
-import { transition } from '../../settings/style-util.js'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import Tables from '../uielements/table';
+import { transition } from '../../settings/style-util.js';
 
 const Table = styled(Tables)`
   overflow: hidden;
@@ -17,7 +17,7 @@ const Table = styled(Tables)`
     &.ant-table-column-sort {
       background: ${palette('secondary', 1)};
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 4px 0 0' : '0 0 0 4px'};
+        props['data-rtl'] === 'rtl' ? '0 4px 0 0' : '0 0 0 4px'};
     }
   }
 
@@ -57,5 +57,5 @@ const Table = styled(Tables)`
   .ant-table-tbody > tr:hover > td {
     background-color: transparent;
   }
-`
-export default Table
+`;
+export default Table;

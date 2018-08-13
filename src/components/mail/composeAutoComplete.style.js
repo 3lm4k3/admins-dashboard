@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius, boxShadow } from '../../settings/style-util'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius, boxShadow } from '../../settings/style-util';
 
 const ComposeAutoCompleteStyleWrapper = styled.div`
   .ReactTags__{
@@ -143,6 +143,6 @@ const ComposeAutoCompleteStyleWrapper = styled.div`
       background-color: ${palette('grayscale', 3)};
     }
   }
-`
+`;
 
-export default ComposeAutoCompleteStyleWrapper
+export default ComposeAutoCompleteStyleWrapper;

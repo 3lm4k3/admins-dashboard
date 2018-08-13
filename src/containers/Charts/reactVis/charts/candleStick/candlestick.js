@@ -1,43 +1,43 @@
-import React from 'react'
-import { AbstractSeries } from 'react-vis'
+import React from 'react';
+import { AbstractSeries } from 'react-vis';
 
 const predefinedClassName =
-  'rv-xy-plot__series rv-xy-plot__series--candlestick'
+  'rv-xy-plot__series rv-xy-plot__series--candlestick';
 
 export default class extends AbstractSeries {
-  render () {
-    const { className, data, marginLeft, marginTop } = this.props
+  render() {
+    const { className, data, marginLeft, marginTop } = this.props;
     if (!data) {
-      return null
+      return null;
     }
-    const xFunctor = this._getAttributeFunctor('x')
-    const yFunctor = this._getAttributeFunctor('y')
+    const xFunctor = this._getAttributeFunctor('x');
+    const yFunctor = this._getAttributeFunctor('y');
     const strokeFunctor =
-      this._getAttributeFunctor('stroke') || this._getAttributeFunctor('color')
+      this._getAttributeFunctor('stroke') || this._getAttributeFunctor('color');
     const fillFunctor =
-      this._getAttributeFunctor('fill') || this._getAttributeFunctor('color')
-    const opacityFunctor = this._getAttributeFunctor('opacity')
+      this._getAttributeFunctor('fill') || this._getAttributeFunctor('color');
+    const opacityFunctor = this._getAttributeFunctor('opacity');
 
-    const distance = Math.abs(xFunctor(data[1]) - xFunctor(data[0])) * 0.2
+    const distance = Math.abs(xFunctor(data[1]) - xFunctor(data[0])) * 0.2;
 
     return (
       <g
         className={`${predefinedClassName} ${className}`}
-        ref='container'
+        ref="container"
         transform={`translate(${marginLeft},${marginTop})`}
       >
         {data.map((d, i) => {
-          const xTrans = xFunctor(d)
-          const yHigh = yFunctor({ ...d, y: d.yHigh })
-          const yOpen = yFunctor({ ...d, y: d.yOpen })
-          const yClose = yFunctor({ ...d, y: d.yClose })
-          const yLow = yFunctor({ ...d, y: d.yLow })
+          const xTrans = xFunctor(d);
+          const yHigh = yFunctor({ ...d, y: d.yHigh });
+          const yOpen = yFunctor({ ...d, y: d.yOpen });
+          const yClose = yFunctor({ ...d, y: d.yClose });
+          const yLow = yFunctor({ ...d, y: d.yLow });
 
           const lineAttrs = {
             stroke: strokeFunctor && strokeFunctor(d)
-          }
+          };
 
-          const xWidth = distance * 2
+          const xWidth = distance * 2;
           return (
             <g
               transform={`translate(${xTrans})`}
@@ -70,9 +70,9 @@ export default class extends AbstractSeries {
                 fill={fillFunctor && fillFunctor(d)}
               />
             </g>
-          )
+          );
         })}
       </g>
-    )
+    );
   }
 }

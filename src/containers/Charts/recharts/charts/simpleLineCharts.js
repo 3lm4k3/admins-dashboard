@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   LineChart,
   Line,
@@ -6,13 +6,13 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
-} from 'recharts'
-import ChartWrapper from '../../chart.style'
+  Legend,
+} from 'recharts';
+import ChartWrapper from '../../chart.style';
 
 export default class extends Component {
-  render () {
-    const { datas, width, height, colors } = this.props
+  render() {
+    const { datas, width, height, colors } = this.props;
     // <div className="isoChartWrapper">
     return (
       <ChartWrapper>
@@ -22,20 +22,20 @@ export default class extends Component {
           data={datas}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
-          <XAxis dataKey='name' stroke={colors[3]} />
+          <XAxis dataKey="name" stroke={colors[3]} />
           <YAxis stroke={colors[3]} />
-          <CartesianGrid strokeDasharray='3 3' />
+          <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Legend />
           <Line
-            type='monotone'
-            dataKey='pv'
+            type="monotone"
+            dataKey="pv"
             stroke={colors[0]}
             activeDot={{ r: 8 }}
           />
-          <Line type='monotone' dataKey='uv' stroke={colors[1]} />
+          <Line type="monotone" dataKey="uv" stroke={colors[1]} />
         </LineChart>
       </ChartWrapper>
-    )
+    );
   }
 }

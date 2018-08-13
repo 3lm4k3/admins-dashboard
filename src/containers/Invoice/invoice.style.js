@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import BoxComponent from '../../components/utility/box'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import BoxComponent from '../../components/utility/box';
+import WithDirection from '../../settings/withDirection';
 
 const BoxWrapper = styled(BoxComponent)`
   .isoInvoiceTableBtn {
@@ -11,7 +11,7 @@ const BoxWrapper = styled(BoxComponent)`
       margin-left: auto;
     }
   }
-`
+`;
 
 const StatusTag = styled.span`
   padding: 0 5px;
@@ -36,7 +36,7 @@ const StatusTag = styled.span`
   &.delivered {
     background-color: ${palette('success', 0)};
   }
-`
+`;
 
 const CardWrapper = styled.div`
   width: auto;
@@ -52,13 +52,13 @@ const CardWrapper = styled.div`
               flex-direction: row;
               > a {
                 margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+                  props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
               }
             }
           }
           &:hover {
             .isoInvoiceBtnView {
-              ${''};
+              ${'' /* opacity: 1; */};
             }
           }
         }
@@ -93,8 +93,8 @@ const CardWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-const Box = WithDirection(BoxWrapper)
-export { Box, StatusTag }
-export default WithDirection(CardWrapper)
+const Box = WithDirection(BoxWrapper);
+export { Box, StatusTag };
+export default WithDirection(CardWrapper);

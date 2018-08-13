@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 import {
   borderRadius,
   boxShadow,
-  transition
-} from '../../../settings/style-util'
+  transition,
+} from '../../../settings/style-util';
 
 const DropzoneWrapper = styled.div`
   .filepicker {
@@ -217,6 +217,6 @@ const DropzoneWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-export default DropzoneWrapper
+export default DropzoneWrapper;

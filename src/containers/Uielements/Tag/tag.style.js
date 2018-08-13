@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition } from '../../../settings/style-util'
-import WithDirection from '../../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition } from '../../../settings/style-util';
+import WithDirection from '../../../settings/withDirection';
 
 const TagStyleWrapper = styled.div`
   display: inline-block;
@@ -65,6 +65,6 @@ const TagStyleWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-export default WithDirection(TagStyleWrapper)
+export default WithDirection(TagStyleWrapper);

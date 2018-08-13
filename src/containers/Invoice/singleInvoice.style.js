@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import WithDirection from '../../settings/withDirection';
 
 const InvoicePageWrapper = styled.div`
   .PageHeader {
@@ -31,7 +31,7 @@ const InvoicePageWrapper = styled.div`
     .isoInvoPrint {
       background: ${palette('blue', 14)};
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
+        props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
       @media (max-width: 500px) {
         margin-top: 15px;
       }
@@ -44,7 +44,7 @@ const InvoicePageWrapper = styled.div`
     .saveBtn {
       background: ${palette('blue', 14)};
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
+        props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
     }
   }
 
@@ -108,13 +108,13 @@ const InvoicePageWrapper = styled.div`
 
           span.orderStatus {
             margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
+              props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
             font-weight: 400;
           }
           span.orderDate {
             font-weight: 400;
             margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
+              props['data-rtl'] === 'rtl' ? '0 8px 0 0' : '0 0 0 8px'};
           }
 
           &:last-child {
@@ -131,7 +131,7 @@ const InvoicePageWrapper = styled.div`
             color: ${palette('grey', 8)};
             margin: 0 0 15px;
             margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
+              props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
             font-weight: 500;
 
             @media (max-width: 420px) {
@@ -152,11 +152,11 @@ const InvoicePageWrapper = styled.div`
 
           .RightSideStatusSpan {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 -10px 0 7px' : '0 7px 0 -10px'};
+              props['data-rtl'] === 'rtl' ? '0 -10px 0 7px' : '0 7px 0 -10px'};
 
             @media (max-width: 560px) {
               margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 10px' : '0 10px 0 0'};
+                props['data-rtl'] === 'rtl' ? '0 0 0 10px' : '0 10px 0 0'};
             }
           }
           #order-drop-list {
@@ -172,17 +172,17 @@ const InvoicePageWrapper = styled.div`
           color: ${palette('grey', 8)};
           > span {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 10px 0 0' : '0 0 0 10px'};
+              props['data-rtl'] === 'rtl' ? '0 10px 0 0' : '0 0 0 10px'};
           }
 
           @media (max-width: 560px) {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
+              props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
           }
 
           > div {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 7px 0 0' : '0 0 0 7px'};
+              props['data-rtl'] === 'rtl' ? '0 7px 0 0' : '0 0 0 7px'};
             > div {
               &::before {
                 background-color: #ececec;
@@ -278,7 +278,7 @@ const InvoicePageWrapper = styled.div`
       .RightSideContent {
         width: calc(50% - 50px);
         margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 10px' : '0 10px 0 0'};
+          props['data-rtl'] === 'rtl' ? '0 0 0 10px' : '0 10px 0 0'};
 
         @media (max-width: 500px) {
           width: 100%;
@@ -291,23 +291,23 @@ const InvoicePageWrapper = styled.div`
         input,
         textarea {
           text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+            props['data-rtl'] === 'rtl' ? 'left' : 'right'};
 
           &::-webkit-input-placeholder {
             text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+              props['data-rtl'] === 'rtl' ? 'left' : 'right'};
           }
           &:-moz-placeholder {
             text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+              props['data-rtl'] === 'rtl' ? 'left' : 'right'};
           }
           &::-moz-placeholder {
             text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+              props['data-rtl'] === 'rtl' ? 'left' : 'right'};
           }
           &:-ms-input-placeholder {
             text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+              props['data-rtl'] === 'rtl' ? 'left' : 'right'};
           }
         }
       }
@@ -428,9 +428,9 @@ const InvoicePageWrapper = styled.div`
       .InvoiceTableBtn {
         display: flex;
         justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+          props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
         align-items: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+          props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
         margin-top: 15px;
         .InvoiceEditAddBtn {
           background: ${palette('blue', 14)};
@@ -445,9 +445,9 @@ const InvoicePageWrapper = styled.div`
         display: flex;
         width: 100%;
         align-items: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+          props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
         text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+          props['data-rtl'] === 'rtl' ? 'left' : 'right'};
         flex-direction: column;
         padding-left: inherit;
 
@@ -459,9 +459,9 @@ const InvoicePageWrapper = styled.div`
           width: 250px;
           display: flex;
           justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+            props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
           text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+            props['data-rtl'] === 'rtl' ? 'left' : 'right'};
 
           span {
             width: 120px;
@@ -469,7 +469,7 @@ const InvoicePageWrapper = styled.div`
         }
         .TotalBillTitle {
           margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 0 0 -10px' : '0 -10px 0 0'};
+            props['data-rtl'] === 'rtl' ? '0 0 0 -10px' : '0 -10px 0 0'};
         }
         .totalVat {
           width: 186px;
@@ -479,7 +479,7 @@ const InvoicePageWrapper = styled.div`
             margin-top: -12px;
             width: 25px;
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
+              props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
             > div {
               &::before {
                 background-color: #ececec;
@@ -493,24 +493,24 @@ const InvoicePageWrapper = styled.div`
           > span {
             width: 70px;
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '-7px 10px 0 0' : '-7px 0 0 10px'};
+              props['data-rtl'] === 'rtl' ? '-7px 10px 0 0' : '-7px 0 0 10px'};
           }
           .ant-input-group-wrapper {
             width: auto;
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '-7px 0 0 0' : '-7px 0 0 0'};
+              props['data-rtl'] === 'rtl' ? '-7px 0 0 0' : '-7px 0 0 0'};
           }
           .vatRateCalcWrap {
             > span:last-child {
               margin: ${props =>
-    props['data-rtl'] === 'rtl'
-      ? '-7px 10px 0 0'
-      : '-7px 0 0 10px'};
+                props['data-rtl'] === 'rtl'
+                  ? '-7px 10px 0 0'
+                  : '-7px 0 0 10px'};
             }
           }
           .ant-input-wrapper.ant-input-group {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 -22px 0 0' : '0 0 0 -22px'};
+              props['data-rtl'] === 'rtl' ? '0 -22px 0 0' : '0 0 0 -22px'};
             margin-top: 0;
             input.ant-input {
               width: 50px;
@@ -537,9 +537,9 @@ const InvoicePageWrapper = styled.div`
           width: 250px;
           display: flex;
           justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+            props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
           text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+            props['data-rtl'] === 'rtl' ? 'left' : 'right'};
 
           span {
             width: 120px;
@@ -551,7 +551,7 @@ const InvoicePageWrapper = styled.div`
           }
           .currencySign {
             margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 10px 0 0' : '0 0 0 10px'};
+              props['data-rtl'] === 'rtl' ? '0 10px 0 0' : '0 0 0 10px'};
             width: 50px;
             margin-top: -5px;
           }
@@ -606,24 +606,24 @@ const InvoicePageWrapper = styled.div`
           p {
             width: 300px;
             justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+              props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
             text-align: ${props =>
-    props['data-rtl'] === 'rtl' ? 'left' : 'right'};
+              props['data-rtl'] === 'rtl' ? 'left' : 'right'};
             span {
               width: 50%;
             }
             span.TotalBillTitle {
               margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+                props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
               margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+                props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
             }
           }
           .vatRateCalc {
             width: 300px;
             display: flex;
             justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-end' : 'flex-start'};
+              props['data-rtl'] === 'rtl' ? 'flex-end' : 'flex-start'};
             .vatRateCalcSpan {
               width: 50%;
             }
@@ -631,14 +631,14 @@ const InvoicePageWrapper = styled.div`
               width: 50%;
               margin-top: -5px;
               margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+                props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
               margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+                props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
               .ant-input-wrapper.ant-input-group {
                 margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+                  props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
                 margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+                  props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
               }
             }
           }
@@ -646,7 +646,7 @@ const InvoicePageWrapper = styled.div`
             width: 300px;
             display: flex;
             justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-end' : 'flex-start'};
+              props['data-rtl'] === 'rtl' ? 'flex-end' : 'flex-start'};
             margin-top: 15px;
             .grandTotalSpan {
               width: 50%;
@@ -658,16 +658,16 @@ const InvoicePageWrapper = styled.div`
               width: 50%;
               .currencySign {
                 margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+                  props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
                 margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+                  props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
                 width: 36px;
               }
               .currencySignSpan {
                 margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
+                  props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
                 margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
+                  props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
               }
             }
           }
@@ -679,17 +679,17 @@ const InvoicePageWrapper = styled.div`
       width: 100%;
       display: flex;
       justify-content: ${props =>
-    props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
+        props['data-rtl'] === 'rtl' ? 'flex-start' : 'flex-end'};
       margin-top: 30px;
     }
     .mateInvoPrint {
       background: ${palette('blue', 14)};
       margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
+        props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
       margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
+        props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
     }
   }
-`
+`;
 
-export default WithDirection(InvoicePageWrapper)
+export default WithDirection(InvoicePageWrapper);

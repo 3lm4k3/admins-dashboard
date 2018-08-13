@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { transition } from '../../../settings/style-util'
-import WithDirection from '../../../settings/withDirection'
+import styled from 'styled-components';
+import { transition } from '../../../settings/style-util';
+import WithDirection from '../../../settings/withDirection';
 
 const WDSocialWidgetWrapper = styled.ul`
   width: 100%;
@@ -28,7 +28,7 @@ const WDSocialWidgetWrapper = styled.ul`
       }
     }
   }
-`
+`;
 
-const SocialWidgetWrapper = WithDirection(WDSocialWidgetWrapper)
-export { SocialWidgetWrapper }
+const SocialWidgetWrapper = WithDirection(WDSocialWidgetWrapper);
+export { SocialWidgetWrapper };

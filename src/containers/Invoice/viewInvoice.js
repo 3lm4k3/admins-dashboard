@@ -1,50 +1,50 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import moment from 'moment'
-import Box from '../../components/utility/box'
-import { ViewTable } from '../../components/invoice/invoiceTable'
-import Button from '../../components/uielements/button'
-import LayoutWrapper from '../../components/utility/layoutWrapper.js'
-import InvoiceAddress from '../../components/invoice/address'
-import InvoicePageWrapper from './singleInvoice.style'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import moment from 'moment';
+import Box from '../../components/utility/box';
+import { ViewTable } from '../../components/invoice/invoiceTable';
+import Button from '../../components/uielements/button';
+import LayoutWrapper from '../../components/utility/layoutWrapper.js';
+import InvoiceAddress from '../../components/invoice/address';
+import InvoicePageWrapper from './singleInvoice.style';
 
 export default class extends Component {
-  render () {
-    const { currentInvoice, toggleView, redirectPath } = this.props
+  render() {
+    const { currentInvoice, toggleView, redirectPath } = this.props;
     return (
       <LayoutWrapper>
         <Box>
-          <InvoicePageWrapper className='InvoicePageWrapper'>
-            <div className='PageHeader'>
+          <InvoicePageWrapper className="InvoicePageWrapper">
+            <div className="PageHeader">
               <Link to={redirectPath}>
-                <Button className='isoGoInvoBtn'>
+                <Button className="isoGoInvoBtn">
                   <span>Go To Invoices</span>
                 </Button>
               </Link>
-              <Button color='secondary' onClick={() => toggleView(true)}>
+              <Button color="secondary" onClick={() => toggleView(true)}>
                 <span>Edit Invoice</span>
               </Button>
-              <Button type='primary' className='isoInvoPrint'>
+              <Button type="primary" className="isoInvoPrint">
                 <span>Print Invoice</span>
               </Button>
             </div>
 
-            <div className='PageContent'>
-              <div className='OrderInfo'>
-                <div className='LeftSideContent'>
-                  <h3 className='Title'>Invoice Info</h3>
-                  <span className='InvoiceNumber'>{currentInvoice.number}</span>
+            <div className="PageContent">
+              <div className="OrderInfo">
+                <div className="LeftSideContent">
+                  <h3 className="Title">Invoice Info</h3>
+                  <span className="InvoiceNumber">{currentInvoice.number}</span>
                 </div>
-                <div className='RightSideContent'>
+                <div className="RightSideContent">
                   <p>
-                    <span className='orderStatusSpan'>Order Status: </span>
-                    <span className='orderStatus'>
+                    <span className="orderStatusSpan">Order Status: </span>
+                    <span className="orderStatus">
                       {currentInvoice.orderStatus}
                     </span>
                   </p>
                   <p>
-                    <span className='orderDateSpan'>Order date: </span>
-                    <span className='orderDate'>
+                    <span className="orderDateSpan">Order date: </span>
+                    <span className="orderDate">
                       {moment(new Date(currentInvoice.orderDate)).format(
                         'MMMM Do YYYY'
                       )}
@@ -52,17 +52,17 @@ export default class extends Component {
                   </p>
                 </div>
               </div>
-              <div className='BillingInformation'>
-                <div className='LeftSideContent'>
-                  <h3 className='Title'>Bill From</h3>
+              <div className="BillingInformation">
+                <div className="LeftSideContent">
+                  <h3 className="Title">Bill From</h3>
 
                   <InvoiceAddress
                     companyName={currentInvoice.billFrom}
                     companyAddress={currentInvoice.billFromAddress}
                   />
                 </div>
-                <div className='RightSideContent'>
-                  <h3 className='Title'>Bill To</h3>
+                <div className="RightSideContent">
+                  <h3 className="Title">Bill To</h3>
 
                   <InvoiceAddress
                     companyName={currentInvoice.billTo}
@@ -70,9 +70,9 @@ export default class extends Component {
                   />
                 </div>
               </div>
-              <div className='InvoiceTable'>
+              <div className="InvoiceTable">
                 <ViewTable invoiceList={currentInvoice.invoiceList} />
-                <div className='TotalBill'>
+                <div className="TotalBill">
                   <p>
                     Sub-total :{' '}
                     <span>{`${currentInvoice.currency}${
@@ -93,8 +93,8 @@ export default class extends Component {
                   </h3>
                 </div>
               </div>
-              <div className='ButtonWrapper'>
-                <Button type='primary' className='mateInvoPrint'>
+              <div className="ButtonWrapper">
+                <Button type="primary" className="mateInvoPrint">
                   <span>Send Invoice</span>
                 </Button>
               </div>
@@ -102,6 +102,6 @@ export default class extends Component {
           </InvoicePageWrapper>
         </Box>
       </LayoutWrapper>
-    )
+    );
   }
 }

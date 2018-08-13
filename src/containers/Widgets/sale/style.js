@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
 const SaleWidgetWrapper = styled.div`
   width: 100%;
@@ -33,6 +33,6 @@ const SaleWidgetWrapper = styled.div`
     color: ${palette('text', 2)};
     margin: 0;
   }
-`
+`;
 
-export { SaleWidgetWrapper }
+export { SaleWidgetWrapper };

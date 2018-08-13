@@ -3,107 +3,107 @@ const cells = [
     header: '',
     col: 'avatar',
     width: 50,
-    coulumnType: 'image'
+    coulumnType: 'image',
   },
   {
     header: 'First Name',
     col: 'firstName',
     width: 100,
-    coulumnType: 'link'
+    coulumnType: 'link',
   },
   {
     header: 'Last Name',
     col: 'lastName',
     width: 100,
-    coulumnType: 'link'
+    coulumnType: 'link',
   },
   {
     header: 'City',
     col: 'city',
     width: 100,
-    coulumnType: 'text'
+    coulumnType: 'text',
   },
   {
     header: 'Street',
     col: 'street',
     width: 200,
-    coulumnType: 'text'
+    coulumnType: 'text',
   },
   {
     header: 'Zip Code',
     col: 'zipCode',
     width: 200,
-    coulumnType: 'text'
+    coulumnType: 'text',
   },
   {
     header: 'Email',
     col: 'email',
     width: 200,
-    coulumnType: 'link'
+    coulumnType: 'link',
   },
   {
     header: 'DOB',
     col: 'date',
     width: 200,
-    coulumnType: 'data'
-  }
-]
+    coulumnType: 'data',
+  },
+];
 const smallCells = [
   cells[1],
   cells[2],
   cells[3],
-  cells[4]
-]
+  cells[4],
+];
 const tableinfos = [
   {
-    title: 'Simple',
-    value: 'simple',
-    cells
+    title:'Simple',
+    value:'simple',
+    cells, 
   },
   {
-    title: 'Fluid Column Widths',
-    value: 'fluidColumnWidths',
+    title:'Fluid Column Widths',
+    value:'fluidColumnWidths',
     cells: [
       { ...smallCells[0], flexGrow: 2 },
       { ...smallCells[1], flexGrow: 3 },
       { ...smallCells[2], flexGrow: 4 },
-      { ...smallCells[3], flexGrow: 2 }
-    ]
+      { ...smallCells[3], flexGrow: 2 },
+    ], 
   },
   {
-    title: 'Resizable',
-    value: 'resizable',
+    title:'Resizable',
+    value:'resizable',
     cells: smallCells,
-    resizable: true
+    resizable: true,
   },
   {
-    title: 'Hide Columns',
-    value: 'hideColumns',
+    title:'Hide Columns',
+    value:'hideColumns',
     cells: cells,
-    hideColumns: true
+    hideColumns: true,
   },
   {
-    title: 'Sortable',
-    value: 'sortable',
+    title:'Sortable',
+    value:'sortable',
     cells: smallCells,
-    sortable: true
+    sortable: true,
   },
   {
-    title: 'Search Text',
-    value: 'searchText',
-    cells: cells,
-    searchText: true
+    title:'Search Text',
+    value:'searchText',
+    cells: cells, 
+    searchText: true,
   },
   {
-    title: 'column Groups',
-    value: 'columnGroup',
-    cells: smallCells
-  },
-  {
-    title: 'Reorder Columns',
-    value: 'reorderable',
+    title:'column Groups',
+    value:'columnGroup',
     cells: smallCells,
-    reorderable: true
-  }
-]
-export default tableinfos
+  },
+  {
+    title:'Reorder Columns',
+    value:'reorderable',
+    cells: smallCells, 
+    reorderable: true,
+  },
+];
+export default tableinfos;

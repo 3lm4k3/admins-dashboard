@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Row, Col } from 'antd'
+import React, { Component } from "react";
+import { Row, Col } from "antd";
 import {
   SimpleLineCharts,
   CustomizedDotLineChart,
@@ -14,21 +14,21 @@ import {
   SpecifiedDomainRadarChart,
   SimpleRadialBarChart,
   LegendEffectOpacity
-} from './charts'
-import PageHeader from '../../../components/utility/pageHeader'
-import Box from '../../../components/utility/box'
-import LayoutWrapper from '../../../components/utility/layoutWrapper.js'
-import ContentHolder from '../../../components/utility/contentHolder'
-import basicStyle from '../../../settings/basicStyle'
-import * as configs from './config'
+} from "./charts";
+import PageHeader from "../../../components/utility/pageHeader";
+import Box from "../../../components/utility/box";
+import LayoutWrapper from "../../../components/utility/layoutWrapper.js";
+import ContentHolder from "../../../components/utility/contentHolder";
+import basicStyle from "../../../settings/basicStyle";
+import * as configs from "./config";
 
 export default class ReCharts extends Component {
-  render () {
-    const { rowStyle, colStyle, gutter } = basicStyle
+  render() {
+    const { rowStyle, colStyle, gutter } = basicStyle;
     return (
-      <LayoutWrapper className='isoMapPage'>
+      <LayoutWrapper className="isoMapPage">
         <PageHeader>Re-Charts</PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.SimpleLineCharts.title}>
               <ContentHolder>
@@ -44,7 +44,7 @@ export default class ReCharts extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.SimpleBarChart.title}>
               <ContentHolder>
@@ -60,7 +60,7 @@ export default class ReCharts extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.CustomShapeBarChart.title}>
               <ContentHolder>
@@ -76,7 +76,7 @@ export default class ReCharts extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.SimpleAreaChart.title}>
               <ContentHolder>
@@ -93,7 +93,7 @@ export default class ReCharts extends Component {
           </Col>
         </Row>
 
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.LineBarAreaComposedChart.title}>
               <ContentHolder>
@@ -131,6 +131,6 @@ export default class ReCharts extends Component {
           </ContentHolder>
         </Box>
       </LayoutWrapper>
-    )
+    );
   }
 }

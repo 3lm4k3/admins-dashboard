@@ -1,30 +1,30 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import Modal from '../../components/feedback/modal'
-import InputName from '../../components/chat/inputName'
-import ChatRooms from './chatrooms'
-import Messages from './messages'
-import ComposeMessage from './composMessage'
-import ViewProfile from '../../components/chat/viewProfile'
-import Loader from '../../components/utility/loader'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Modal from "../../components/feedback/modal";
+import InputName from "../../components/chat/inputName";
+import ChatRooms from "./chatrooms";
+import Messages from "./messages";
+import ComposeMessage from "./composMessage";
+import ViewProfile from "../../components/chat/viewProfile";
+import Loader from "../../components/utility/loader";
 import {
   ChatWindow,
   ChatBox,
   Button,
   MessageDialog,
   ToggleViewProfile
-} from './message.style'
+} from "./message.style";
 
-import actions from '../../redux/chat/actions'
+import actions from "../../redux/chat/actions";
 
 class MobileView extends Component {
-  componentDidMount () {
-    const { users, userId, chatInit } = this.props
+  componentDidMount() {
+    const { users, userId, chatInit } = this.props;
     if (!users) {
-      chatInit(userId)
+      chatInit(userId);
     }
   }
-  render () {
+  render() {
     const {
       loading,
       users,
@@ -39,18 +39,18 @@ class MobileView extends Component {
       toggleMobileList,
       toggleMobileProfile,
       className
-    } = this.props
+    } = this.props;
     if (loading) {
-      return <Loader />
+      return <Loader />;
     }
-    let CurrentView = <Loader />
+    let CurrentView = <Loader />;
     if (mobileActiveList) {
       CurrentView = (
         <div>
           <Modal
             visible={openCompose}
             onCancel={toggleCompose}
-            title='Compose Message'
+            title="Compose Message"
             footer={null}
           >
             <MessageDialog>
@@ -69,7 +69,7 @@ class MobileView extends Component {
           </Modal>
           <ChatRooms toggleMobileList={toggleMobileList} />
         </div>
-      )
+      );
     } else if (mobileActiveProfile) {
       CurrentView = (
         <ViewProfile
@@ -77,19 +77,19 @@ class MobileView extends Component {
           toggleViewProfile={toggleViewProfile}
           toggleMobileProfile={toggleMobileProfile}
         />
-      )
+      );
     } else {
       CurrentView = (
-        <ChatBox className='ChatBox'>
+        <ChatBox className="ChatBox">
           {selectedChatRoom && (
             <ToggleViewProfile>
               <Button onClick={() => toggleMobileList(true)}>
-                <i className='ion-chevron-left' />
+                <i className="ion-chevron-left" />
               </Button>
               <span
                 onClick={() => {
-                  toggleViewProfile(selectedChatRoom.otherUserInfo)
-                  toggleMobileProfile(true)
+                  toggleViewProfile(selectedChatRoom.otherUserInfo);
+                  toggleMobileProfile(true);
                 }}
               >
                 {selectedChatRoom.otherUserInfo.name}
@@ -104,12 +104,12 @@ class MobileView extends Component {
             }}
           />
         </ChatBox>
-      )
+      );
     }
-    return <ChatWindow className='ChatWindow'>{CurrentView}</ChatWindow>
+    return <ChatWindow className="ChatWindow">{CurrentView}</ChatWindow>;
   }
 }
-function mapStateToProps (state) {
-  return state.Chat
+function mapStateToProps(state) {
+  return state.Chat;
 }
-export default connect(mapStateToProps, actions)(MobileView)
+export default connect(mapStateToProps, actions)(MobileView);

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { WidgetColumn } from './style'
+import React, { Component } from 'react';
+import { WidgetColumn } from './style';
 
 export default class extends Component {
-  render () {
+  render() {
     const {
       width,
       gutterTop,
@@ -12,7 +12,7 @@ export default class extends Component {
       padding,
       children,
       align
-    } = this.props
+    } = this.props;
     const alignContent =
       this.props.align === 'start'
         ? 'flex-start'
@@ -20,7 +20,7 @@ export default class extends Component {
           ? 'flex-end'
           : this.props.align === 'center'
             ? 'center'
-            : this.props.align === 'stretch' ? 'stretch' : ''
+            : this.props.align === 'stretch' ? 'stretch' : '';
 
     const columnStyle = {
       display: 'flex',
@@ -33,11 +33,11 @@ export default class extends Component {
       padding: padding,
       width: this.props.width,
       alignContent: alignContent
-    }
+    };
     return (
-      <WidgetColumn className='isoWidgetsColumn' style={columnStyle}>
+      <WidgetColumn className="isoWidgetsColumn" style={columnStyle}>
         {this.props.children}
       </WidgetColumn>
-    )
+    );
   }
 }

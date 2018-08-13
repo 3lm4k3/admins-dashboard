@@ -1,43 +1,43 @@
-import React, { Component } from 'react'
-import { Row, Col } from 'antd'
-import Tooltip from '../../../components/uielements/tooltip'
-import PageHeader from '../../../components/utility/pageHeader'
-import Box from '../../../components/utility/box'
-import LayoutWrapper from '../../../components/utility/layoutWrapper.js'
-import ContentHolder from '../../../components/utility/contentHolder'
-import basicStyle from '../../../settings/basicStyle'
-import IntlMessages from '../../../components/utility/intlMessages'
+import React, { Component } from 'react';
+import { Row, Col } from 'antd';
+import Tooltip from '../../../components/uielements/tooltip';
+import PageHeader from '../../../components/utility/pageHeader';
+import Box from '../../../components/utility/box';
+import LayoutWrapper from '../../../components/utility/layoutWrapper.js';
+import ContentHolder from '../../../components/utility/contentHolder';
+import basicStyle from '../../../settings/basicStyle';
+import IntlMessages from '../../../components/utility/intlMessages';
 
 const text = (
-  <span>{<IntlMessages id='uiElements.tooltip.contentSpan' />}</span>
-)
+  <span>{<IntlMessages id="uiElements.tooltip.contentSpan" />}</span>
+);
 
 export default class extends Component {
-  render () {
-    const { rowStyle, colStyle, gutter } = basicStyle
+  render() {
+    const { rowStyle, colStyle, gutter } = basicStyle;
 
     return (
       <LayoutWrapper>
         <PageHeader>
-          {<IntlMessages id='uiElements.tooltip.tooltip' />}
+          {<IntlMessages id="uiElements.tooltip.tooltip" />}
         </PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id='uiElements.tooltip.basicExample' />}
+              title={<IntlMessages id="uiElements.tooltip.basicExample" />}
               subtitle={
-                <IntlMessages id='uiElements.tooltip.basicExampleSubTitle' />
+                <IntlMessages id="uiElements.tooltip.basicExampleSubTitle" />
               }
             >
               <ContentHolder>
                 <Tooltip
                   title={
-                    <IntlMessages id='uiElements.tooltip.tooltipContent' />
+                    <IntlMessages id="uiElements.tooltip.tooltipContent" />
                   }
                 >
                   <span>
                     {
-                      <IntlMessages id='uiElements.tooltip.tooltipContentSpan' />
+                      <IntlMessages id="uiElements.tooltip.tooltipContentSpan" />
                     }
                   </span>
                 </Tooltip>
@@ -46,77 +46,77 @@ export default class extends Component {
           </Col>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id='uiElements.tooltip.placementTitle' />}
+              title={<IntlMessages id="uiElements.tooltip.placementTitle" />}
               subtitle={
-                <IntlMessages id='uiElements.tooltip.placementSubTitle' />
+                <IntlMessages id="uiElements.tooltip.placementSubTitle" />
               }
             >
               <ContentHolder>
-                <div className='demoBtnsWrapper'>
-                  <Tooltip placement='topLeft' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.TL' />}
+                <div className="demoBtnsWrapper">
+                  <Tooltip placement="topLeft" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.TL" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='top' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.top' />}
+                  <Tooltip placement="top" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.top" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='topRight' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.TR' />}
-                    </a>
-                  </Tooltip>
-                </div>
-                <div className='demoBtnsWrapper'>
-                  <Tooltip placement='leftTop' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.LT' />}
-                    </a>
-                  </Tooltip>
-                  <Tooltip placement='left' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.left' />}
-                    </a>
-                  </Tooltip>
-                  <Tooltip placement='leftBottom' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.LB' />}
+                  <Tooltip placement="topRight" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.TR" />}
                     </a>
                   </Tooltip>
                 </div>
-                <div className='demoBtnsWrapper'>
-                  <Tooltip placement='rightTop' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.RT' />}
+                <div className="demoBtnsWrapper">
+                  <Tooltip placement="leftTop" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.LT" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='right' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.right' />}
+                  <Tooltip placement="left" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.left" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='rightBottom' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.RB' />}
+                  <Tooltip placement="leftBottom" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.LB" />}
                     </a>
                   </Tooltip>
                 </div>
-                <div className='demoBtnsWrapper'>
-                  <Tooltip placement='bottomLeft' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.BL' />}
+                <div className="demoBtnsWrapper">
+                  <Tooltip placement="rightTop" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.RT" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='bottom' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.bottom' />}
+                  <Tooltip placement="right" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.right" />}
                     </a>
                   </Tooltip>
-                  <Tooltip placement='bottomRight' title={text}>
-                    <a className='tooltipBtn'>
-                      {<IntlMessages id='uiElements.tooltip.BR' />}
+                  <Tooltip placement="rightBottom" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.RB" />}
+                    </a>
+                  </Tooltip>
+                </div>
+                <div className="demoBtnsWrapper">
+                  <Tooltip placement="bottomLeft" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.BL" />}
+                    </a>
+                  </Tooltip>
+                  <Tooltip placement="bottom" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.bottom" />}
+                    </a>
+                  </Tooltip>
+                  <Tooltip placement="bottomRight" title={text}>
+                    <a className="tooltipBtn">
+                      {<IntlMessages id="uiElements.tooltip.BR" />}
                     </a>
                   </Tooltip>
                 </div>
@@ -125,6 +125,6 @@ export default class extends Component {
           </Col>
         </Row>
       </LayoutWrapper>
-    )
+    );
   }
 }

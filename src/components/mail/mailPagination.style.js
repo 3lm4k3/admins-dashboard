@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const MailPagination = styled.div`
   display: -webkit-flex;
@@ -34,7 +34,7 @@ const MailPagination = styled.div`
 
     &.nextPage {
       margin: ${props =>
-    props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
+        props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
     }
 
     &:hover {
@@ -46,6 +46,6 @@ const MailPagination = styled.div`
       }
     }
   }
-`
+`;
 
-export default WithDirection(MailPagination)
+export default WithDirection(MailPagination);

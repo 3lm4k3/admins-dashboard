@@ -1,4 +1,4 @@
-import actions from './actions'
+import actions from './actions';
 
 const initState = {
   searcText: 'React JS Conf',
@@ -6,16 +6,16 @@ const initState = {
   result: [],
   loading: false,
   error: false
-}
+};
 
-export default function reducer (state = initState, action) {
+export default function reducer(state = initState, action) {
   switch (action.type) {
     case actions.YOUTUBE_SEARCH:
       return {
         ...state,
         loading: true,
         searcText: action.payload.searcText
-      }
+      };
     case actions.YOUTUBE_SUCCESS_RESULT:
       return {
         ...state,
@@ -25,15 +25,15 @@ export default function reducer (state = initState, action) {
         total_count: action.total_count,
         prevPageToken: action.prevPageToken,
         nextPageToken: action.nextPageToken
-      }
+      };
     case actions.YOUTUBE_ERROR_RESULT:
       return {
         ...state,
         loading: false,
         error: false,
         result: []
-      }
+      };
     default:
-      return state
+      return state;
   }
 }

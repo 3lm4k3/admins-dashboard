@@ -1,16 +1,16 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import Buttons from '../../components/uielements/button'
-import Inputs from '../../components/uielements/input'
-import { Textarea as Textareas } from '../../components/uielements/input'
-import ReactDrawers from 'react-motion-drawer'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import Buttons from '../../components/uielements/button';
+import Inputs from '../../components/uielements/input';
+import { Textarea as Textareas } from '../../components/uielements/input';
+import ReactDrawers from 'react-motion-drawer';
 
-const Input = styled(Inputs)``
-const Textarea = styled(Textareas)``
+const Input = styled(Inputs)``;
+const Textarea = styled(Textareas)``;
 const ReactDrawer = styled(ReactDrawers)`
   width: 100%;
   background: #ffffff;
-`
+`;
 
 const MessageSingle = styled.div`
   display: flex;
@@ -114,7 +114,7 @@ const MessageSingle = styled.div`
       }
     }
   }
-`
+`;
 const ChatWindow = styled.div`
   display: flex;
   width: 100%;
@@ -128,7 +128,7 @@ const ChatWindow = styled.div`
       max-width: 100%;
     }
   }
-`
+`;
 const ChatBox = styled.div`
   width: calc(100% - 350px);
   background-color: #ffffff;
@@ -144,7 +144,7 @@ const ChatBox = styled.div`
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     width: calc(100% - 280px);
   }
-`
+`;
 const ChatSidebar = styled.div`
   flex-shrink: 0;
   border: 1px solid ${palette('border', 0)};
@@ -183,7 +183,7 @@ const ChatSidebar = styled.div`
   @media only screen and (min-width: 992px) {
     width: 350px;
   }
-`
+`;
 
 const Button = styled(Buttons)`
   width: calc(100% - 60px);
@@ -196,7 +196,7 @@ const Button = styled(Buttons)`
       }
     }
   }
-`
+`;
 
 const ComposeMessageWrapper = styled.div`
   background: ${palette('grayscale', 5)};
@@ -214,7 +214,7 @@ const ComposeMessageWrapper = styled.div`
       box-shadow: none;
     }
   }
-`
+`;
 const ComposeInputWrapper = styled.div`
   background: #ffffff;
   height: 65vh;
@@ -224,13 +224,13 @@ const ComposeInputWrapper = styled.div`
     width: 100%;
     margin-left: 20px;
   }
-`
+`;
 
 const UserListsWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-`
+`;
 
 const UserLists = styled.div`
   width: 100%;
@@ -309,7 +309,7 @@ const UserLists = styled.div`
       }
     }
   }
-`
+`;
 
 const ToggleViewProfile = styled.div`
   background: #ffffff;
@@ -350,7 +350,7 @@ const ToggleViewProfile = styled.div`
       color: ${palette('text', 0)};
     }
   }
-`
+`;
 
 const SidebarSearchBox = styled.div`
   padding: 15px 20px;
@@ -369,7 +369,7 @@ const SidebarSearchBox = styled.div`
       box-shadow: none;
     }
   }
-`
+`;
 
 const MessageChatWrapper = styled.div`
   display: flex;
@@ -384,7 +384,7 @@ const MessageChatWrapper = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-`
+`;
 
 const ChatViewWrapper = styled.div`
   height: 100%;
@@ -393,7 +393,7 @@ const ChatViewWrapper = styled.div`
   @media only screen and (max-width: 767px) {
     padding: 0;
   }
-`
+`;
 
 const MessageDialog = styled.div`
   h5 {
@@ -418,7 +418,7 @@ const MessageDialog = styled.div`
       }
     }
   }
-`
+`;
 
 const AddUserBtn = styled(Buttons)`
   && {
@@ -434,7 +434,7 @@ const AddUserBtn = styled(Buttons)`
       }
     }
   }
-`
+`;
 
 const Fieldset = styled.div`
   width: 100%;
@@ -445,7 +445,7 @@ const Fieldset = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
-`
+`;
 
 const Label = styled.label`
   font-size: 12px;
@@ -454,9 +454,9 @@ const Label = styled.label`
   font-weight: 400;
   padding: 0;
   margin: 0 0 5px;
-`
+`;
 
-const Form = styled.div``
+const Form = styled.div``;
 
 export {
   MessageSingle,
@@ -479,5 +479,5 @@ export {
   AddUserBtn,
   Fieldset,
   Label,
-  Form
-}
+  Form,
+};

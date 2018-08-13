@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const UppyStyleWrapper = styled.div`
   @-webkit-keyframes 'a' {
@@ -1837,6 +1837,6 @@ const UppyStyleWrapper = styled.div`
       box-shadow: 0 0 20px 7px rgba(148, 148, 148, 0.15);
     }
   }
-`
+`;
 
-export default UppyStyleWrapper
+export default UppyStyleWrapper;

@@ -1,57 +1,57 @@
-import React, { Component } from 'react'
-import { Row, Col } from 'antd'
-import Popconfirms from '../../../components/feedback/popconfirm'
-import message from '../../../components/feedback/message'
-import Button from '../../../components/uielements/button'
-import PageHeader from '../../../components/utility/pageHeader'
-import Box from '../../../components/utility/box'
-import LayoutWrapper from '../../../components/utility/layoutWrapper.js'
-import ContentHolder from '../../../components/utility/contentHolder'
-import basicStyle from '../../../settings/basicStyle'
-import IntlMessages from '../../../components/utility/intlMessages'
-import PopconfirmWrapper from './popconfirm.style'
+import React, { Component } from 'react';
+import { Row, Col } from 'antd';
+import Popconfirms from '../../../components/feedback/popconfirm';
+import message from '../../../components/feedback/message';
+import Button from '../../../components/uielements/button';
+import PageHeader from '../../../components/utility/pageHeader';
+import Box from '../../../components/utility/box';
+import LayoutWrapper from '../../../components/utility/layoutWrapper.js';
+import ContentHolder from '../../../components/utility/contentHolder';
+import basicStyle from '../../../settings/basicStyle';
+import IntlMessages from '../../../components/utility/intlMessages';
+import PopconfirmWrapper from './popconfirm.style';
 
 const Popconfirm = props => (
   <PopconfirmWrapper>
     <Popconfirms {...props} />
   </PopconfirmWrapper>
-)
-const text = 'Are you sure delete this task?'
+);
+const text = 'Are you sure delete this task?';
 
-function confirm (e) {
-  message.success('Click on Yes')
+function confirm(e) {
+  message.success('Click on Yes');
 }
 
-function cancel (e) {
-  message.error('Click on No')
+function cancel(e) {
+  message.error('Click on No');
 }
 
 export default class extends Component {
-  render () {
-    const { rowStyle, colStyle, gutter } = basicStyle
+  render() {
+    const { rowStyle, colStyle, gutter } = basicStyle;
     return (
       <LayoutWrapper>
         <PageHeader>
-          {<IntlMessages id='feedback.alert.popConfirm' />}
+          {<IntlMessages id="feedback.alert.popConfirm" />}
         </PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify='start'>
+        <Row style={rowStyle} gutter={gutter} justify="start">
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id='feedback.alert.popConfirm.basicTitle' />}
+              title={<IntlMessages id="feedback.alert.popConfirm.basicTitle" />}
               subtitle={
-                <IntlMessages id='feedback.alert.popConfirm.basicSubTitle' />
+                <IntlMessages id="feedback.alert.popConfirm.basicSubTitle" />
               }
             >
               <ContentHolder>
                 <Popconfirm
-                  title='Are you sure？'
-                  okText='Yes'
-                  cancelText='No'
+                  title="Are you sure？"
+                  okText="Yes"
+                  cancelText="No"
                   onConfirm={confirm}
                   onCancel={cancel}
                 >
                   <a>
-                    {<IntlMessages id='feedback.alert.popConfirm.delete' />}
+                    {<IntlMessages id="feedback.alert.popConfirm.delete" />}
                   </a>
                 </Popconfirm>
               </ContentHolder>
@@ -60,150 +60,150 @@ export default class extends Component {
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
               title={
-                <IntlMessages id='feedback.alert.popConfirm.notiWithIconTitle' />
+                <IntlMessages id="feedback.alert.popConfirm.notiWithIconTitle" />
               }
               subtitle={
-                <IntlMessages id='feedback.alert.popConfirm.notiWithIconSubTitle' />
+                <IntlMessages id="feedback.alert.popConfirm.notiWithIconSubTitle" />
               }
             >
               <ContentHolder>
-                <div className='demoBtnsWrapper'>
+                <div className="demoBtnsWrapper">
                   <Popconfirm
-                    placement='topLeft'
+                    placement="topLeft"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.TL' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.TL" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='top'
+                    placement="top"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.top' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.top" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='topRight'
+                    placement="topRight"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.TR' />}
-                    </Button>
-                  </Popconfirm>
-                </div>
-                <div className='demoBtnsWrapper'>
-                  <Popconfirm
-                    placement='leftTop'
-                    title={text}
-                    onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
-                  >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.LT' />}
-                    </Button>
-                  </Popconfirm>
-                  <Popconfirm
-                    placement='left'
-                    title={text}
-                    onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
-                  >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.left' />}
-                    </Button>
-                  </Popconfirm>
-                  <Popconfirm
-                    placement='leftBottom'
-                    title={text}
-                    onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
-                  >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.LB' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.TR" />}
                     </Button>
                   </Popconfirm>
                 </div>
-                <div className='demoBtnsWrapper'>
+                <div className="demoBtnsWrapper">
                   <Popconfirm
-                    placement='rightTop'
+                    placement="leftTop"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.RT' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.LT" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='right'
+                    placement="left"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.right' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.left" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='rightBottom'
+                    placement="leftBottom"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.RB' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.LB" />}
                     </Button>
                   </Popconfirm>
                 </div>
-                <div className='demoBtnsWrapper'>
+                <div className="demoBtnsWrapper">
                   <Popconfirm
-                    placement='bottomLeft'
+                    placement="rightTop"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.Bl' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.RT" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='bottom'
+                    placement="right"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.bottom' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.right" />}
                     </Button>
                   </Popconfirm>
                   <Popconfirm
-                    placement='bottomRight'
+                    placement="rightBottom"
                     title={text}
                     onConfirm={confirm}
-                    okText='Yes'
-                    cancelText='No'
+                    okText="Yes"
+                    cancelText="No"
                   >
-                    <Button className='demoPosBtn'>
-                      {<IntlMessages id='feedback.alert.popConfirm.BR' />}
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.RB" />}
+                    </Button>
+                  </Popconfirm>
+                </div>
+                <div className="demoBtnsWrapper">
+                  <Popconfirm
+                    placement="bottomLeft"
+                    title={text}
+                    onConfirm={confirm}
+                    okText="Yes"
+                    cancelText="No"
+                  >
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.Bl" />}
+                    </Button>
+                  </Popconfirm>
+                  <Popconfirm
+                    placement="bottom"
+                    title={text}
+                    onConfirm={confirm}
+                    okText="Yes"
+                    cancelText="No"
+                  >
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.bottom" />}
+                    </Button>
+                  </Popconfirm>
+                  <Popconfirm
+                    placement="bottomRight"
+                    title={text}
+                    onConfirm={confirm}
+                    okText="Yes"
+                    cancelText="No"
+                  >
+                    <Button className="demoPosBtn">
+                      {<IntlMessages id="feedback.alert.popConfirm.BR" />}
                     </Button>
                   </Popconfirm>
                 </div>
@@ -212,6 +212,6 @@ export default class extends Component {
           </Col>
         </Row>
       </LayoutWrapper>
-    )
+    );
   }
 }

@@ -1,5 +1,5 @@
-const width = '90%'
-const height = '400px'
+const width = '90%';
+const height = '400px';
 
 const BarChart = {
   title: 'BarChart',
@@ -12,52 +12,52 @@ const BarChart = {
       'Year',
       'Trafic',
       {
-        role: 'style'
-      }
+        role: 'style',
+      },
     ],
     ['2010', 10000, 'fill-color: #48A6F2; fill-opacity: 0.4'],
     ['2012', 21500, 'fill-color: #f64744; fill-opacity: 0.4'],
     ['2014', 56598, 'fill-color: #ffbf00; fill-opacity: 0.4'],
-    ['2016', 85256, 'fill-color: #511E78; fill-opacity: 0.4']
+    ['2016', 85256, 'fill-color: #511E78; fill-opacity: 0.4'],
   ],
   options: {
     title: 'Visitor statistics from 2010 to 2016',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     bar: {
-      groupWidth: '95%'
+      groupWidth: '95%',
     },
     legend: {
-      position: 'none'
+      position: 'none',
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
+        color: '#788195',
+      },
+    },
   },
   chartEvents: [
     {
-      eventName: 'onmouseover'
-    }
-  ]
-}
+      eventName: 'onmouseover',
+    },
+  ],
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Line Charts
@@ -71,12 +71,12 @@ const lineChart = {
   columns: [
     {
       label: 'time',
-      type: 'number'
+      type: 'number',
     },
     {
       label: 'Air Passengers',
-      type: 'number'
-    }
+      type: 'number',
+    },
   ],
   rows: [
     [1949, 11],
@@ -222,46 +222,46 @@ const lineChart = {
     [1960.66666666667, 508],
     [1960.75, 461],
     [1960.83333333334, 390],
-    [1960.91666666667, 432]
+    [1960.91666666667, 432],
   ],
   options: {
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Time',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Air Passengers',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     colors: ['#48A6F2'],
     dataOpacity: 1.0,
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Bubble Charts
@@ -283,58 +283,58 @@ const BubbleChart = {
     ['IRQ', 68.09, 4.77, 'Middle East', 31090763],
     ['ISR', 81.55, 2.96, 'Middle East', 7485600],
     ['RUS', 68.6, 1.54, 'Europe', 141850000],
-    ['USA', 78.09, 2.05, 'North America', 307007000]
+    ['USA', 78.09, 2.05, 'North America', 307007000],
   ],
   options: {
     title:
       'Correlation between life expectancy, fertility rate and population of some world countries (2010)',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Life Expectancy',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Fertility Rate',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     bubble: {
       opacity: 0.6,
       stroke: '#ffffff',
       textStyle: {
         fontSize: 11,
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     colors: ['#48A6F2', '#F55F82', '#ffbf00'],
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
-    }
-  }
-}
+      startup: true,
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
           Histogram Charts
@@ -374,42 +374,42 @@ const Histogram = {
     ['Supersaurus (super lizard)', 30.5],
     ['Tyrannosaurus (tyrant lizard)', 15.2],
     ['Ultrasaurus (ultra lizard)', 30.5],
-    ['Velociraptor (swift robber)', 1.8]
+    ['Velociraptor (swift robber)', 1.8],
   ],
   options: {
     title: 'Lengths of dinosaurs, in meters',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     colors: ['#511E78'],
     dataOpacity: 0.6,
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Scatter Charts
@@ -431,45 +431,45 @@ const ScatterChart = {
     [8, 11],
     [12, 8],
     [9.5, 14],
-    [6.5, 12]
+    [6.5, 12],
   ],
   options: {
     title: 'Age vs. Weight Comparison',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     hAxis: {
       title: 'Age',
       titleTextStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       minValue: 0,
       maxValue: 15,
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       title: 'Weight',
       titleTextStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       minValue: 0,
       maxValue: 15,
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     legend: 'none',
     colors: ['#42A5F5'],
     dataOpacity: 0.8,
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Area Charts
@@ -485,38 +485,38 @@ const AreaChart = {
     ['2013', 1000, 400],
     ['2014', 1170, 460],
     ['2015', 660, 1120],
-    ['2016', 1030, 540]
+    ['2016', 1030, 540],
   ],
   options: {
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     colors: ['#48A6F2', '#511E78'],
     dataOpacity: 0.6,
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Candle Stick Charts
@@ -533,37 +533,37 @@ const CandlestickChart = {
     ['Tue', 31, 38, 55, 66],
     ['Wed', 50, 55, 77, 80],
     ['Thu', 77, 77, 66, 50],
-    ['Fri', 68, 66, 22, 15]
+    ['Fri', 68, 66, 22, 15],
   ],
   options: {
     title: 'Visitors Per Day',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: 'none',
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     colors: ['#48A6F2'],
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Combo Charts
@@ -582,62 +582,62 @@ const ComboChart = {
       'Madagascar',
       'Papua New Guinea',
       'Rwanda',
-      'Average'
+      'Average',
     ],
     ['2004/05', 165, 938, 522, 998, 450, 614.6],
     ['2005/06', 135, 1120, 599, 1268, 288, 682],
     ['2006/07', 157, 1167, 587, 807, 397, 623],
     ['2007/08', 139, 1110, 615, 968, 215, 609.4],
-    ['2008/09', 136, 691, 629, 1026, 366, 569.6]
+    ['2008/09', 136, 691, 629, 1026, 366, 569.6],
   ],
   options: {
     title: 'Monthly Coffee Production by Country',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Cups',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Month',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     seriesType: 'bars',
     series: {
       5: {
-        type: 'line'
-      }
+        type: 'line',
+      },
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     colors: ['#00b16a', '#ff6384', '#511E78', '#01C0C8', '#ffbf00', '#48A6F2'],
     dataOpacity: 0.6,
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Donut Charts
@@ -654,31 +654,31 @@ const DonutChart = {
     ['Eat', 2],
     ['Commute', 2],
     ['Watch TV', 2],
-    ['Sleep', 7]
+    ['Sleep', 7],
   ],
   options: {
     title: 'My Daily Activities',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     pieHole: 0.4,
     pieSliceTextStyle: {
-      color: '#ffffff'
+      color: '#ffffff',
     },
     is3D: true,
     colors: ['#9678AE', '#F99FB4', '#C8E4FB', '#01C0C8', '#ffbf00'],
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
           Stepped Area Charts
@@ -694,46 +694,46 @@ const SteppedAreaChart = {
     ['Alfred Hitchcock (1935)', 8.4, 7.9],
     ['Ralph Thomas (1959)', 6.9, 6.5],
     ['Don Sharp (1978)', 6.5, 6.4],
-    ['James Hawes (2008)', 4.4, 6.2]
+    ['James Hawes (2008)', 4.4, 6.2],
   ],
   options: {
     title: 'The decline of The 39 Steps',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     legend: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     colors: ['#511E78', '#F55F82'],
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Accumulated Rating',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     isStacked: true,
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Table
@@ -748,52 +748,52 @@ const Table = {
   columns: [
     {
       type: 'string',
-      label: 'Name'
+      label: 'Name',
     },
     {
       type: 'number',
-      label: 'Salary'
+      label: 'Salary',
     },
     {
       type: 'boolean',
-      label: 'Full Time Employee'
-    }
+      label: 'Full Time Employee',
+    },
   ],
   rows: [
     [
       'Mike',
       {
         v: 10000,
-        f: '$10,000'
+        f: '$10,000',
       },
-      true
+      true,
     ],
     [
       'Jim',
       {
         v: 8000,
-        f: '$8,000'
+        f: '$8,000',
       },
-      false
+      false,
     ],
     [
       'Alice',
       {
         v: 12500,
-        f: '$12,500'
+        f: '$12,500',
       },
-      true
+      true,
     ],
     [
       'Bob',
       {
         v: 7000,
-        f: '$7,000'
+        f: '$7,000',
       },
-      true
-    ]
-  ]
-}
+      true,
+    ],
+  ],
+};
 
 /* * * * * * * * * * * * * * * * * * * *
             Timeline Charts
@@ -808,50 +808,50 @@ const Timeline = {
   columns: [
     {
       id: 'Term',
-      type: 'string'
+      type: 'string',
     },
     {
       id: 'President',
-      type: 'string'
+      type: 'string',
     },
     {
       id: 'Start',
-      type: 'date'
+      type: 'date',
     },
     {
       id: 'End',
-      type: 'date'
-    }
+      type: 'date',
+    },
   ],
   rows: [
     [
       '1',
       'Washington',
       new Date('1789-04-29T18:00:00.000Z'),
-      new Date('1797-03-03T18:00:00.000Z')
+      new Date('1797-03-03T18:00:00.000Z'),
     ],
     [
       '2',
       'Adams',
       new Date('1797-03-03T18:00:00.000Z'),
-      new Date('1801-03-03T18:00:00.000Z')
+      new Date('1801-03-03T18:00:00.000Z'),
     ],
     [
       '3',
       'Jefferson',
       new Date('1801-03-03T18:00:00.000Z'),
-      new Date('1809-03-03T18:00:00.000Z')
-    ]
+      new Date('1809-03-03T18:00:00.000Z'),
+    ],
   ],
   options: {
     colors: ['#ffbf00', '#F55F82', '#48A6F2'],
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Tree Map
@@ -868,7 +868,7 @@ const TreeMap = {
       'Location',
       'Parent',
       'Market trade volume (size)',
-      'Market increase/decrease (color)'
+      'Market increase/decrease (color)',
     ],
     ['Global', null, 0, 0],
     ['America', 'Global', 0, 0],
@@ -897,14 +897,14 @@ const TreeMap = {
     ['S. Africa', 'Africa', 30, 43],
     ['Sudan', 'Africa', 12, 2],
     ['Congo', 'Africa', 10, 12],
-    ['Zaire', 'Africa', 8, 10]
+    ['Zaire', 'Africa', 8, 10],
   ],
   options: {
     minColor: '#511E78',
     midColor: '#C8E4FB',
-    maxColor: '#48A6F2'
-  }
-}
+    maxColor: '#48A6F2',
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
           Trend Lines Charts
@@ -923,45 +923,45 @@ const TrendLines = {
     [4, 22],
     [3, 16.5],
     [6.5, 32.8],
-    [14, 72]
+    [14, 72],
   ],
   options: {
     title: 'Age of sugar maples vs. trunk diameter, in inches',
     titleTextStyle: {
-      color: '#788195'
+      color: '#788195',
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Diameter',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
+        color: '#788195',
       },
       title: 'Age',
       titleTextStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     legend: 'none',
     trendlines: {
       0: {
         type: 'exponential',
-        colors: '#48A6F2'
-      }
+        colors: '#48A6F2',
+      },
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
-    }
-  }
-}
+        color: '#788195',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
             Water Fall Charts
@@ -978,45 +978,45 @@ const Waterfall = {
     ['Tue', 31, 38, 55, 66],
     ['Wed', 50, 55, 77, 80],
     ['Thu', 77, 77, 66, 50],
-    ['Fri', 68, 66, 22, 15]
+    ['Fri', 68, 66, 22, 15],
   ],
   options: {
     legend: 'none',
     bar: {
-      groupWidth: '100%'
+      groupWidth: '100%',
     },
     hAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     vAxis: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     animation: {
       duration: 1000,
       easing: 'in',
-      startup: true
+      startup: true,
     },
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     candlestick: {
       fallingColor: {
         strokeWidth: 0,
-        fill: '#F55F82'
+        fill: '#F55F82',
       },
       risingColor: {
         strokeWidth: 0,
-        fill: '#48A6F2'
-      }
-    }
-  }
-}
+        fill: '#48A6F2',
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Gantt Charts
@@ -1031,32 +1031,32 @@ const Gantt = {
   columns: [
     {
       id: 'Task ID',
-      type: 'string'
+      type: 'string',
     },
     {
       id: 'Task Name',
-      type: 'string'
+      type: 'string',
     },
     {
       id: 'Start Date',
-      type: 'date'
+      type: 'date',
     },
     {
       id: 'End Date',
-      type: 'date'
+      type: 'date',
     },
     {
       id: 'Duration',
-      type: 'number'
+      type: 'number',
     },
     {
       id: 'Percent Complete',
-      type: 'number'
+      type: 'number',
     },
     {
       id: 'Dependencies',
-      type: 'string'
-    }
+      type: 'string',
+    },
   ],
   rows: [
     [
@@ -1066,7 +1066,7 @@ const Gantt = {
       new Date('2015-01-04T18:00:00.000Z'),
       null,
       100,
-      null
+      null,
     ],
     [
       'Write',
@@ -1075,7 +1075,7 @@ const Gantt = {
       new Date('2015-01-08T18:00:00.000Z'),
       259200000,
       25,
-      'Research,Outline'
+      'Research,Outline',
     ],
     [
       'Cite',
@@ -1084,7 +1084,7 @@ const Gantt = {
       new Date('2015-01-06T18:00:00.000Z'),
       86400000,
       20,
-      'Research'
+      'Research',
     ],
     [
       'Complete',
@@ -1093,7 +1093,7 @@ const Gantt = {
       new Date('2015-01-09T18:00:00.000Z'),
       86400000,
       0,
-      'Cite,Write'
+      'Cite,Write',
     ],
     [
       'Outline',
@@ -1102,14 +1102,14 @@ const Gantt = {
       new Date('2015-01-05T18:00:00.000Z'),
       86400000,
       100,
-      'Research'
-    ]
+      'Research',
+    ],
   ],
   options: {
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     gantt: {
       criticalPathEnabled: false, // Critical path arrows will be the same as other arrows.
@@ -1117,11 +1117,11 @@ const Gantt = {
         angle: 100,
         width: 2,
         color: '#9678AE',
-        radius: 0
-      }
-    }
-  }
-}
+        radius: 0,
+      },
+    },
+  },
+};
 
 /* * * * * * * * * * * * * * * * * * * *
               Word Tree Charts
@@ -1152,20 +1152,20 @@ const WordTree = {
     ['cats are better than kittens'],
     ['cats are evil'],
     ['cats are weird'],
-    ['cats eat mice']
+    ['cats eat mice'],
   ],
   options: {
     tooltip: {
       textStyle: {
-        color: '#788195'
-      }
+        color: '#788195',
+      },
     },
     wordtree: {
       format: 'implicit',
-      word: 'cats'
-    }
-  }
-}
+      word: 'cats',
+    },
+  },
+};
 
 export {
   BarChart,
@@ -1184,5 +1184,5 @@ export {
   TrendLines,
   Waterfall,
   Gantt,
-  WordTree
-}
+  WordTree,
+};

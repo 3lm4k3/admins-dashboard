@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { Layout } from 'antd'
-import Input from '../../components/uielements/input'
-import todoAction from '../../redux/todos/actions.js'
-import TodoList from './todoList'
-import { TodoWrapper } from './todo.style'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Layout } from "antd";
+import Input from "../../components/uielements/input";
+import todoAction from "../../redux/todos/actions.js";
+import TodoList from "./todoList";
+import { TodoWrapper } from "./todo.style";
 
 const {
   addTodo,
@@ -12,17 +12,17 @@ const {
   deleteTodo,
   allCompleted,
   deleteCompleted
-} = todoAction
-const { Header, Content } = Layout
+} = todoAction;
+const { Header, Content } = Layout;
 
 class ToDo extends Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      newTodo: ''
-    }
+      newTodo: ""
+    };
   }
-  render () {
+  render() {
     const {
       todos,
       colors,
@@ -31,23 +31,23 @@ class ToDo extends Component {
       deleteTodo,
       allCompleted,
       deleteCompleted
-    } = this.props
+    } = this.props;
     return (
-      <Layout style={{ background: 'none' }}>
-        <TodoWrapper className='isomorphicTodoComponent'>
-          <Header className='isoTodoHeader'>
+      <Layout style={{ background: "none" }}>
+        <TodoWrapper className="isomorphicTodoComponent">
+          <Header className="isoTodoHeader">
             <Input
-              placeholder={'Type here for add a new todo'}
+              placeholder={"Type here for add a new todo"}
               value={this.state.newTodo}
-              className='isoTodoInput'
+              className="isoTodoInput"
               onChange={event => this.setState({ newTodo: event.target.value })}
               onPressEnter={event => {
-                this.setState({ newTodo: '' })
-                addTodo(event.target.value)
+                this.setState({ newTodo: "" });
+                addTodo(event.target.value);
               }}
             />
           </Header>
-          <Content className='isoTodoContentBody'>
+          <Content className="isoTodoContentBody">
             <TodoList
               todos={todos}
               deleteTodo={deleteTodo}
@@ -59,16 +59,16 @@ class ToDo extends Component {
           </Content>
         </TodoWrapper>
       </Layout>
-    )
+    );
   }
 }
 
-function mapStateToProps (state) {
-  const { todos, colors } = state.Todos
+function mapStateToProps(state) {
+  const { todos, colors } = state.Todos;
   return {
     todos,
     colors
-  }
+  };
 }
 export default connect(mapStateToProps, {
   addTodo,
@@ -76,4 +76,4 @@ export default connect(mapStateToProps, {
   deleteTodo,
   deleteCompleted,
   allCompleted
-})(ToDo)
+})(ToDo);

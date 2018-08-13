@@ -1,4 +1,4 @@
-const theme = {}
+const theme = {};
 
 theme.palette = {
   primary: [
@@ -15,7 +15,7 @@ theme.palette = {
     '#5896FF', // 10: Lighten 8%
     '#2b69e6', // 11:
     '#236cfe', // 12: darken 10%
-    '#4d88ff' // 13: Lighten 5%
+    '#4d88ff', // 13: Lighten 5%
   ],
   secondary: [
     '#2d3446', // 0: DarkBlue
@@ -28,7 +28,7 @@ theme.palette = {
     '#e9ebf1', // 7: DarkBluish
     '#F6F8FB', // 8: LighterBluish Lighten 2%
     '#E9EBEE', // 9: LighterBluish Darken 3%
-    '#1a1a1a' // 10: Sidebar submenu select
+    '#1a1a1a', // 10: Sidebar submenu select
   ],
   color: [
     '#FEAC01', // 0: Orange
@@ -44,18 +44,18 @@ theme.palette = {
     '#d73925', // 10: Google Plus Darken 5%
     '#e14615', // 11: Auth0
     '#ca3f13', // 12: Auth0
-    '#e0364c' // 13: themeColor--AlizarinCrimson
+    '#e0364c', // 13: themeColor--AlizarinCrimson
   ],
   warning: [
-    '#ffbf00' // 0: Warning
+    '#ffbf00', // 0: Warning
   ],
   success: [
-    '#00b16a' // 0: Success
+    '#00b16a', // 0: Success
   ],
   error: [
     '#f64744', // 0: Error
     '#EC3D3A', // 1: Darken 4%
-    '#FF5B58' // 2: Lighten 8%
+    '#FF5B58', // 2: Lighten 8%
   ],
   grayscale: [
     '#bababa', // 0: GreyShade
@@ -69,21 +69,21 @@ theme.palette = {
     '#eeeeee', // 8:
     '#fbfbfb', // 9:
     '#f5f5f5', // 10:
-    '#f7f8f9' // 11: today-highlight-bg
+    '#f7f8f9', // 11: today-highlight-bg
   ],
   text: [
     '#323332', // 0: Heading
     '#595959', // 1: HeadingLight
     '#979797', // 2: Text
     '#797979', // 3: TextDark
-    '#6a6c6a' // 4: Heading Lighten 22%
+    '#6a6c6a', // 4: Heading Lighten 22%
   ],
   border: [
     '#e9e9e9', // 0: Border
     '#d8d8d8', // 1: BorderDark
     '#ebebeb', // 2: BorderLight
     '#d3d3d3', // 3:
-    'rgba(228, 228, 228, 0.65)' // 4:
+    'rgba(228, 228, 228, 0.65)', // 4:
   ],
 
   calendar: [
@@ -92,13 +92,13 @@ theme.palette = {
     '#a67f59', // 2:
     '#07a', // 3:
     '#dd4a68', // 4:
-    '#e90' // 5:
-  ]
-}
+    '#e90', // 5:
+  ],
+};
 
 theme.fonts = {
   primary: 'Roboto, sans-serif',
-  pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace'
-}
+  pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
+};
 
-export default theme
+export default theme;

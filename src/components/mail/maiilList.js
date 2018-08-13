@@ -1,10 +1,10 @@
-import React from 'react'
-import { timeDifference } from '../../helpers/utility'
-import { tags, tagColor } from './mailTags.js'
-import MailListWrapper from './mailList.style'
-import { rtl } from '../../settings/withDirection'
+import React from 'react';
+import { timeDifference } from '../../helpers/utility';
+import { tags, tagColor } from './mailTags.js';
+import MailListWrapper from './mailList.style';
+import { rtl } from '../../settings/withDirection';
 
-export default function mailList (
+export default function mailList(
   mails,
   selectMail,
   selectedMail,
@@ -12,24 +12,24 @@ export default function mailList (
 ) {
   const renderSingleMail = (mail, key) => {
     const onClick = () => {
-      selectMail(mail.id)
+      selectMail(mail.id);
       if (toggleListVisible) {
-        toggleListVisible()
+        toggleListVisible();
       }
-    }
-    const isSelected = selectedMail === mail.id
-    const recpName = mail.name
+    };
+    const isSelected = selectedMail === mail.id;
+    const recpName = mail.name;
     const signature = {
       splitLet: recpName
         .match(/\b(\w)/g)
         .join('')
         .split('', 2)
-    }
-    const activeClass = isSelected ? 'activeMail' : ''
-    const unreadClass = !mail.read ? 'unreadMail' : ''
+    };
+    const activeClass = isSelected ? 'activeMail' : '';
+    const unreadClass = !mail.read ? 'unreadMail' : '';
     const tagOption = mail.tags
       ? tagColor[tags.findIndex(tags => tags === mail.tags)]
-      : 'transparent'
+      : 'transparent';
     return (
       <div
         key={`list${key}`}
@@ -37,7 +37,7 @@ export default function mailList (
         className={`${activeClass} ${unreadClass} isoMailList`}
       >
         <span
-          className='isoLabelIndicator'
+          className="isoLabelIndicator"
           style={
             rtl === 'rtl' ? (
               { borderRightColor: tagOption }
@@ -46,27 +46,27 @@ export default function mailList (
             )
           }
         />
-        <div className='isoRecipentsImg'>
+        <div className="isoRecipentsImg">
           {mail.img ? (
-            <img alt='#' src={mail.img} />
+            <img alt="#" src={mail.img} />
           ) : (
             <span>{signature.splitLet}</span>
           )}
         </div>
 
-        <div className='isoMailInfo'>
-          <div className='infoHead'>
-            <p className='isoRecipents'>{mail.name}</p>
-            <span className='isoReceiveDate'>{timeDifference(mail.date)}</span>
+        <div className="isoMailInfo">
+          <div className="infoHead">
+            <p className="isoRecipents">{mail.name}</p>
+            <span className="isoReceiveDate">{timeDifference(mail.date)}</span>
           </div>
-          <p className='isoSubject'>{mail.subject}</p>
+          <p className="isoSubject">{mail.subject}</p>
         </div>
       </div>
-    )
-  }
+    );
+  };
   return (
-    <MailListWrapper className='isoMailListWrapper'>
+    <MailListWrapper className="isoMailListWrapper">
       {mails.map((mail, index) => renderSingleMail(mail, index))}
     </MailListWrapper>
-  )
+  );
 }

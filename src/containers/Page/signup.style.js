@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import bgImage from '../../image/work.jpg'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import bgImage from '../../image/work.jpg';
+import WithDirection from '../../settings/withDirection';
 
 const SignUpStyleWrapper = styled.div`
   width: 100%;
@@ -101,9 +101,9 @@ const SignUpStyleWrapper = styled.div`
 
           &:first-child {
             margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
+              props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
             margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
+              props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
           }
         }
       }
@@ -166,6 +166,6 @@ const SignUpStyleWrapper = styled.div`
       }
     }
   }
-`
+`;
 
-export default WithDirection(SignUpStyleWrapper)
+export default WithDirection(SignUpStyleWrapper);

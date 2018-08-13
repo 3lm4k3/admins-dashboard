@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
 
 const AntInputNumber = ComponentName => styled(ComponentName)`
   &.ant-input-number {
@@ -26,7 +26,7 @@ const AntInputNumber = ComponentName => styled(ComponentName)`
       left: ${props => (props['data-rtl'] === 'rtl' ? '0' : 'inherit')};
       right: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '0')};
       border-radius: ${props =>
-    props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
+        props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
       border-left: ${props => (props['data-rtl'] === 'rtl' ? 0 : 1)}px solid
         ${palette('border', 1)};
       border-right: ${props => (props['data-rtl'] === 'rtl' ? 1 : 0)}px solid
@@ -56,6 +56,6 @@ const AntInputNumber = ComponentName => styled(ComponentName)`
       }
     }
   }
-`
+`;
 
-export default AntInputNumber
+export default AntInputNumber;

@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Bar } from 'react-chartjs-2'
-import { data, barSettings } from './barConfig'
+import React, { Component } from 'react';
+import { Bar } from 'react-chartjs-2';
+import { data, barSettings } from './barConfig';
 
 export default class extends Component {
-  render () {
+  render() {
     return (
       <div>
         <Bar
@@ -13,6 +13,6 @@ export default class extends Component {
           options={{ maintainAspectRatio: false }}
         />
       </div>
-    )
+    );
   }
 }

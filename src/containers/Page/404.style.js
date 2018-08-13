@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { palette } from 'styled-theme'
-import { transition, borderRadius } from '../../settings/style-util'
-import WithDirection from '../../settings/withDirection'
+import styled from 'styled-components';
+import { palette } from 'styled-theme';
+import { transition, borderRadius } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const FourZeroFourStyleWrapper = styled.div`
   width: 100%;
@@ -114,9 +114,9 @@ const FourZeroFourStyleWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: ${props =>
-    props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
+      props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
     margin-right: ${props =>
-    props['data-rtl'] === 'rtl' ? '100px' : 'inherti'};
+      props['data-rtl'] === 'rtl' ? '100px' : 'inherti'};
     height: 500px;
 
     @media only screen and (max-width: 767px) {
@@ -128,6 +128,6 @@ const FourZeroFourStyleWrapper = styled.div`
       max-height: 100%;
     }
   }
-`
+`;
 
-export default WithDirection(FourZeroFourStyleWrapper)
+export default WithDirection(FourZeroFourStyleWrapper);

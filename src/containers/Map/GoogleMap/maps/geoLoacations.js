@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class extends Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
   }
-  render () {
-    return <div>geo</div>
+  render() {
+    return <div>geo</div>;
   }
 }
