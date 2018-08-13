@@ -552,5 +552,5 @@ Logout
 View All
 View Cart
 Total Price
-`;
-export default txt;
+`
+export default txt

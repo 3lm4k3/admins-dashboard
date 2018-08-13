@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   XYPlot,
   XAxis,
@@ -6,15 +6,15 @@ import {
   VerticalGridLines,
   HorizontalGridLines,
   HorizontalBarSeries
-} from 'react-vis';
-import ChartWrapper from '../../chart.style';
+} from 'react-vis'
+import ChartWrapper from '../../chart.style'
 
 export default class extends Component {
-  render() {
-    const { datas, width, height } = this.props;
+  render () {
+    const { datas, width, height } = this.props
     return (
-      <ChartWrapper className="isoChartWrapper">
-        <XYPlot width={width} height={height} stackBy="x">
+      <ChartWrapper className='isoChartWrapper'>
+        <XYPlot width={width} height={height} stackBy='x'>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
@@ -23,11 +23,11 @@ export default class extends Component {
             const config = {
               key,
               data: data.data
-            };
-            return <HorizontalBarSeries {...config} />;
+            }
+            return <HorizontalBarSeries {...config} />
           })}
         </XYPlot>
       </ChartWrapper>
-    );
+    )
   }
 }

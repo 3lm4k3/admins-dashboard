@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition, borderRadius } from '../../../../settings/style-util';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition, borderRadius } from '../../../../settings/style-util'
 
 const LeafletMapWrapper = styled.div`
   &.isoLeafletMap {
@@ -204,6 +204,6 @@ const LeafletMapWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-export default LeafletMapWrapper;
+export default LeafletMapWrapper

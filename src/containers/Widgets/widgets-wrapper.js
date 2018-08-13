@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { WidgetWrapper } from './style';
+import React, { Component } from 'react'
+import { WidgetWrapper } from './style'
 
 export default class extends Component {
-  render() {
+  render () {
     const {
       width,
       gutterTop,
@@ -12,7 +12,7 @@ export default class extends Component {
       padding,
       bgColor,
       children
-    } = this.props;
+    } = this.props
     const wrapperStyle = {
       width: width,
       marginTop: gutterTop,
@@ -21,12 +21,12 @@ export default class extends Component {
       marginLeft: gutterLeft,
       padding: padding,
       backgroundColor: bgColor
-    };
+    }
 
     return (
-      <WidgetWrapper className="isoWidgetsWrapper" style={wrapperStyle}>
+      <WidgetWrapper className='isoWidgetsWrapper' style={wrapperStyle}>
         {children}
       </WidgetWrapper>
-    );
+    )
   }
 }

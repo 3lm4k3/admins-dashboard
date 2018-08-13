@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import 'leaflet';
-import 'leaflet-routing-machine';
-import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
-import 'leaflet-routing-machine/dist/leaflet.routing.icons.png';
-import { mapboxConfig } from '../../../../settings';
-import LeafletMapWrapper from './map.style';
+import React, { Component } from 'react'
+import 'leaflet'
+import 'leaflet-routing-machine'
+import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'
+import 'leaflet-routing-machine/dist/leaflet.routing.icons.png'
+import { mapboxConfig } from '../../../../settings'
+import LeafletMapWrapper from './map.style'
 
 export default class extends Component {
-  constructor(props) {
-    super(props);
-    this.mountMap = this.mountMap.bind(this);
+  constructor (props) {
+    super(props)
+    this.mountMap = this.mountMap.bind(this)
   }
-  mountMap(element) {
-    if (!element) return;
-    const { L } = window;
+  mountMap (element) {
+    if (!element) return
+    const { L } = window
     const map = L.map(element).setView(
       mapboxConfig.center,
       !isNaN(mapboxConfig.defaultZoom) ? mapboxConfig.defaultZoom : 13
-    );
+    )
     const osmAttr =
-      '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+      '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     L.tileLayer(mapboxConfig.tileLayer, {
       maxZoom: !isNaN(mapboxConfig.maxZoom) ? mapboxConfig.maxZoom : 18,
       attribution: osmAttr
-    }).addTo(map);
+    }).addTo(map)
     try {
       L.Routing
         .control({
@@ -33,18 +33,18 @@ export default class extends Component {
           ],
           routeWhileDragging: true
         })
-        .addTo(map);
+        .addTo(map)
     } catch (e) {}
   }
-  render() {
+  render () {
     return (
-      <LeafletMapWrapper className="isoLeafletMap">
+      <LeafletMapWrapper className='isoLeafletMap'>
         <div
-          id="basic-map-marker"
+          id='basic-map-marker'
           style={{ height: '400px', width: '100%' }}
           ref={this.mountMap}
         />
       </LeafletMapWrapper>
-    );
+    )
   }
 }

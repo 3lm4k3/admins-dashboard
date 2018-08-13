@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette, font } from 'styled-theme';
+import styled from 'styled-components'
+import { palette, font } from 'styled-theme'
 
 const DashAppHolder = styled.div`
   font-family: ${font('primary', 0)};
@@ -51,6 +51,6 @@ const DashAppHolder = styled.div`
     justify-content: center;
     width: 100%;
   }
-`;
+`
 
-export default DashAppHolder;
+export default DashAppHolder

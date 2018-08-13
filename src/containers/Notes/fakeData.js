@@ -24,5 +24,5 @@ export default JSON.parse(
   "note": "Dolor quas est quae. Id temporibus sed. Illum quo amet est fuga laborum facilis. Aut nisi consequatur voluptatum et. Eum et necessitatibus quam corporis expedita quasi reiciendis quia vitae. Earum harum deserunt minus modi consequuntur perspiciatis labore officia quo.",
   "createTime": "2017-05-11T22:30:14.915Z",
   "color": 4
-}]`,
-);
+}]`
+)

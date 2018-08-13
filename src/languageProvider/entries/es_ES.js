@@ -1,6 +1,6 @@
-import antdSA from 'antd/lib/locale-provider/ca_ES';
-import appLocaleData from 'react-intl/locale-data/es';
-import saMessages from '../locales/es_ES.json';
+import antdSA from 'antd/lib/locale-provider/ca_ES'
+import appLocaleData from 'react-intl/locale-data/es'
+import saMessages from '../locales/es_ES.json'
 
 const saLang = {
   messages: {
@@ -9,5 +9,5 @@ const saLang = {
   antd: antdSA,
   locale: 'es',
   data: appLocaleData
-};
-export default saLang;
+}
+export default saLang

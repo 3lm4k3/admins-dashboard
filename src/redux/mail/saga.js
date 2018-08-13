@@ -1,9 +1,9 @@
-import { all, takeEvery, fork } from 'redux-saga/effects';
-import actions from './actions';
+import { all, takeEvery, fork } from 'redux-saga/effects'
+import actions from './actions'
 
-export function* filterAction() {
-  yield takeEvery(actions.FILTER_ATTRIBUTE, function*() {});
+export function * filterAction () {
+  yield takeEvery(actions.FILTER_ATTRIBUTE, function * () {})
 }
-export default function* rootSaga() {
-  yield all([fork(filterAction)]);
+export default function * rootSaga () {
+  yield all([fork(filterAction)])
 }

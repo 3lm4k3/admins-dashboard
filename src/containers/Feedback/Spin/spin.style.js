@@ -1,9 +1,9 @@
-import React from 'react';
-import Spins from '../../../components/uielements/spin';
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import React from 'react'
+import Spins from '../../../components/uielements/spin'
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
-const AntSpin = props => <Spins {...props} />;
+const AntSpin = props => <Spins {...props} />
 
 const Spin = styled(AntSpin)`
   && {
@@ -13,6 +13,6 @@ const Spin = styled(AntSpin)`
       }
     }
   }
-`;
+`
 
-export default Spin;
+export default Spin

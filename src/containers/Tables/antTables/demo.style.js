@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const TableDemoStyle = styled.div`
   .ant-tabs-content {
@@ -19,6 +19,6 @@ const TableDemoStyle = styled.div`
       }
     }
   }
-`;
+`
 
-export default TableDemoStyle;
+export default TableDemoStyle

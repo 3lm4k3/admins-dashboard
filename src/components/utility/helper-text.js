@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ text = '' }) => (
   <div
-    className="isoHelperText"
+    className='isoHelperText'
     style={{
       display: 'flex',
       alignItems: 'center',
@@ -13,4 +13,4 @@ export default ({ text = '' }) => (
   >
     <h3>{text}</h3>
   </div>
-);
+)

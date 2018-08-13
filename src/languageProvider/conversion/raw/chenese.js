@@ -552,5 +552,5 @@ Frappe Charts
 查看全部
 查看购物车
 总价格
-`;
-export default txt;
+`
+export default txt

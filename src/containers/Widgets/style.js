@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const WidgetWrapper = styled.div`
   margin: 0 10px;
@@ -7,7 +7,7 @@ const WidgetWrapper = styled.div`
   @media only screen and (max-width: 767) {
     margin-right: 0 !important;
   }
-`;
+`
 
 const WidgetBox = styled.div`
   width: 100%;
@@ -20,10 +20,10 @@ const WidgetBox = styled.div`
     width: 100% !important;
     height: 100% !important;
   }
-`;
+`
 
 const WidgetColumn = styled.div`
   align-content: flex-start;
-`;
+`
 
-export { WidgetWrapper, WidgetBox, WidgetColumn };
+export { WidgetWrapper, WidgetBox, WidgetColumn }

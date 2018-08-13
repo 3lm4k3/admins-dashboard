@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const LoaderComponent = styled.div`
   width: 100%;
@@ -53,6 +53,6 @@ const LoaderComponent = styled.div`
       stroke-dashoffset: -120px;
     }
   }
-`;
+`
 
-export default LoaderComponent;
+export default LoaderComponent

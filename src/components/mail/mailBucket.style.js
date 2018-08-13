@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const MailBucket = styled.ul`
   padding: 35px 0 0;
@@ -31,7 +31,7 @@ const MailBucket = styled.ul`
       color: ${palette('secondary', 2)};
       line-height: normal;
       margin: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 auto 0 0' : '0 0 0 auto'};
+    props['data-rtl'] === 'rtl' ? '0 auto 0 0' : '0 0 0 auto'};
       display: -webkit-inline-flex;
       display: -ms-inline-flex;
       display: inline-flex;
@@ -53,6 +53,6 @@ const MailBucket = styled.ul`
       }
     }
   }
-`;
+`
 
-export default WithDirection(MailBucket);
+export default WithDirection(MailBucket)

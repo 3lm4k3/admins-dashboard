@@ -9,5 +9,5 @@ const options = [
     label: 'sidebar.blankPage',
     leftIcon: 'ion-document'
   }
-];
-export default options;
+]
+export default options

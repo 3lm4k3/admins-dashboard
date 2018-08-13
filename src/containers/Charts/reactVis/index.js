@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Row, Col } from "antd";
+import React, { Component } from 'react'
+import { Row, Col } from 'antd'
 import {
   LineSeries,
   LineMark,
@@ -20,22 +20,22 @@ import {
   CandleStick,
   ComplexChart,
   StreamGraph
-} from "./charts";
-import * as configs from "./config";
-import PageHeader from "../../../components/utility/pageHeader";
-import Box from "../../../components/utility/box";
-import LayoutWrapper from "../../../components/utility/layoutWrapper.js";
-import ContentHolder from "../../../components/utility/contentHolder";
-import basicStyle from "../../../settings/basicStyle";
-import "react-vis/dist/style.css";
+} from './charts'
+import * as configs from './config'
+import PageHeader from '../../../components/utility/pageHeader'
+import Box from '../../../components/utility/box'
+import LayoutWrapper from '../../../components/utility/layoutWrapper.js'
+import ContentHolder from '../../../components/utility/contentHolder'
+import basicStyle from '../../../settings/basicStyle'
+import 'react-vis/dist/style.css'
 
 export default class ReactVis extends Component {
-  render() {
-    const { rowStyle, colStyle, gutter } = basicStyle;
+  render () {
+    const { rowStyle, colStyle, gutter } = basicStyle
     return (
-      <LayoutWrapper className="isoMapPage">
+      <LayoutWrapper className='isoMapPage'>
         <PageHeader>React Vis</PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.LineSeries.title}>
               <ContentHolder>
@@ -51,7 +51,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.AreaChartElevated.title}>
               <ContentHolder>
@@ -69,7 +69,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.ClusteredStackedBarChart.title}>
               <ContentHolder>
@@ -87,7 +87,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.CircularGridLines.title}>
               <ContentHolder>
@@ -105,7 +105,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.DynamicCrosshairScatterplot.title}>
               <ContentHolder>
@@ -123,7 +123,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.SimpleDonutChart.title}>
               <ContentHolder>
@@ -139,7 +139,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.SimpleTreeMap.title}>
               <ContentHolder>
@@ -155,7 +155,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.BasicSunburst.title}>
               <ContentHolder>
@@ -171,7 +171,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} xs={24} style={colStyle}>
             <Box title={configs.CandleStick.title}>
               <ContentHolder>
@@ -187,7 +187,7 @@ export default class ReactVis extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col span={24} style={colStyle}>
             <Box title={configs.StreamGraph.title}>
               <ContentHolder>
@@ -197,6 +197,6 @@ export default class ReactVis extends Component {
           </Col>
         </Row>
       </LayoutWrapper>
-    );
+    )
   }
 }

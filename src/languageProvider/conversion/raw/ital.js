@@ -551,5 +551,5 @@ Disconnettersi
 Guarda tutto
 Visualizza carrello
 Prezzo totale
-`;
-export default txt;
+`
+export default txt

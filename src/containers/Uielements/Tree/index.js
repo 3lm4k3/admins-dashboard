@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import { Row, Col } from 'antd';
-import PageHeader from '../../../components/utility/pageHeader';
-import Box from '../../../components/utility/box';
-import LayoutWrapper from '../../../components/utility/layoutWrapper.js';
-import ContentHolder from '../../../components/utility/contentHolder';
-import basicStyle from '../../../settings/basicStyle';
-import BasicTree from './basicTree';
-import BasicControlledTree from './basicControlledTree';
-import DraggableTree from './draggableTree';
-import AsyncTree from './asyncTree';
-import SearchableTree from './searchableTree';
-import LineTree from './lineTree';
-import IntlMessages from '../../../components/utility/intlMessages';
+import React, { Component } from 'react'
+import { Row, Col } from 'antd'
+import PageHeader from '../../../components/utility/pageHeader'
+import Box from '../../../components/utility/box'
+import LayoutWrapper from '../../../components/utility/layoutWrapper.js'
+import ContentHolder from '../../../components/utility/contentHolder'
+import basicStyle from '../../../settings/basicStyle'
+import BasicTree from './basicTree'
+import BasicControlledTree from './basicControlledTree'
+import DraggableTree from './draggableTree'
+import AsyncTree from './asyncTree'
+import SearchableTree from './searchableTree'
+import LineTree from './lineTree'
+import IntlMessages from '../../../components/utility/intlMessages'
 
 export default class extends Component {
-  render() {
-    const { rowStyle, colStyle, gutter } = basicStyle;
+  render () {
+    const { rowStyle, colStyle, gutter } = basicStyle
     return (
       <LayoutWrapper>
-        <PageHeader>{<IntlMessages id="uiElements.tree.tree" />}</PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <PageHeader>{<IntlMessages id='uiElements.tree.tree' />}</PageHeader>
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.basicExample" />}
-              subtitle={<IntlMessages id="uiElements.tree.basicExampleSubTitle" />}
+              title={<IntlMessages id='uiElements.tree.basicExample' />}
+              subtitle={<IntlMessages id='uiElements.tree.basicExampleSubTitle' />}
             >
               <ContentHolder>
                 <BasicTree />
@@ -32,8 +32,8 @@ export default class extends Component {
           </Col>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.basicControlledExample" />}
-              subtitle={<IntlMessages id="uiElements.tree.tree" />}
+              title={<IntlMessages id='uiElements.tree.basicControlledExample' />}
+              subtitle={<IntlMessages id='uiElements.tree.tree' />}
             >
               <ContentHolder>
                 <BasicControlledTree />
@@ -41,11 +41,11 @@ export default class extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.draggableExample" />}
-              subtitle={<IntlMessages id="uiElements.tree.draggableExampleSubTitle" />}
+              title={<IntlMessages id='uiElements.tree.draggableExample' />}
+              subtitle={<IntlMessages id='uiElements.tree.draggableExampleSubTitle' />}
             >
               <ContentHolder>
                 <DraggableTree />
@@ -54,8 +54,8 @@ export default class extends Component {
           </Col>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.loadAsync" />}
-              subtitle={<IntlMessages id="uiElements.tree.loadAsyncSubTitle" />}
+              title={<IntlMessages id='uiElements.tree.loadAsync' />}
+              subtitle={<IntlMessages id='uiElements.tree.loadAsyncSubTitle' />}
             >
               <ContentHolder>
                 <AsyncTree />
@@ -63,11 +63,11 @@ export default class extends Component {
             </Box>
           </Col>
         </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
+        <Row style={rowStyle} gutter={gutter} justify='start'>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.searchableExample" />}
-              subtitle={<IntlMessages id="uiElements.tree.searchableExampleSubTitle" />}
+              title={<IntlMessages id='uiElements.tree.searchableExample' />}
+              subtitle={<IntlMessages id='uiElements.tree.searchableExampleSubTitle' />}
             >
               <ContentHolder>
                 <SearchableTree />
@@ -76,8 +76,8 @@ export default class extends Component {
           </Col>
           <Col md={12} sm={12} xs={24} style={colStyle}>
             <Box
-              title={<IntlMessages id="uiElements.tree.treeWithLine" />}
-              subtitle={<IntlMessages id="uiElements.tree.treeWithLine" />}
+              title={<IntlMessages id='uiElements.tree.treeWithLine' />}
+              subtitle={<IntlMessages id='uiElements.tree.treeWithLine' />}
             >
               <ContentHolder>
                 <LineTree />
@@ -86,6 +86,6 @@ export default class extends Component {
           </Col>
         </Row>
       </LayoutWrapper>
-    );
+    )
   }
 }

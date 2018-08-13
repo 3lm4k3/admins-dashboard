@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette, font } from 'styled-theme';
-import WithDirection from '../../../settings/withDirection';
+import styled from 'styled-components'
+import { palette, font } from 'styled-theme'
+import WithDirection from '../../../settings/withDirection'
 
 const QuillEditor = styled.div`
   .ql-editor {
@@ -19,7 +19,7 @@ const QuillEditor = styled.div`
 
     .ql-picker-label {
       padding: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 8px 0 2px' : '0 2px 0 8px'};
+    props['data-rtl'] === 'rtl' ? '0 8px 0 2px' : '0 2px 0 8px'};
 
       &:not(.ql-color-picker):not(.ql-icon-picker) {
         svg {
@@ -129,6 +129,6 @@ const QuillEditor = styled.div`
   .ql-snow a {
     color: ${palette('primary', 0)};
   }
-`;
+`
 
-export default WithDirection(QuillEditor);
+export default WithDirection(QuillEditor)

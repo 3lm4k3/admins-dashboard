@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ config, changeTheme, selectedId }) => {
-  const { id, label, options } = config;
+  const { id, label, options } = config
   return (
-    <div className="themeSwitchBlock">
+    <div className='themeSwitchBlock'>
       <h4>
         {label}
       </h4>
-      <div className="themeSwitchBtnWrapper">
+      <div className='themeSwitchBtnWrapper'>
         {options.map(option => {
-          const { themeName, buttonColor, text } = option;
+          const { themeName, buttonColor, text } = option
           const onClick = () => {
-            changeTheme(id, themeName);
-          };
-          const customClass = themeName === selectedId ? 'selectedTheme' : '';
+            changeTheme(id, themeName)
+          }
+          const customClass = themeName === selectedId ? 'selectedTheme' : ''
           return (
             <button
-              type="button"
+              type='button'
               key={themeName}
               onClick={onClick}
               className={customClass}
@@ -24,9 +24,9 @@ export default ({ config, changeTheme, selectedId }) => {
             >
               {text}
             </button>
-          );
+          )
         })}
       </div>
     </div>
-  );
-};
+  )
+}

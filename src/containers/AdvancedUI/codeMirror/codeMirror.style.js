@@ -1,8 +1,8 @@
-import React from 'react';
-import CodeMirrors from '../../../components/uielements/codeMirror';
-import styled from 'styled-components';
+import React from 'react'
+import CodeMirrors from '../../../components/uielements/codeMirror'
+import styled from 'styled-components'
 
-const CodeMirrorEditor = props => <CodeMirrors {...props} />;
+const CodeMirrorEditor = props => <CodeMirrors {...props} />
 
 const CodeMirror = styled(CodeMirrorEditor)`
   .CodeMirror {
@@ -379,7 +379,7 @@ const CodeMirror = styled(CodeMirrorEditor)`
   span.CodeMirror-selectedtext {
     background: none;
   }
-`;
+`
 
 const CodeMirrorToolbar = styled.div`
   width: 100%;
@@ -396,7 +396,7 @@ const CodeMirrorToolbar = styled.div`
       margin-right: 0;
     }
   }
-`;
+`
 
-export default CodeMirror;
-export { CodeMirrorToolbar };
+export default CodeMirror
+export { CodeMirrorToolbar }

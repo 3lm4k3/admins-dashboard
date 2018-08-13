@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition, borderRadius } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition, borderRadius } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const FiveZeroZeroStyleWrapper = styled.div`
   width: 100%;
@@ -111,9 +111,9 @@ const FiveZeroZeroStyleWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: ${props =>
-      props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
     margin-right: ${props =>
-      props['data-rtl'] === 'rtl' ? '100px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '100px' : 'inherit'};
     height: 500px;
 
     @media only screen and (max-width: 767px) {
@@ -125,6 +125,6 @@ const FiveZeroZeroStyleWrapper = styled.div`
       max-height: 100%;
     }
   }
-`;
+`
 
-export default WithDirection(FiveZeroZeroStyleWrapper);
+export default WithDirection(FiveZeroZeroStyleWrapper)

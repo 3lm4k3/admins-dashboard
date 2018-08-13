@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import TableWrapper, { CustomizedTableWrapper } from '../antTable.style';
-import Switch from '../../../../components/uielements/switch';
-import Form from '../../../../components/uielements/form';
-const FormItem = Form.Item;
+import React, { Component } from 'react'
+import TableWrapper, { CustomizedTableWrapper } from '../antTable.style'
+import Switch from '../../../../components/uielements/switch'
+import Form from '../../../../components/uielements/form'
+const FormItem = Form.Item
 
 const expandedRowRender = record => (
   <p>{`${record.firstName} lives in ${record.city}`}</p>
-);
-const title = () => 'Here is title';
-const showHeader = true;
-const footer = () => 'Here is footer';
-const scroll = { y: 240 };
+)
+const title = () => 'Here is title'
+const showHeader = true
+const footer = () => 'Here is footer'
+const scroll = { y: 240 }
 
 const toggleOptions = [
   {
@@ -58,11 +58,11 @@ const toggleOptions = [
     title: 'Scrollable',
     key: 'scroll'
   }
-];
+]
 export default class extends Component {
-  constructor(props) {
-    super(props);
-    this.renderSwitch = this.renderSwitch.bind(this);
+  constructor (props) {
+    super(props)
+    this.renderSwitch = this.renderSwitch.bind(this)
     this.state = {
       bordered: undefined,
       loading: undefined,
@@ -74,28 +74,28 @@ export default class extends Component {
       footer,
       rowSelection: {},
       scroll: undefined
-    };
+    }
   }
-  renderSwitch(option) {
-    const checked = this.state[option.key] !== undefined;
+  renderSwitch (option) {
+    const checked = this.state[option.key] !== undefined
     const onChange = () => {
       if (!checked) {
-        this.setState({ [option.key]: option.defaultValue });
+        this.setState({ [option.key]: option.defaultValue })
       } else {
-        this.setState({ [option.key]: undefined });
+        this.setState({ [option.key]: undefined })
       }
-    };
+    }
     return (
       <FormItem label={option.title} key={option.key}>
         <Switch checked={checked} onChange={onChange} />
       </FormItem>
-    );
+    )
   }
-  render() {
+  render () {
     return (
-      <CustomizedTableWrapper className="isoCustomizedTableWrapper">
-        <div className="isoCustomizedTableControlBar">
-          <Form layout="inline">
+      <CustomizedTableWrapper className='isoCustomizedTableWrapper'>
+        <div className='isoCustomizedTableControlBar'>
+          <Form layout='inline'>
             {toggleOptions.map(option => this.renderSwitch(option))}
           </Form>
         </div>
@@ -103,9 +103,9 @@ export default class extends Component {
           {...this.state}
           columns={this.props.tableInfo.columns}
           dataSource={this.props.dataList.getAll()}
-          className="isoCustomizedTable"
+          className='isoCustomizedTable'
         />
       </CustomizedTableWrapper>
-    );
+    )
   }
 }

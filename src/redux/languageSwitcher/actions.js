@@ -1,4 +1,4 @@
-import { getCurrentLanguage } from '../../containers/LanguageSwitcher/config';
+import { getCurrentLanguage } from '../../containers/LanguageSwitcher/config'
 const actions = {
   CHANGE_LANGUAGE: 'CHANGE_LANGUAGE',
   ACTIVATE_LANG_MODAL: 'ACTIVATE_LANG_MODAL',
@@ -9,7 +9,7 @@ const actions = {
     return {
       type: actions.CHANGE_LANGUAGE,
       language: getCurrentLanguage(language)
-    };
+    }
   }
-};
-export default actions;
+}
+export default actions

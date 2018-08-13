@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const WDSingleMailActions = styled.div`
   width: 100%;
@@ -35,13 +35,13 @@ const WDSingleMailActions = styled.div`
     outline: 0;
     border: 1px solid ${palette('border', 0)};
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 -1px 0 15px' : '0 15px 0 -1px'};
+    props['data-rtl'] === 'rtl' ? '0 -1px 0 15px' : '0 15px 0 -1px'};
     cursor: pointer;
     ${transition()};
 
     @media only screen and (max-width: 479px) {
       margin: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 -1px 0 5px' : '0 5px 0 -1px'};
+    props['data-rtl'] === 'rtl' ? '0 -1px 0 5px' : '0 5px 0 -1px'};
     }
 
     i {
@@ -72,7 +72,7 @@ const WDSingleMailActions = styled.div`
       }
     }
   }
-`;
+`
 
 const WDMailActionsWrapper = styled.div`
   display: -webkit-flex;
@@ -93,7 +93,7 @@ const WDMailActionsWrapper = styled.div`
     outline: 0;
     border: 1px solid ${palette('border', 0)};
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
+    props['data-rtl'] === 'rtl' ? '0 -1px 0 0' : '0 0 0 -1px'};
     cursor: pointer;
     ${transition()};
 
@@ -106,7 +106,7 @@ const WDMailActionsWrapper = styled.div`
 
     &:first-child {
       margin: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 0 0 -1px' : '0 -1px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 -1px' : '0 -1px 0 0'};
     }
 
     &:hover {
@@ -124,7 +124,7 @@ const WDMailActionsWrapper = styled.div`
       font-size: 14px;
     }
   }
-`;
+`
 
 const WDMailCategoryWrapper = WDMailActionsWrapper.extend`
   margin: ${props =>
@@ -132,19 +132,19 @@ const WDMailCategoryWrapper = WDMailActionsWrapper.extend`
 
   @media only screen and (max-width: 767px) {
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 auto 0 10px' : '0 10px 0 auto'};
+    props['data-rtl'] === 'rtl' ? '0 auto 0 10px' : '0 10px 0 auto'};
   }
 
   @media only screen and (max-width: 479px) {
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
   }
-`;
+`
 
 const WDMailPaginationWrapper = WDMailActionsWrapper.extend`
   margin: ${props =>
     props['data-rtl'] === 'rtl' ? '0 auto 0 0' : '0 0 0 auto'};
-`;
+`
 
 const MailActionDropdown = styled.ul`
   li {
@@ -155,17 +155,17 @@ const MailActionDropdown = styled.ul`
       color: ${palette('primary', 0)};
     }
   }
-`;
+`
 
-const SingleMailActions = WithDirection(WDSingleMailActions);
-const MailCategoryWrapper = WithDirection(WDMailCategoryWrapper);
-const MailPaginationWrapper = WithDirection(WDMailPaginationWrapper);
-const MailActionsWrapper = WithDirection(WDMailActionsWrapper);
+const SingleMailActions = WithDirection(WDSingleMailActions)
+const MailCategoryWrapper = WithDirection(WDMailCategoryWrapper)
+const MailPaginationWrapper = WithDirection(WDMailPaginationWrapper)
+const MailActionsWrapper = WithDirection(WDMailActionsWrapper)
 
 export {
   SingleMailActions,
   MailActionsWrapper,
   MailCategoryWrapper,
   MailPaginationWrapper,
-  MailActionDropdown,
-};
+  MailActionDropdown
+}

@@ -1,4 +1,4 @@
-import moment from 'moment';
+import moment from 'moment'
 const events = [
   {
     allDay: false,
@@ -250,17 +250,17 @@ const events = [
     start: '2017-06-13T20:53:08.880Z',
     end: '2017-06-13T20:53:08.880Z'
   }
-];
+]
 
 const datediff = new moment(new Date()).diff(
   new moment('2017-06-01T18:23:07.322Z'),
   'days'
-);
+)
 events.forEach((event, index) => {
-  events[index].id = `${index + 1}`;
-  events[index].title = `Demo event ${index + 1}`;
-  events[index].desc = `Desc of event ${index + 1}`;
-  events[index].start = new moment(event.start).add(datediff, 'days').toDate();
-  events[index].end = new moment(event.end).add(datediff, 'days').toDate();
-});
-export default events.splice(0, 10);
+  events[index].id = `${index + 1}`
+  events[index].title = `Demo event ${index + 1}`
+  events[index].desc = `Desc of event ${index + 1}`
+  events[index].start = new moment(event.start).add(datediff, 'days').toDate()
+  events[index].end = new moment(event.end).add(datediff, 'days').toDate()
+})
+export default events.splice(0, 10)

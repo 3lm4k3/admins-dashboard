@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const ReportWidgetWrapper = styled.div`
   width: 100%;
@@ -38,6 +38,6 @@ const ReportWidgetWrapper = styled.div`
     line-height: 1.5;
     margin: 0;
   }
-`;
+`
 
-export { ReportWidgetWrapper };
+export { ReportWidgetWrapper }

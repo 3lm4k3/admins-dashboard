@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const AppHolder = styled.div`
   -webkit-overflow-scrolling: touch;
@@ -74,6 +74,6 @@ const AppHolder = styled.div`
   button {
     border-radius: 0;
   }
-`;
+`
 
-export default AppHolder;
+export default AppHolder

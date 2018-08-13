@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import Popconfirm from '../feedback/popconfirm';
+import React, { Component } from 'react'
+import Popconfirm from '../feedback/popconfirm'
 
 export default class extends Component {
-  render() {
-    const { index, onDeleteCell } = this.props;
+  render () {
+    const { index, onDeleteCell } = this.props
     return (
       <Popconfirm
-        title="Sure to delete?"
-        okText="DELETE"
-        cancelText="No"
+        title='Sure to delete?'
+        okText='DELETE'
+        cancelText='No'
         onConfirm={() => onDeleteCell(index)}
       >
         <a>Delete</a>
       </Popconfirm>
-    );
+    )
   }
 }

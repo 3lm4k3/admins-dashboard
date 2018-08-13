@@ -1,33 +1,33 @@
-import React, { Component } from 'react';
-import Popconfirm from '../feedback/popconfirm';
-import Button from '../uielements/button';
-import notification from '../notification';
+import React, { Component } from 'react'
+import Popconfirm from '../feedback/popconfirm'
+import Button from '../uielements/button'
+import notification from '../notification'
 
 export default class extends Component {
-  render() {
-    const { contact, deleteContact } = this.props;
-    let name = '';
+  render () {
+    const { contact, deleteContact } = this.props
+    let name = ''
     if (contact.firstName) {
-      name = `${contact.firstName} `;
+      name = `${contact.firstName} `
     }
     if (contact.lastName) {
-      name = `${name}${contact.lastName}`;
+      name = `${name}${contact.lastName}`
     }
     if (!name) {
-      name = 'No Name';
+      name = 'No Name'
     }
     return (
       <Popconfirm
         title={`Sure to delete ${name}?`}
-        okText="DELETE"
-        cancelText="No"
+        okText='DELETE'
+        cancelText='No'
         onConfirm={() => {
-          notification('error', `${name} Deleted`, '');
-          deleteContact(contact.id);
+          notification('error', `${name} Deleted`, '')
+          deleteContact(contact.id)
         }}
       >
-        <Button icon="close" type="button" className="isoDeleteBtn" />
+        <Button icon='close' type='button' className='isoDeleteBtn' />
       </Popconfirm>
-    );
+    )
   }
 }

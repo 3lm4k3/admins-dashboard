@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition, borderRadius, boxShadow } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition, borderRadius, boxShadow } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const WDContactCardWrapper = styled.div`
   width: 100%;
@@ -30,7 +30,7 @@ const WDContactCardWrapper = styled.div`
     width: 120px;
     flex-shrink: 0;
     margin-right: ${props =>
-      props['data-rtl'] === 'rtl' ? 'inherit' : '50px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '50px'};
     margin-left: ${props => (props['data-rtl'] === 'rtl' ? '50px' : 'inherit')};
     flex-shrink: 0;
 
@@ -103,24 +103,24 @@ const WDContactCardWrapper = styled.div`
         line-height: 1.5;
         margin: 0;
         margin-right: ${props =>
-          props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '15px'};
         margin-left: ${props =>
-          props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '15px' : 'inherit'};
         text-align: ${props =>
-          props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
         min-width: 80px;
         position: relative;
 
         @media only screen and (max-width: 430px) {
           margin-bottom: 5px;
           margin-right: ${props =>
-            props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '0'};
           margin-left: ${props =>
-            props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
           padding-right: ${props =>
-            props['data-rtl'] === 'rtl' ? 'inherit' : '10px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '10px'};
           padding-left: ${props =>
-            props['data-rtl'] === 'rtl' ? '10px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '10px' : 'inherit'};
           min-width: 0;
         }
 
@@ -139,7 +139,7 @@ const WDContactCardWrapper = styled.div`
         line-height: 1.5;
         margin: 0;
         text-align: ${props =>
-          props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
       }
 
       input {
@@ -226,8 +226,8 @@ const WDContactCardWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-const ContactCardWrapper = WithDirection(WDContactCardWrapper);
+const ContactCardWrapper = WithDirection(WDContactCardWrapper)
 
-export { ContactCardWrapper };
+export { ContactCardWrapper }

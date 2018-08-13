@@ -1,25 +1,25 @@
-import { Input } from 'antd';
+import { Input } from 'antd'
 import {
   InputWrapper,
   InputGroupWrapper,
   InputSearchWrapper,
-  TextAreaWrapper,
-} from './styles/input.style';
-import WithDirection from '../../settings/withDirection';
+  TextAreaWrapper
+} from './styles/input.style'
+import WithDirection from '../../settings/withDirection'
 
-const { Search, TextArea, Group } = Input;
+const { Search, TextArea, Group } = Input
 
-const WDStyledInput = InputWrapper(Input);
-const StyledInput = WithDirection(WDStyledInput);
+const WDStyledInput = InputWrapper(Input)
+const StyledInput = WithDirection(WDStyledInput)
 
-const WDInputGroup = InputGroupWrapper(Group);
-const InputGroup = WithDirection(WDInputGroup);
+const WDInputGroup = InputGroupWrapper(Group)
+const InputGroup = WithDirection(WDInputGroup)
 
-const WDInputSearch = InputSearchWrapper(Search);
-const InputSearch = WithDirection(WDInputSearch);
+const WDInputSearch = InputSearchWrapper(Search)
+const InputSearch = WithDirection(WDInputSearch)
 
-const WDTextarea = TextAreaWrapper(TextArea);
-const Textarea = WithDirection(WDTextarea);
+const WDTextarea = TextAreaWrapper(TextArea)
+const Textarea = WithDirection(WDTextarea)
 
-export default StyledInput;
-export { InputSearch, InputGroup, Textarea };
+export default StyledInput
+export { InputSearch, InputGroup, Textarea }

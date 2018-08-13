@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius } from '../../../settings/style-util';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius } from '../../../settings/style-util'
 
 const VCardWidgetWrapper = styled.div`
   width: 100%;
@@ -66,6 +66,6 @@ const VCardWidgetWrapper = styled.div`
       margin-top: 25px;
     }
   }
-`;
+`
 
-export { VCardWidgetWrapper };
+export { VCardWidgetWrapper }

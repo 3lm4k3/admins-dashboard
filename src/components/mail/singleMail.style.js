@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius, transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const SingleMailContents = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ const SingleMailContents = styled.div`
     height: 100%;
     overflow-y: auto;
   }
-`;
+`
 
 const WDSingleMailHeader = styled.div`
   width: 100%;
@@ -51,7 +51,7 @@ const WDSingleMailHeader = styled.div`
     text-transform: capitalize;
     margin: ${props => (props['data-rtl'] === 'rtl' ? '0 25px 0 0' : '0 0 0 25px')};
   }
-`;
+`
 
 const WDSingleMailInfo = styled.div`
   width: 100%;
@@ -127,7 +127,7 @@ const WDSingleMailInfo = styled.div`
           font-weight: 400;
           color: ${palette('secondary', 2)};
           padding: ${props =>
-            props['data-rtl'] === 'rtl' ? '0 5px 0 0' : '0 0 0 5px'};
+    props['data-rtl'] === 'rtl' ? '0 5px 0 0' : '0 0 0 5px'};
           display: -webkit-inline-flex;
           display: -ms-inline-flex;
           display: inline-flex;
@@ -161,7 +161,7 @@ const WDSingleMailInfo = styled.div`
       }
     }
   }
-`;
+`
 
 const WDSingleMailBody = styled.div`
   padding: 30px 35px;
@@ -180,7 +180,7 @@ const WDSingleMailBody = styled.div`
     line-height: 1.5;
     margin-bottom: 21px;
   }
-`;
+`
 
 const WDSingleMailReply = styled.div`
   width: 100%;
@@ -225,17 +225,17 @@ const WDSingleMailReply = styled.div`
       }
     }
   }
-`;
+`
 
-const SingleMailHeader = WithDirection(WDSingleMailHeader);
-const SingleMailInfo = WithDirection(WDSingleMailInfo);
-const SingleMailBody = WithDirection(WDSingleMailBody);
-const SingleMailReply = WithDirection(WDSingleMailReply);
+const SingleMailHeader = WithDirection(WDSingleMailHeader)
+const SingleMailInfo = WithDirection(WDSingleMailInfo)
+const SingleMailBody = WithDirection(WDSingleMailBody)
+const SingleMailReply = WithDirection(WDSingleMailReply)
 
 export {
   SingleMailContents,
   SingleMailHeader,
   SingleMailInfo,
   SingleMailBody,
-  SingleMailReply,
-};
+  SingleMailReply
+}

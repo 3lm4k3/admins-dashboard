@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius, transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const WDGithubResultListStyleWrapper = styled.div`
   width: 100%;
@@ -64,13 +64,13 @@ const WDGithubResultListStyleWrapper = styled.div`
 
         &.language {
           margin: ${props =>
-            props['data-rtl'] === 'rtl' ? '0 0 0 70px' : '0 70px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 70px' : '0 70px 0 0'};
           &:before {
             content: '';
             width: 10px;
             height: 10px;
             margin: ${props =>
-              props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
             display: inline-block;
             background-color: ${palette('text', 1)};
             ${borderRadius('50%')};
@@ -82,7 +82,7 @@ const WDGithubResultListStyleWrapper = styled.div`
 
           @media only screen and (min-width: 768px) and (max-width: 1199px) {
             margin: ${props =>
-              props['data-rtl'] === 'rtl' ? '0 0 0 40px' : '0 40px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 40px' : '0 40px 0 0'};
           }
         }
 
@@ -94,7 +94,7 @@ const WDGithubResultListStyleWrapper = styled.div`
             font-size: 16px;
             color: ${palette('text', 1)};
             margin: ${props =>
-              props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 5px' : '0 5px 0 0'};
           }
         }
       }
@@ -119,7 +119,7 @@ const WDGithubResultListStyleWrapper = styled.div`
       margin-top: 25px;
     }
   }
-`;
+`
 const GithubResultStyleWrapper = styled.div`
   margin-top: 30px;
 
@@ -146,9 +146,9 @@ const GithubResultStyleWrapper = styled.div`
       display: inline-flex;
     }
   }
-`;
+`
 const GithubResultListStyleWrapper = WithDirection(
   WDGithubResultListStyleWrapper
-);
+)
 
-export { GithubResultListStyleWrapper, GithubResultStyleWrapper };
+export { GithubResultListStyleWrapper, GithubResultStyleWrapper }
