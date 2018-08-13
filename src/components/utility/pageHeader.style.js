@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../settings/withDirection'
 
 const WDComponentTitleWrapper = styled.h1`
   font-size: 19px;
@@ -25,7 +25,7 @@ const WDComponentTitleWrapper = styled.h1`
     background-color: ${palette('secondary', 3)};
     display: flex;
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
   }
 
   &:after {
@@ -35,9 +35,9 @@ const WDComponentTitleWrapper = styled.h1`
     background-color: ${palette('secondary', 3)};
     display: flex;
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
+    props['data-rtl'] === 'rtl' ? '0 15px 0 0' : '0 0 0 15px'};
   }
-`;
+`
 
-const ComponentTitleWrapper = WithDirection(WDComponentTitleWrapper);
-export { ComponentTitleWrapper };
+const ComponentTitleWrapper = WithDirection(WDComponentTitleWrapper)
+export { ComponentTitleWrapper }

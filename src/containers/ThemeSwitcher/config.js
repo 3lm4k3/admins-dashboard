@@ -1,4 +1,4 @@
-import { themeConfig } from '../../settings';
+import { themeConfig } from '../../settings'
 const changeThemes = {
   id: 'changeThemes',
   label: 'themeSwitcher',
@@ -15,7 +15,7 @@ const changeThemes = {
       textColor: '#323332'
     }
   ]
-};
+}
 const topbarTheme = {
   id: 'topbarTheme',
   label: 'themeSwitcher.Topbar',
@@ -69,7 +69,7 @@ const topbarTheme = {
       textColor: '#ffffff'
     }
   ]
-};
+}
 const sidebarTheme = {
   id: 'sidebarTheme',
   label: 'themeSwitcher.Sidebar',
@@ -124,7 +124,7 @@ const sidebarTheme = {
       textColor: '#ffffff'
     }
   ]
-};
+}
 const layoutTheme = {
   id: 'layoutTheme',
   label: 'themeSwitcher.Background',
@@ -155,20 +155,20 @@ const layoutTheme = {
       textColor: '#ffffff'
     }
   ]
-};
+}
 const customizedThemes = {
   changeThemes,
   topbarTheme,
   sidebarTheme,
   layoutTheme
-};
-export function getCurrentTheme(attribute, selectedThemename) {
-  let selecetedTheme = {};
+}
+export function getCurrentTheme (attribute, selectedThemename) {
+  let selecetedTheme = {}
   customizedThemes[attribute].options.forEach(theme => {
     if (theme.themeName === selectedThemename) {
-      selecetedTheme = theme;
+      selecetedTheme = theme
     }
-  });
-  return selecetedTheme;
+  })
+  return selecetedTheme
 }
-export default customizedThemes;
+export default customizedThemes

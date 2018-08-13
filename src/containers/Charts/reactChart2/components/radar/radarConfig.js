@@ -22,7 +22,7 @@ const data = {
       data: [28, 48, 40, 19, 96, 27, 100]
     }
   ]
-};
+}
 
 export {
   data

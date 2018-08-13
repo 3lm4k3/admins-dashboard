@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../settings/style-util';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius, transition } from '../../settings/style-util'
 
 const MailComposeBtnWrapper = styled.div`
   width: 100%;
@@ -33,6 +33,6 @@ const MailComposeBtnWrapper = styled.div`
       background-color: ${palette('primary', 1)};
     }
   }
-`;
+`
 
-export default MailComposeBtnWrapper;
+export default MailComposeBtnWrapper

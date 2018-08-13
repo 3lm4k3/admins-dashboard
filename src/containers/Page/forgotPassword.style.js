@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import bgImage from '../../image/image3.jpg';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import bgImage from '../../image/image3.jpg'
+import WithDirection from '../../settings/withDirection'
 
 const ForgotPasswordStyleWrapper = styled.div`
   width: 100%;
@@ -126,6 +126,6 @@ const ForgotPasswordStyleWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-export default WithDirection(ForgotPasswordStyleWrapper);
+export default WithDirection(ForgotPasswordStyleWrapper)

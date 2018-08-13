@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { borderRadius } from '../settings/style-util';
-import WithDirection from '../settings/withDirection';
+import styled from 'styled-components'
+import { borderRadius } from '../settings/style-util'
+import WithDirection from '../settings/withDirection'
 
 const ColorChooserDropdown = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const ColorChooserDropdown = styled.div`
     outline: 0;
     padding: 0;
     margin: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
     ${borderRadius('3px')};
 
     &:last-child {
@@ -30,6 +30,6 @@ const ColorChooserDropdown = styled.div`
       margin-left: 0;
     }
   }
-`;
+`
 
-export default WithDirection(ColorChooserDropdown);
+export default WithDirection(ColorChooserDropdown)

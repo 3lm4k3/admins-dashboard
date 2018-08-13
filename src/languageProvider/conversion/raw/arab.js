@@ -546,5 +546,5 @@ $ 15000
 شراء الآن
 إعدادات
 تحديد
-`;
-export default txt;
+`
+export default txt

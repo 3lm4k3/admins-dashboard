@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Actions from '../../redux/themeSwitcher/actions.js';
-import Switcher from '../../components/themeSwitcher/themeSwitcher';
-import LanguageSwitcher from '../LanguageSwitcher';
-import Themes from './config';
-import bucketSVG from '../../image/bucket.svg';
-import IntlMessages from '../../components/utility/intlMessages';
-import ThemeSwitcherStyle from './themeSwitcher.style';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Actions from '../../redux/themeSwitcher/actions.js'
+import Switcher from '../../components/themeSwitcher/themeSwitcher'
+import LanguageSwitcher from '../LanguageSwitcher'
+import Themes from './config'
+import bucketSVG from '../../image/bucket.svg'
+import IntlMessages from '../../components/utility/intlMessages'
+import ThemeSwitcherStyle from './themeSwitcher.style'
 
-const { switchActivation, changeTheme } = Actions;
+const { switchActivation, changeTheme } = Actions
 
 class ThemeSwitcher extends Component {
-  render() {
+  render () {
     const {
       isActivated,
       // changeThemes,
@@ -20,26 +20,26 @@ class ThemeSwitcher extends Component {
       layoutTheme,
       switchActivation,
       changeTheme
-    } = this.props;
+    } = this.props
 
-    const styleButton = { background: sidebarTheme.buttonColor };
+    const styleButton = { background: sidebarTheme.buttonColor }
 
     return (
       <ThemeSwitcherStyle
         className={isActivated ? 'isoThemeSwitcher active' : 'isoThemeSwitcher'}
       >
-        <div className="componentTitleWrapper" style={styleButton}>
-          <h3 className="componentTitle">
-            <IntlMessages id="themeSwitcher.settings" />
+        <div className='componentTitleWrapper' style={styleButton}>
+          <h3 className='componentTitle'>
+            <IntlMessages id='themeSwitcher.settings' />
           </h3>
         </div>
 
-        <div className="SwitcherBlockWrapper">
-          {/*<Switcher
+        <div className='SwitcherBlockWrapper'>
+          {/* <Switcher
             config={Themes.changeThemes}
             changeTheme={changeTheme}
             selectedId={changeThemes.themeName}
-          />*/}
+          /> */}
           <Switcher
             config={Themes.sidebarTheme}
             changeTheme={changeTheme}
@@ -60,37 +60,37 @@ class ThemeSwitcher extends Component {
           <LanguageSwitcher />
         </div>
 
-        <div className="purchaseBtnWrapper">
+        <div className='purchaseBtnWrapper'>
           <a
-            href="https://themeforest.net/item/isomorphic-react-redux-admin-dashboard/20262330?ref=redqteam"
-            className="purchaseBtn"
+            href='https://themeforest.net/item/isomorphic-react-redux-admin-dashboard/20262330?ref=redqteam'
+            className='purchaseBtn'
             style={styleButton}
           >
-            <IntlMessages id="themeSwitcher.purchase" />
+            <IntlMessages id='themeSwitcher.purchase' />
           </a>
         </div>
 
         <button
-          type="primary"
-          className="switcherToggleBtn"
+          type='primary'
+          className='switcherToggleBtn'
           style={styleButton}
           onClick={() => {
-            switchActivation();
+            switchActivation()
           }}
         >
-          <img src={process.env.PUBLIC_URL + bucketSVG} alt="bucket" />
+          <img src={process.env.PUBLIC_URL + bucketSVG} alt='bucket' />
         </button>
       </ThemeSwitcherStyle>
-    );
+    )
   }
 }
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {
     ...state.ThemeSwitcher,
     LanguageSwitcher: state.LanguageSwitcher
-  };
+  }
 }
 export default connect(mapStateToProps, {
   switchActivation,
   changeTheme
-})(ThemeSwitcher);
+})(ThemeSwitcher)

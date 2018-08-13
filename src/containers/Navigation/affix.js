@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { Affix, Button } from 'antd';
+import React, { Component } from 'react'
+import { Affix, Button } from 'antd'
 
 export default class extends Component {
-  render() {
+  render () {
     return (
       <div>
         <h2> Basic Affix </h2>
         <Affix>
-          <Button type="primary">Affix top</Button>
+          <Button type='primary'>Affix top</Button>
         </Affix>
         <br />
         <Affix offsetBottom={0}>
-          <Button type="primary">Affix bottom</Button>
+          <Button type='primary'>Affix bottom</Button>
         </Affix>
         <br />
         <br />
@@ -19,14 +19,14 @@ export default class extends Component {
         <br />
         <h2> Containter to Scroll Affix </h2>
         <div
-          className="scrollable-container"
+          className='scrollable-container'
           ref={node => {
-            this.container = node;
+            this.container = node
           }}
         >
-          <div className="background">
+          <div className='background'>
             <Affix target={() => this.container}>
-              <Button type="primary">Fixed at the top of container</Button>
+              <Button type='primary'>Fixed at the top of container</Button>
             </Affix>
           </div>
         </div>
@@ -43,6 +43,6 @@ export default class extends Component {
         <br />
         <br />
       </div>
-    );
+    )
   }
 }

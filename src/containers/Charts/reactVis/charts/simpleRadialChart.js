@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import { RadialChart } from 'react-vis';
-import ChartWrapper from '../../chart.style';
+import { RadialChart } from 'react-vis'
+import ChartWrapper from '../../chart.style'
 
 export default class extends Component {
-  render() {
-    const { datas, width, height, colorRange, colorDomain } = this.props;
+  render () {
+    const { datas, width, height, colorRange, colorDomain } = this.props
     return (
-      <ChartWrapper className="isoChartWrapper">
+      <ChartWrapper className='isoChartWrapper'>
         <RadialChart
           colorType={'literal'}
           colorDomain={colorDomain}
@@ -19,6 +19,6 @@ export default class extends Component {
           height={height}
         />
       </ChartWrapper>
-    );
+    )
   }
 }

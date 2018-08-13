@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { XYPlot, XAxis, YAxis, MarkSeries, CircularGridLines } from 'react-vis';
-import ChartWrapper from '../../chart.style';
+import React, { Component } from 'react'
+import { XYPlot, XAxis, YAxis, MarkSeries, CircularGridLines } from 'react-vis'
+import ChartWrapper from '../../chart.style'
 
 const margin = {
   top: 10,
   bottom: 10,
   left: 10,
   right: 10
-};
+}
 
 export default class extends Component {
-  render() {
+  render () {
     const {
       datas,
       width,
@@ -19,9 +19,9 @@ export default class extends Component {
       yDomain,
       strokeWidth,
       sizeRange
-    } = this.props;
+    } = this.props
     return (
-      <ChartWrapper className="isoChartWrapper">
+      <ChartWrapper className='isoChartWrapper'>
         <XYPlot
           margin={margin}
           xDomain={xDomain}
@@ -43,6 +43,6 @@ export default class extends Component {
           />
         </XYPlot>
       </ChartWrapper>
-    );
+    )
   }
 }

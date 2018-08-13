@@ -19,5 +19,5 @@ const actions = {
   gitSearchError: () => ({
     type: actions.GIT_ERROR_RESULT
   })
-};
-export default actions;
+}
+export default actions

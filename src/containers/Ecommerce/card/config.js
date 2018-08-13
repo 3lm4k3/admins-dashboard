@@ -1,6 +1,6 @@
-import React from 'react';
-import { DeleteCell } from '../../../components/tables/helperCells';
-function createColumns(editColumn, deleteColumn) {
+import React from 'react'
+import { DeleteCell } from '../../../components/tables/helperCells'
+function createColumns (editColumn, deleteColumn) {
   return [
     {
       title: 'Number',
@@ -24,13 +24,13 @@ function createColumns(editColumn, deleteColumn) {
         <span>
           <DeleteCell
             onDeleteCell={() => {
-              deleteColumn(record);
+              deleteColumn(record)
             }}
           />
         </span>
       )
     }
-  ];
+  ]
 }
 
 const fakedata = [
@@ -55,5 +55,5 @@ const fakedata = [
     name: 'Joe Black',
     notes: 'Nulla vitae elit libero, a pharetra augue.'
   }
-];
-export { createColumns, fakedata };
+]
+export { createColumns, fakedata }

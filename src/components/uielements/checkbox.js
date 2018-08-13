@@ -1,8 +1,8 @@
-import { Checkbox } from 'antd';
-import AntCheckbox from './styles/checkbox.style';
+import { Checkbox } from 'antd'
+import AntCheckbox from './styles/checkbox.style'
 
-const checkbox = AntCheckbox(Checkbox);
-const CheckboxGroup = Checkbox.Group;
+const checkbox = AntCheckbox(Checkbox)
+const CheckboxGroup = Checkbox.Group
 
-export default checkbox;
-export { CheckboxGroup };
+export default checkbox
+export { CheckboxGroup }

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import Buttons from '../../../components/uielements/button';
-import Table from '../../Tables/antTables/antTable.style';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import Buttons from '../../../components/uielements/button'
+import Table from '../../Tables/antTables/antTable.style'
 
 const TableWrapper = styled(Table)`
   .ant-table-bordered .ant-table-thead > tr > th,
@@ -15,7 +15,7 @@ const TableWrapper = styled(Table)`
       white-space: nowrap;
     }
   }
-`;
+`
 
 const StatusTag = styled.span`
   padding: 0 5px;
@@ -36,7 +36,7 @@ const StatusTag = styled.span`
   &.publish {
     background-color: ${palette('success', 0)};
   }
-`;
+`
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -44,16 +44,16 @@ const TitleWrapper = styled.div`
   margin-bottom: 20px;
   flex-wrap: wrap;
   align-items: center;
-`;
+`
 
-const ButtonHolders = styled.div``;
+const ButtonHolders = styled.div``
 
 const ComponentTitle = styled.h3`
   font-size: 16px;
   font-weight: 500;
   color: ${palette('text', 0)};
   margin: 5px 0;
-`;
+`
 
 const ActionBtn = styled(Buttons)`
   && {
@@ -74,7 +74,7 @@ const ActionBtn = styled(Buttons)`
       }
     }
   }
-`;
+`
 
 const Fieldset = styled.div`
   width: 100%;
@@ -85,7 +85,7 @@ const Fieldset = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
-`;
+`
 
 const Label = styled.label`
   font-size: 13px;
@@ -94,7 +94,7 @@ const Label = styled.label`
   font-weight: 500;
   padding: 0;
   margin: 0 0 8px;
-`;
+`
 
 const ActionWrapper = styled.div`
   display: flex;
@@ -125,9 +125,9 @@ const ActionWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-const Form = styled.div``;
+const Form = styled.div``
 
 export {
   ActionBtn,
@@ -139,5 +139,5 @@ export {
   ActionWrapper,
   ComponentTitle,
   TableWrapper,
-  StatusTag,
-};
+  StatusTag
+}

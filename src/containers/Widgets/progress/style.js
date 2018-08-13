@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../../settings/withDirection'
 
 const VarSingleProgressWidgetBar = styled.div`
   width: 100%;
@@ -29,7 +29,7 @@ const VarSingleProgressWidgetBar = styled.div`
     padding-right: 4em;
     margin-right: -4em;
   }
-`;
+`
 
 const CircleProgressWidgetBar = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ const CircleProgressWidgetBar = styled.div`
       color: ${palette('text', 3)};
     }
   }
-`;
+`
 
 const ProgressWidgetWrapper = styled.div`
   display: flex;
@@ -94,12 +94,12 @@ const ProgressWidgetWrapper = styled.div`
       margin: 0 0 5px;
     }
   }
-`;
+`
 
-const SingleProgressWidgetBar = WithDirection(VarSingleProgressWidgetBar);
+const SingleProgressWidgetBar = WithDirection(VarSingleProgressWidgetBar)
 
 export {
   SingleProgressWidgetBar,
   CircleProgressWidgetBar,
-  ProgressWidgetWrapper,
-};
+  ProgressWidgetWrapper
+}

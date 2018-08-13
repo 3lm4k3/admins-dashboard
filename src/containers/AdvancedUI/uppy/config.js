@@ -27,5 +27,5 @@ const config = {
       placeholder: 'describe what the file is for'
     }
   ]
-};
-export default config;
+}
+export default config

@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import { SaleWidgetWrapper } from './style';
+import React, { Component } from 'react'
+import { SaleWidgetWrapper } from './style'
 
 export default class extends Component {
-  render() {
-    const { fontColor, label, price, details } = this.props;
+  render () {
+    const { fontColor, label, price, details } = this.props
 
     const textColor = {
       color: fontColor
-    };
+    }
 
     return (
-      <SaleWidgetWrapper className="isoSaleWidget">
-        <h3 className="isoSaleLabel">{label}</h3>
-        <span className="isoSalePrice" style={textColor}>
+      <SaleWidgetWrapper className='isoSaleWidget'>
+        <h3 className='isoSaleLabel'>{label}</h3>
+        <span className='isoSalePrice' style={textColor}>
           {price}
         </span>
-        <p className="isoSaleDetails">{details}</p>
+        <p className='isoSaleDetails'>{details}</p>
       </SaleWidgetWrapper>
-    );
+    )
   }
 }

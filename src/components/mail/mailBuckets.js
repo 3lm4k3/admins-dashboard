@@ -1,5 +1,5 @@
-import React from 'react';
-import MailBucket from './mailBucket.style';
+import React from 'react'
+import MailBucket from './mailBucket.style'
 
 const buckets = [
   'Inbox',
@@ -8,38 +8,38 @@ const buckets = [
   'Trash',
   'Important',
   'spam',
-  'Starred',
-];
+  'Starred'
+]
 
-function getUnread(mails) {
-  const unread = {};
+function getUnread (mails) {
+  const unread = {}
   mails.forEach(mail => {
     if (!unread[mail.bucket]) {
-      unread[mail.bucket] = 0;
+      unread[mail.bucket] = 0
     }
     if (!mail.read) {
-      unread[mail.bucket] += 1;
+      unread[mail.bucket] += 1
     }
-  });
-  return unread;
+  })
+  return unread
 }
 
-export default function mailbuckets(
+export default function mailbuckets (
   mails,
   filterAction,
   filterAttr,
   onDrawerClose
 ) {
-  const unread = getUnread(mails);
+  const unread = getUnread(mails)
   const renderSinglebucket = (bucket, key) => {
     const onClick = () => {
-      filterAction({ bucket });
+      filterAction({ bucket })
       if (onDrawerClose) {
-        onDrawerClose();
+        onDrawerClose()
       }
-    };
-    const selectedBucket = bucket === filterAttr.bucket;
-    const activeClass = selectedBucket ? 'active' : '';
+    }
+    const selectedBucket = bucket === filterAttr.bucket
+    const activeClass = selectedBucket ? 'active' : ''
     return (
       <li
         key={`bucket${key}`}
@@ -47,16 +47,16 @@ export default function mailbuckets(
         className={`isoSingleBucket ${activeClass}`}
       >
         <span>{bucket}</span>
-        <span className="isoMailBadge">
+        <span className='isoMailBadge'>
           {unread[bucket] ? unread[bucket] : ''}
         </span>
       </li>
-    );
-  };
+    )
+  }
   return (
-    <MailBucket className="isoBucketList">
+    <MailBucket className='isoBucketList'>
       {buckets.map((bucket, index) => renderSinglebucket(bucket, index))}
     </MailBucket>
-  );
+  )
 }
-export { buckets };
+export { buckets }

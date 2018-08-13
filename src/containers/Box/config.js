@@ -7,11 +7,11 @@ const layoutConfig = {
   draggableHandle: '.isoDragBox',
   isResizable: true,
   rowHeight: 1,
-  margin: [0, 0],
-};
+  margin: [0, 0]
+}
 
 const gutter = {
   gutterWidth: 10,
-  gutterHeight: 10,
-};
-export { layoutConfig, gutter };
+  gutterHeight: 10
+}
+export { layoutConfig, gutter }

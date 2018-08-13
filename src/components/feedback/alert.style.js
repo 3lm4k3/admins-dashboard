@@ -1,10 +1,10 @@
-import React from 'react';
-import { Alert } from 'antd';
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../settings/withDirection';
+import React from 'react'
+import { Alert } from 'antd'
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../settings/withDirection'
 
-const AntAlert = props => <Alert {...props} />;
+const AntAlert = props => <Alert {...props} />
 
 const Alerts = styled(AntAlert)`
   && {
@@ -26,9 +26,9 @@ const Alerts = styled(AntAlert)`
 
   &&.ant-alert-with-description {
     padding: ${props =>
-      props['data-rtl'] === 'rtl'
-        ? '16px 60px 16px 16px'
-        : '16px 16px 16px 60px'};
+    props['data-rtl'] === 'rtl'
+      ? '16px 60px 16px 16px'
+      : '16px 16px 16px 60px'};
     .ant-alert-message {
       font-weight: 500;
       color: ${palette('text', 0)};
@@ -46,9 +46,9 @@ const Alerts = styled(AntAlert)`
     }
     &&.ant-alert-no-icon {
       padding: ${props =>
-        props['data-rtl'] === 'rtl'
-          ? '12px 16px 12px 48px'
-          : '12px 48px 12px 16px'};
+    props['data-rtl'] === 'rtl'
+      ? '12px 16px 12px 48px'
+      : '12px 48px 12px 16px'};
     }
     .ant-alert-close-icon {
       right: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '16px')};
@@ -57,14 +57,14 @@ const Alerts = styled(AntAlert)`
   }
   &&.ant-alert-no-icon {
     padding: ${props =>
-      props['data-rtl'] === 'rtl'
-        ? '12px 16px 12px 48px'
-        : '12px 48px 12px 16px'};
+    props['data-rtl'] === 'rtl'
+      ? '12px 16px 12px 48px'
+      : '12px 48px 12px 16px'};
   }
   .ant-alert-close-icon {
     right: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '16px')};
     left: ${props => (props['data-rtl'] === 'rtl' ? '16px' : 'inherit')};
   }
-`;
+`
 
-export default WithDirection(Alerts);
+export default WithDirection(Alerts)

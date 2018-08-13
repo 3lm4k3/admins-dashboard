@@ -1,4 +1,4 @@
-import clone from 'clone';
+import clone from 'clone'
 const defaultOptions = [
   {
     id: 'disabled',
@@ -42,7 +42,7 @@ const defaultOptions = [
     falseValue: false,
     value: false
   }
-];
+]
 const configs = [
   {
     id: 'SingleDatePicker',
@@ -79,5 +79,5 @@ const configs = [
       }
     ]
   }
-];
-export default configs;
+]
+export default configs

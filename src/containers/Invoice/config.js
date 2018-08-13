@@ -1,5 +1,5 @@
-const localDataName = 'mateInvoice';
-const orderStatusOptions = ['Pending', 'Shipped', 'Delivered'];
+const localDataName = 'mateInvoice'
+const orderStatusOptions = ['Pending', 'Shipped', 'Delivered']
 
 const fakedata = [
   {
@@ -89,7 +89,7 @@ const fakedata = [
     vatPrice: 1330,
     totalCost: 14630
   }
-];
+]
 const newInvoice = {
   orderStatus: 'Pending',
   orderDate: new Date().getTime(),
@@ -111,19 +111,19 @@ const newInvoice = {
   vatRate: 10,
   vatPrice: 0,
   totalCost: 0
-};
+}
 const createDemoData = () => {
-  const localData = localStorage.getItem(localDataName);
+  const localData = localStorage.getItem(localDataName)
   if (localData) {
     try {
-      const invoices = JSON.parse(localData);
+      const invoices = JSON.parse(localData)
       if (invoices && invoices.length > 0) {
-        return invoices;
+        return invoices
       }
     } catch (e) {}
   }
-  return fakedata;
-};
+  return fakedata
+}
 
 export {
   fakedata,
@@ -131,4 +131,4 @@ export {
   localDataName,
   newInvoice,
   orderStatusOptions
-};
+}

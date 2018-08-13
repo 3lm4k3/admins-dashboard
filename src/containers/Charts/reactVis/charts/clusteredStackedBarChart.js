@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   XYPlot,
   XAxis,
@@ -7,24 +7,24 @@ import {
   HorizontalGridLines,
   VerticalBarSeries,
   DiscreteColorLegend
-} from 'react-vis';
-import ChartWrapper from '../../chart.style';
+} from 'react-vis'
+import ChartWrapper from '../../chart.style'
 
 export default class extends Component {
-  render() {
-    const { datas, width, height, orientationItems } = this.props;
+  render () {
+    const { datas, width, height, orientationItems } = this.props
     return (
-      <ChartWrapper className="isoChartWrapper">
+      <ChartWrapper className='isoChartWrapper'>
         <XYPlot
-          className="clustered-stacked-bar-chart-example"
-          xType="ordinal"
-          stackBy="y"
+          className='clustered-stacked-bar-chart-example'
+          xType='ordinal'
+          stackBy='y'
           width={width}
           height={height}
         >
           <DiscreteColorLegend
             style={{ position: 'absolute', left: '40px', top: '0px' }}
-            orientation="horizontal"
+            orientation='horizontal'
             items={orientationItems}
           />
           <VerticalGridLines />
@@ -37,11 +37,11 @@ export default class extends Component {
               data: data.data,
               cluster: data.cluster,
               color: data.color
-            };
-            return <VerticalBarSeries {...config} />;
+            }
+            return <VerticalBarSeries {...config} />
           })}
         </XYPlot>
       </ChartWrapper>
-    );
+    )
   }
 }

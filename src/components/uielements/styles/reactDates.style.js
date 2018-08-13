@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../../settings/withDirection'
 
 const ReactDatesStyleWrapper = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const ReactDatesStyleWrapper = styled.div`
       }
     }
   }
-`;
+`
 
 const ReactDateWrapper = ComponentName => styled(ComponentName)`
   .isoReactDate {
@@ -99,11 +99,11 @@ const ReactDateWrapper = ComponentName => styled(ComponentName)`
         .DayPickerNavigation__prev,
         .DayPickerNavigation__next {
           -webkit-transform: ${props =>
-            props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
           -ms-transform: ${props =>
-            props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
           transform: ${props =>
-            props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
         }
       }
     }
@@ -111,16 +111,16 @@ const ReactDateWrapper = ComponentName => styled(ComponentName)`
     .DateRangePickerInput {
       .DateRangePickerInput__arrow {
         -webkit-transform: ${props =>
-          props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
         -ms-transform: ${props =>
-          props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
         transform: ${props =>
-          props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'inherit'};
       }
     }
   }
-`;
+`
 
-const ReactDatesWrapper = WithDirection(ReactDateWrapper);
+const ReactDatesWrapper = WithDirection(ReactDateWrapper)
 
-export { ReactDatesStyleWrapper, ReactDatesWrapper };
+export { ReactDatesStyleWrapper, ReactDatesWrapper }

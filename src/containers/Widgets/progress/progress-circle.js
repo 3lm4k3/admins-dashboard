@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Progress from '../../../components/uielements/progress';
-import { CircleProgressWidgetBar } from './style';
+import React, { Component } from 'react'
+import Progress from '../../../components/uielements/progress'
+import { CircleProgressWidgetBar } from './style'
 
 export default class CircleProgressWidget extends Component {
-  render() {
-    const { label, percent, barHeight, status, info, fontColor } = this.props;
+  render () {
+    const { label, percent, barHeight, status, info, fontColor } = this.props
     return (
-      <CircleProgressWidgetBar className="isoCircleProgress">
+      <CircleProgressWidgetBar className='isoCircleProgress'>
         <Progress
-          type="circle"
+          type='circle'
           percent={percent}
           strokeWidth={barHeight}
           status={status}
@@ -18,6 +18,6 @@ export default class CircleProgressWidget extends Component {
           {label}
         </h3>
       </CircleProgressWidgetBar>
-    );
+    )
   }
 }

@@ -26,7 +26,7 @@ const data = {
       yAxisID: 'y-axis-1'
     }
   ]
-};
+}
 
 const options = {
   responsive: true,
@@ -68,14 +68,14 @@ const options = {
       }
     ]
   }
-};
+}
 
 const plugins = [
   {
     afterDraw: (chartInstance, easing) => {
-      const ctx = chartInstance.chart.ctx;
-      ctx.fillText('This text drawn by a plugin', 100, 100);
+      const ctx = chartInstance.chart.ctx
+      ctx.fillText('This text drawn by a plugin', 100, 100)
     }
   }
-];
-export { data, options, plugins };
+]
+export { data, options, plugins }

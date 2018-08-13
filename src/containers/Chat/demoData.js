@@ -134,7 +134,7 @@ const demoUsers = [
     profileImageUrl:
       'https://thumb1.shutterstock.com/display_pic_with_logo/270058/116922589/stock-photo-peaceful-african-american-businessman-in-office-116922589.jpg'
   }
-];
+]
 /*
 const createDemoUsers = () => {
   demoUsers.forEach(user => fsProps.usersCollections.add(user));
@@ -170,4 +170,4 @@ const createDemoChatrooms = users => {
   }
 }
 */
-export { demoUsers };
+export { demoUsers }

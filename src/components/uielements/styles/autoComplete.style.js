@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const AntAutoComplete = ComponentName => styled(ComponentName)`
   width: 100%;
@@ -19,7 +19,7 @@ const AntAutoComplete = ComponentName => styled(ComponentName)`
             margin: 0 10px;
             left: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '0')};
             right: ${props =>
-              props['data-rtl'] === 'rtl' ? '9px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '9px' : 'inherit'};
             color: ${palette('grayscale', 1)};
           }
 
@@ -29,7 +29,7 @@ const AntAutoComplete = ComponentName => styled(ComponentName)`
             height: 35px;
             font-size: 13px;
             text-align: ${props =>
-              props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
             line-height: 1.5;
             color: ${palette('text', 1)};
             border: 1px solid ${palette('border', 0)};
@@ -53,10 +53,10 @@ const AntAutoComplete = ComponentName => styled(ComponentName)`
       padding: 10px;
     }
   }
-`;
+`
 
 const AntAutoCompleteOption = ComponentName => styled(ComponentName)`
   color: #000000;
-`;
+`
 
-export { AntAutoComplete, AntAutoCompleteOption };
+export { AntAutoComplete, AntAutoCompleteOption }

@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 import {
   transition,
   borderRadius,
-  boxShadow,
-} from '../../../settings/style-util';
+  boxShadow
+} from '../../../settings/style-util'
 
 const InputWrapper = ComponentName => styled(ComponentName)`
   &.ant-input {
@@ -55,7 +55,7 @@ const InputWrapper = ComponentName => styled(ComponentName)`
       color: ${palette('grayscale', 0)};
     }
   }
-`;
+`
 const InputGroupWrapper = ComponentName => styled(ComponentName)`
   &.ant-input-group {
     margin-bottom: 10px;
@@ -67,7 +67,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
     .ant-input {
       &:first-child {
         border-radius: ${props =>
-          props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
+    props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
       }
     }
 
@@ -76,7 +76,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
     > .ant-input:not(:first-child):not(:last-child) {
       padding: 0 7px;
       border-left-width: ${props =>
-        props['data-rtl'] === 'rtl' ? '0' : '1px'};
+    props['data-rtl'] === 'rtl' ? '0' : '1px'};
       margin-right: ${props => (props['data-rtl'] === 'rtl' ? '-1px' : '0')};
     }
 
@@ -91,20 +91,20 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
 
       &:first-child {
         border-right-width: ${props =>
-          props['data-rtl'] === 'rtl' ? '1px' : '0'};
+    props['data-rtl'] === 'rtl' ? '1px' : '0'};
         border-left-width: ${props =>
-          props['data-rtl'] === 'rtl' ? '0' : '1px'};
+    props['data-rtl'] === 'rtl' ? '0' : '1px'};
         border-radius: ${props =>
-          props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
+    props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
       }
 
       &:last-child {
         border-right-width: ${props =>
-          props['data-rtl'] === 'rtl' ? '0' : '1px'};
+    props['data-rtl'] === 'rtl' ? '0' : '1px'};
         border-left-width: ${props =>
-          props['data-rtl'] === 'rtl' ? '1px' : '0'};
+    props['data-rtl'] === 'rtl' ? '1px' : '0'};
         border-radius: ${props =>
-          props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
+    props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
       }
 
       .ant-select {
@@ -124,7 +124,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
     }
 
     & > .ant-input:not(:first-child):not(:last-child) {
-      ${'' /* border-left: 0; */};
+      ${''};
     }
 
     .ant-input:first-child:last-child {
@@ -133,7 +133,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
 
     &.ant-input-group-compact > * {
       border-right-width: ${props =>
-        props['data-rtl'] === 'rtl' ? '1px ' : '0'};
+    props['data-rtl'] === 'rtl' ? '1px ' : '0'};
     }
 
     &.ant-input-group-compact > .ant-select > .ant-select-selection,
@@ -143,7 +143,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
     &.ant-input-group-compact > .ant-mention-wrapper .ant-mention-editor,
     &.ant-input-group-compact > .ant-time-picker .ant-time-picker-input {
       border-right-width: ${props =>
-        props['data-rtl'] === 'rtl' ? '1px ' : '0'};
+    props['data-rtl'] === 'rtl' ? '1px ' : '0'};
     }
 
     &.ant-input-group-compact > *:first-child,
@@ -160,7 +160,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
       > .ant-time-picker:first-child
       .ant-time-picker-input {
       border-radius: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
+    props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
       border-left-width: 1px
         ${'' /* border-right-width: ${props =>
         props['data-rtl'] === 'rtl' ? '1px' : '0'}; */};
@@ -178,9 +178,9 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
       > .ant-time-picker:last-child
       .ant-time-picker-input {
       border-radius: ${props =>
-        props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
+    props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
       border-right-width: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 ' : '1px'};
+    props['data-rtl'] === 'rtl' ? '0 ' : '1px'};
     }
 
     .ant-calendar-picker-clear,
@@ -197,7 +197,7 @@ const InputGroupWrapper = ComponentName => styled(ComponentName)`
       height: 35px;
     }
   }
-`;
+`
 
 const TextAreaWrapper = ComponentName => styled(ComponentName)`
   &.ant-input {
@@ -233,7 +233,7 @@ const TextAreaWrapper = ComponentName => styled(ComponentName)`
       color: ${palette('grayscale', 0)};
     }
   }
-`;
+`
 
 const InputSearchWrapper = ComponentName => styled(ComponentName)`
   &.ant-input-affix-wrapper {
@@ -299,6 +299,6 @@ const InputSearchWrapper = ComponentName => styled(ComponentName)`
       }
     }
   }
-`;
+`
 
-export { InputWrapper, InputGroupWrapper, InputSearchWrapper, TextAreaWrapper };
+export { InputWrapper, InputGroupWrapper, InputSearchWrapper, TextAreaWrapper }

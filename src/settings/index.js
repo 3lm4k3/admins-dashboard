@@ -1,23 +1,23 @@
 export default {
   apiUrl: 'http://yoursite.com/api/'
-};
+}
 const siteConfig = {
   siteName: 'ISOMORPHIC',
   siteIcon: 'ion-flash',
   footerText: 'Isomorphic ©2017 Created by RedQ, Inc'
-};
+}
 
 const themeConfig = {
   topbar: 'themedefault',
   sidebar: 'themedefault',
   layout: 'themedefault',
   theme: 'themedefault'
-};
-const language = 'english';
+}
+const language = 'english'
 const AlgoliaSearchConfig = {
   appId: '',
   apiKey: ''
-};
+}
 const Auth0Config = {
   domain: '',
   clientID: '',
@@ -49,7 +49,7 @@ const Auth0Config = {
       }
     }
   }
-};
+}
 const firebaseConfig = {
   apiKey: '',
   authDomain: '',
@@ -57,17 +57,17 @@ const firebaseConfig = {
   projectId: '',
   storageBucket: '',
   messagingSenderId: ''
-};
+}
 const googleConfig = {
   apiKey: '' //
-};
+}
 const mapboxConfig = {
   tileLayer: '',
   maxZoom: '',
   defaultZoom: '',
   center: []
-};
-const youtubeSearchApi = '';
+}
+const youtubeSearchApi = ''
 export {
   siteConfig,
   themeConfig,
@@ -78,4 +78,4 @@ export {
   googleConfig,
   mapboxConfig,
   youtubeSearchApi
-};
+}

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const LayoutContentWrapper = styled.div`
   padding: 40px 20px;
@@ -13,6 +13,6 @@ const LayoutContentWrapper = styled.div`
   @media (max-width: 580px) {
     padding: 15px;
   }
-`;
+`
 
-export { LayoutContentWrapper };
+export { LayoutContentWrapper }

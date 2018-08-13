@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 import {
   transition,
   borderRadius,
-  boxShadow,
-} from '../../../settings/style-util';
-import WithDirection from '../../../settings/withDirection';
+  boxShadow
+} from '../../../settings/style-util'
+import WithDirection from '../../../settings/withDirection'
 
 const ProductsTable = styled.div`
   width: 100%;
@@ -289,6 +289,6 @@ const ProductsTable = styled.div`
       }
     }
   }
-`;
+`
 
-export default WithDirection(ProductsTable);
+export default WithDirection(ProductsTable)

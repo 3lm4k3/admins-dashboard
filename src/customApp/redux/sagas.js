@@ -1,6 +1,6 @@
-import { all } from 'redux-saga/effects';
-import githubSearchSagas from './githubSearch/sagas';
+import { all } from 'redux-saga/effects'
+import githubSearchSagas from './githubSearch/sagas'
 
-export default function* devSaga() {
-  yield all([githubSearchSagas()]);
+export default function * devSaga () {
+  yield all([githubSearchSagas()])
 }

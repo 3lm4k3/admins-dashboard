@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-import 'react-quill/dist/quill.core.css';
-import QuillEditor from './styles/editor.style';
+import React, { Component } from 'react'
+import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.snow.css'
+import 'react-quill/dist/quill.core.css'
+import QuillEditor from './styles/editor.style'
 
 export default class Editor extends Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.state = { value: '' };
+  constructor (props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+    this.state = { value: '' }
     this.quillModules = {
       toolbar: {
         container: [
@@ -18,32 +18,32 @@ export default class Editor extends Component {
             { list: 'ordered' },
             { list: 'bullet' },
             { indent: '-1' },
-            { indent: '+1' },
+            { indent: '+1' }
           ],
           ['link', 'image', 'video'],
-          ['clean'],
-        ],
-      },
-    };
+          ['clean']
+        ]
+      }
+    }
   }
 
-  handleChange(value) {
-    this.setState({ value });
+  handleChange (value) {
+    this.setState({ value })
   }
 
-  render() {
+  render () {
     const options = {
       theme: 'snow',
       formats: Editor.formats,
       placeholder: 'Write Something',
       value: this.state.value,
       onChange: this.handleChange,
-      modules: this.quillModules,
-    };
+      modules: this.quillModules
+    }
     return (
       <QuillEditor>
         <ReactQuill {...options} />
       </QuillEditor>
-    );
+    )
   }
 }

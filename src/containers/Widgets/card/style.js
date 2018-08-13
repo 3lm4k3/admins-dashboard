@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../../settings/withDirection'
 
 const CardWidgetWrapper = styled.div`
   width: 100%;
@@ -17,9 +17,9 @@ const CardWidgetWrapper = styled.div`
     align-items: center;
     justify-content: center;
     padding: ${props =>
-      props['data-rtl'] === 'rtl'
-        ? '20px 20px 20px 30px'
-        : '20px 30px 20px 20px'};
+    props['data-rtl'] === 'rtl'
+      ? '20px 20px 20px 30px'
+      : '20px 30px 20px 20px'};
 
     i {
       font-size: 36px;
@@ -43,6 +43,6 @@ const CardWidgetWrapper = styled.div`
       text-transform: uppercase;
     }
   }
-`;
+`
 
-export default WithDirection(CardWidgetWrapper);
+export default WithDirection(CardWidgetWrapper)

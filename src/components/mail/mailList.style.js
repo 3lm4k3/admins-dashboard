@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius, transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const MailListWrapper = styled.div`
   width: 100%;
@@ -27,7 +27,7 @@ const MailListWrapper = styled.div`
       height: 0;
       border-style: solid;
       border-width: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 15px 15px 0;' : '15px 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 15px 15px 0;' : '15px 15px 0 0'};
       border-color: transparent transparent transparent transparent;
       position: absolute;
       top: 0;
@@ -124,6 +124,6 @@ const MailListWrapper = styled.div`
     width: 100%;
     overflow: hidden;
   }
-`;
+`
 
-export default WithDirection(MailListWrapper);
+export default WithDirection(MailListWrapper)

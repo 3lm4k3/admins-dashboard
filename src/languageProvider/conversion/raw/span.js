@@ -552,5 +552,5 @@ Cerrar sesión
 Ver todo
 Ver carro
 Precio total
-`;
-export default txt;
+`
+export default txt

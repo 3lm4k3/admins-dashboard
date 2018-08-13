@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { palette } from "styled-theme";
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
 const UserItem = styled.div`
   display: flex;
@@ -24,10 +24,10 @@ const UserItem = styled.div`
 
   .suggetionText {
     font-size: 13px;
-    color: ${palette("text", 0)};
+    color: ${palette('text', 0)};
     font-weight: 500;
     margin: 0;
   }
-`;
+`
 
-export default UserItem;
+export default UserItem

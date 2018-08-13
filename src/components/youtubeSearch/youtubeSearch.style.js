@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { borderRadius, transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const WDYoutubeSearchListStyleWrapper = styled.div`
   width: 100%;
@@ -46,7 +46,7 @@ const WDYoutubeSearchListStyleWrapper = styled.div`
       flex-direction: column;
       width: 100%;
       margin: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 20px 0 0' : '0 0 0 20px'};
+    props['data-rtl'] === 'rtl' ? '0 20px 0 0' : '0 0 0 20px'};
       cursor: pointer;
 
       h3.videoName {
@@ -124,18 +124,18 @@ const WDYoutubeSearchListStyleWrapper = styled.div`
             top: 6px;
             left: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '8px')};
             right: ${props =>
-              props['data-rtl'] === 'rtl' ? '8px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '8px' : 'inherit'};
             ${borderRadius('50%')};
           }
 
           @media only screen and (max-width: 420px) {
             padding: ${props =>
-              props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
+    props['data-rtl'] === 'rtl' ? '0 13px 0 0' : '0 0 0 13px'};
 
             &:before {
               left: ${props => (props['data-rtl'] === 'rtl' ? 'inherit' : '0')};
               right: ${props =>
-                props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '0' : 'inherit'};
             }
           }
         }
@@ -153,7 +153,7 @@ const WDYoutubeSearchListStyleWrapper = styled.div`
       }
     }
   }
-`;
+`
 const YoutubeSearchStyleWrapper = styled.div`
   margin-top: 30px;
 
@@ -178,7 +178,7 @@ const YoutubeSearchStyleWrapper = styled.div`
       margin: 0 10px;
     }
   }
-`;
+`
 
 const YoutubeModal = ComponentName => styled(ComponentName)`
   .ant-modal-close-x {
@@ -195,14 +195,14 @@ const YoutubeModal = ComponentName => styled(ComponentName)`
       width: 100%;
     }
   }
-`;
+`
 
 const YoutubeSearchListStyleWrapper = WithDirection(
   WDYoutubeSearchListStyleWrapper
-);
+)
 
 export {
   YoutubeSearchListStyleWrapper,
   YoutubeSearchStyleWrapper,
-  YoutubeModal,
-};
+  YoutubeModal
+}

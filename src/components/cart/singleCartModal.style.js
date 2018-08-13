@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import { transition } from '../../settings/style-util';
-import WithDirection from '../../settings/withDirection';
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import { transition } from '../../settings/style-util'
+import WithDirection from '../../settings/withDirection'
 
 const TopbarCartWrapper = styled.div`
   width: 100%;
@@ -32,7 +32,7 @@ const TopbarCartWrapper = styled.div`
     width: 100%;
     display: flex;
     padding: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 20px 0 0' : '0 0 0 20px'};
+    props['data-rtl'] === 'rtl' ? '0 20px 0 0' : '0 0 0 20px'};
     flex-direction: column;
     text-align: ${props => (props['data-rtl'] === 'rtl' ? 'right' : 'left')};
 
@@ -84,6 +84,6 @@ const TopbarCartWrapper = styled.div`
       opacity: 1;
     }
   }
-`;
+`
 
-export default WithDirection(TopbarCartWrapper);
+export default WithDirection(TopbarCartWrapper)

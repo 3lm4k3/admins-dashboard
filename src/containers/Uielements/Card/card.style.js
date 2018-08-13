@@ -1,14 +1,14 @@
-import React from 'react';
-import Cards from '../../../components/uielements/card';
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
+import React from 'react'
+import Cards from '../../../components/uielements/card'
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 
-const CardComp = props => <Cards {...props} />;
+const CardComp = props => <Cards {...props} />
 
 const Card = styled(CardComp)`
   .ant-card-head {
     background-color: ${palette('grayscale', 4)};
-    ${'' /* border-bottom: 1px solid ${palette('border', 0)}; */} border-bottom: 0;
+    ${''} border-bottom: 0;
 
     .ant-card-head-title {
       color: ${palette('text', 0)};
@@ -73,6 +73,6 @@ const Card = styled(CardComp)`
   .custom-image img {
     display: block;
   }
-`;
+`
 
-export default Card;
+export default Card

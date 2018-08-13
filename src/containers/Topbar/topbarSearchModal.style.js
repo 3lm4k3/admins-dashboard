@@ -1,7 +1,7 @@
-import Modal from '../../components/feedback/modal';
-import styled from 'styled-components';
-import { palette } from 'styled-theme';
-import WithDirection from '../../settings/withDirection';
+import Modal from '../../components/feedback/modal'
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
+import WithDirection from '../../settings/withDirection'
 
 const TopbarSearchModal = styled(Modal)`
   &.ant-modal {
@@ -33,9 +33,9 @@ const TopbarSearchModal = styled(Modal)`
             border: 0;
             border-radius: 0;
             padding-left: ${props =>
-              props['data-rtl'] === 'rtl' ? '15px' : '55px'};
+    props['data-rtl'] === 'rtl' ? '15px' : '55px'};
             padding-right: ${props =>
-              props['data-rtl'] === 'rtl' ? '55px' : '15px'};
+    props['data-rtl'] === 'rtl' ? '55px' : '15px'};
             height: 60px;
             font-size: 14px;
 
@@ -80,6 +80,6 @@ const TopbarSearchModal = styled(Modal)`
       }
     }
   }
-`;
+`
 
-export default WithDirection(TopbarSearchModal);
+export default WithDirection(TopbarSearchModal)

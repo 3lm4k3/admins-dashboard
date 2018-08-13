@@ -1,16 +1,16 @@
 const rowStyle = {
   width: '100%',
   display: 'flex',
-  flexFlow: 'row wrap',
-};
+  flexFlow: 'row wrap'
+}
 const colStyle = {
-  marginBottom: '16px',
-};
-const gutter = 16;
+  marginBottom: '16px'
+}
+const gutter = 16
 const basicStyle = {
   rowStyle,
   colStyle,
-  gutter,
-};
+  gutter
+}
 
-export default basicStyle;
+export default basicStyle
