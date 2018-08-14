@@ -51,12 +51,12 @@ const Auth0Config = {
   }
 };
 const firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: ''
+  apiKey: "AIzaSyAW3wyUmWI-DmUlb3eAlczEmCskfd_yS4g",
+  authDomain: "elmawkaafirebase.firebaseapp.com",
+  databaseURL: "https://elmawkaafirebase.firebaseio.com",
+  projectId: "elmawkaafirebase",
+  storageBucket: "elmawkaafirebase.appspot.com",
+  messagingSenderId: "128426952287"
 };
 const googleConfig = {
   apiKey: '' //
