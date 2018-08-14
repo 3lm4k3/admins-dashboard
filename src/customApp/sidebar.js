@@ -1,9 +1,9 @@
 const options = [
-  {
-    key: 'githubSearch',
-    label: 'sidebar.githubSearch',
-    leftIcon: 'ion-social-github'
-  },
+  // {
+  //   key: 'githubSearch',
+  //   label: 'sidebar.githubSearch',
+  //   leftIcon: 'ion-social-github'
+  // },
   {
     key: 'blank_page',
     label: 'sidebar.blankPage',
