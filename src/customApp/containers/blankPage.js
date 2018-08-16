@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import SimpleTable from "../../containers/Tables/antTables/tableViews/simpleView";
 import LayoutContentWrapper from "../../components/utility/layoutWrapper.js";
 import LayoutContent from "../../components/utility/layoutContent";
-import { Table, Icon } from 'antd';
+import { firestore } from "firebase";
+
+const db = firestore()
+
 const dataSource = [{
   key: '1',
   name: 'Mike',
@@ -27,13 +31,27 @@ const columns = [{
   dataIndex: 'address',
   key: 'address',
 }];
+
+db.collection("posts").get().then(function (querySnapshot) {
+  querySnapshot.forEach(function (doc) {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data());
+  });
+});
+
 export default class extends Component {
   render() {
     return (
       <LayoutContentWrapper style={{ height: "100vh" }}>
         <LayoutContent>
           <h1>Blank Page</h1>
-          <Table dataSource={dataSource} columns={columns} />
+          <SimpleTable
+            pagination={false}
+            columns={columns}
+            dataSource={dataSource}
+            className="isoSimpleTable"
+          />
+          {/* <Table dataSource={dataSource} columns={columns} /> */}
         </LayoutContent>
       </LayoutContentWrapper>
     );
