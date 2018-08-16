@@ -6,7 +6,7 @@ const options = [
   },
   {
     key: 'table',
-    label: 'sidebar.table',
+    label: 'Posts',
     leftIcon: 'ion-document'
   }
 ];
