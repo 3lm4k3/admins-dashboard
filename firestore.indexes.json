@@ -1,0 +1,32 @@
+{
+  "indexes": [
+    {
+      "collectionId": "articles",
+      "state": "READY",
+      "fields": [
+        {
+          "fieldPath": "deleted_at",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "mode": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionId": "investors",
+      "state": "READY",
+      "fields": [
+        {
+          "fieldPath": "deleted_at",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "mode": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
