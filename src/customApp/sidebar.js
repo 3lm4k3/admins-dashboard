@@ -1,12 +1,12 @@
 const options = [
   {
-    key: 'blank_page',
-    label: 'sidebar.blankPage',
-    leftIcon: 'ion-document'
+    key: 'githubSearch',
+    label: 'sidebar.githubSearch',
+    leftIcon: 'ion-social-github'
   },
   {
-    key: 'table',
-    label: 'Posts',
+    key: 'blank_page',
+    label: 'sidebar.blankPage',
     leftIcon: 'ion-document'
   }
 ];
