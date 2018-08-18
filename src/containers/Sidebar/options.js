@@ -73,22 +73,22 @@ const options = [
   //   label: 'sidebar.todos',
   //   leftIcon: 'ion-android-checkbox-outline',
   // },
-  // {
-  //   key: 'firestorecrud',
-  //   label: 'sidebar.firestorecrud',
-  //   leftIcon: 'ion-fireball',
+  {
+    key: 'firestorecrud',
+    label: 'sidebar.firestorecrud',
+    leftIcon: 'ion-fireball',
 
-  //   children: [
-  //     {
-  //       key: 'articles',
-  //       label: 'sidebar.firestorecrudarticle',
-  //     },
-  //     {
-  //       key: 'investors',
-  //       label: 'sidebar.firestorecrudinvestor',
-  //     },
-  //   ],
-  // },
+    children: [
+      {
+        key: 'articles',
+        label: 'sidebar.firestorecrudarticle',
+      },
+      {
+        key: 'investors',
+        label: 'sidebar.firestorecrudinvestor',
+      },
+    ],
+  },
   // {
   //   key: 'contacts',
   //   label: 'sidebar.contacts',
